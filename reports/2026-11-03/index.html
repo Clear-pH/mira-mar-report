@@ -1,0 +1,2714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mira Mar — Marketing Performance Report · Oct 5 – Nov 3, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Manrope:wght@300;400;500;600;700;800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Caslon+Display&family=Pinyon+Script&family=Work+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>
+  // Apply theme + palette before paint to avoid FOUC
+  (function() {
+    try {
+      var p = localStorage.getItem('mm-report-palette') || 'miramar';
+      var t = localStorage.getItem('mm-report-theme') || 'dark';
+      document.documentElement.setAttribute('data-palette', p);
+      document.documentElement.setAttribute('data-theme', t);
+    } catch(e) {}
+  })();
+</script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    /* Mira Mar Sarasota — design system tokens */
+    --mm-oxblood:       #4B0108;
+    --mm-oxblood-deep:  #401516;
+    --mm-rose:          #A4515E;
+    --mm-rose-soft:     #97555F;
+    --mm-cream:         #F3ECE7;
+    --mm-cream-warm:    #FFF9EA;
+    --mm-paper:         #FFFDFB;
+    --mm-paper-2:       #EFE9E4;
+    --mm-ink:           #161412;
+    --mm-ink-2:         #1E1C1C;
+    --mm-ash:           #65635F;
+
+    /* Default theme — Mira Mar dark */
+    --bg-deep:           var(--mm-ink);
+    --bg:                var(--mm-ink-2);
+    --card-bg:           var(--mm-oxblood-deep);
+    --card-edge:         color-mix(in oklab, var(--mm-rose) 18%, transparent);
+    --surface-grad-from: #2A1416;
+    --surface-grad-to:   #1A0E10;
+    --gold:              var(--mm-rose);
+    --gold-soft:         #C97A86;
+    --gold-dim:          var(--mm-rose-soft);
+    --cream:             var(--mm-cream);
+    --white:             var(--mm-paper);
+    --muted:             #B8AEA6;
+    --muted-soft:        #8C8480;
+    --green:             #7FB685;
+    --green-bg:          rgba(127,182,133,0.10);
+    --yellow:            #D5A45F;
+    --yellow-bg:         rgba(213,164,95,0.10);
+    --red:               #D88A78;
+    --red-bg:            rgba(216,138,120,0.10);
+    --line:              color-mix(in oklab, var(--mm-rose) 22%, transparent);
+    --selection-bg:      var(--mm-rose);
+    --selection-fg:      var(--mm-paper);
+    --print-bg:          #fff;
+    --max-w:             1080px;
+    --serif:             'Libre Caslon Display', 'Cormorant Garamond', 'Times New Roman', Georgia, serif;
+    --serif-body:        'Libre Baskerville', 'Cormorant Garamond', Georgia, serif;
+    --display:           'Pinyon Script', 'Snell Roundhand', cursive;
+    --sans:              'Work Sans', 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  /* Mira Mar — light theme (paper + oxblood ink) */
+  html[data-theme="light"]:not([data-palette="classic"]) {
+    --bg-deep:           var(--mm-paper);
+    --bg:                var(--mm-paper-2);
+    --card-bg:           var(--mm-cream);
+    --card-edge:         color-mix(in oklab, var(--mm-oxblood) 14%, transparent);
+    --surface-grad-from: var(--mm-paper);
+    --surface-grad-to:   var(--mm-cream);
+    --gold:              var(--mm-rose);
+    --gold-soft:         var(--mm-rose-soft);
+    --gold-dim:          #6B2A33;
+    --cream:             var(--mm-oxblood);
+    --white:             var(--mm-ink);
+    --muted:             var(--mm-ash);
+    --muted-soft:        #8C8680;
+    --green:             #4A7A4D;
+    --green-bg:          rgba(74,122,77,0.10);
+    --yellow:            #B58239;
+    --yellow-bg:         rgba(181,130,57,0.12);
+    --red:               #A55543;
+    --red-bg:            rgba(165,85,67,0.12);
+    --line:              color-mix(in oklab, var(--mm-oxblood) 18%, transparent);
+    --selection-bg:      var(--mm-rose);
+    --selection-fg:      var(--mm-paper);
+  }
+
+  /* Classic — preserves original navy/gold palette (dark only) */
+  html[data-palette="classic"] {
+    --bg-deep:           #0e1320;
+    --bg:                #141a2a;
+    --card-bg:           #1b2236;
+    --card-edge:         #2a3350;
+    --surface-grad-from: #1b2236;
+    --surface-grad-to:   #161c2c;
+    --gold:              #c9a96e;
+    --gold-soft:         #d9bd87;
+    --gold-dim:          #8c7548;
+    --cream:             #f4ecd9;
+    --white:             #f3f0e6;
+    --muted:             #97a0b8;
+    --muted-soft:        #6c7591;
+    --green:             #6ed39a;
+    --green-bg:          rgba(110,211,154,0.10);
+    --yellow:            #f0c860;
+    --yellow-bg:         rgba(240,200,96,0.10);
+    --red:               #f08573;
+    --red-bg:            rgba(240,133,115,0.10);
+    --line:              rgba(201,169,110,0.18);
+    --selection-bg:      #c9a96e;
+    --selection-fg:      #0e1320;
+    --serif:             'Cormorant Garamond', 'Times New Roman', Georgia, serif;
+    --serif-body:        'Cormorant Garamond', Georgia, serif;
+    --sans:              'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  /* Classic — light variant (cream paper, navy ink) */
+  html[data-palette="classic"][data-theme="light"] {
+    --bg-deep:           #f5f0e3;
+    --bg:                #ede6d2;
+    --card-bg:           #fdfaf1;
+    --card-edge:         #d9cdac;
+    --surface-grad-from: #fdfaf1;
+    --surface-grad-to:   #f5efdc;
+    --gold:              #8c7548;
+    --gold-soft:         #b8963e;
+    --gold-dim:          #6e5a30;
+    --cream:             #1a1a1a;
+    --white:             #1a1a1a;
+    --muted:             #555;
+    --muted-soft:        #777;
+    --green:             #2f7a4e;
+    --green-bg:          rgba(47,122,78,0.10);
+    --yellow:            #b8963e;
+    --yellow-bg:         rgba(184,150,62,0.12);
+    --red:               #b94e3a;
+    --red-bg:            rgba(185,78,58,0.10);
+    --line:              rgba(140,117,72,0.30);
+    --selection-bg:      #c9a96e;
+    --selection-fg:      #1a1a1a;
+  }
+
+  html { font-size: 16px; scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--bg-deep);
+    color: var(--white);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image:
+      radial-gradient(ellipse at 20% -10%, color-mix(in oklab, var(--gold) 18%, transparent), transparent 50%),
+      radial-gradient(ellipse at 80% 100%, color-mix(in oklab, var(--green) 12%, transparent), transparent 50%);
+    background-attachment: fixed;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  /* Subtle film grain */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 100;
+    opacity: 0.035;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  }
+
+  ::selection { background: var(--selection-bg); color: var(--selection-fg); }
+
+  /* ── Theme Controls (floating, paired with archive nav) ── */
+  .theme-controls {
+    position: fixed;
+    top: 1.25rem;
+    left: 1.25rem;
+    z-index: 60;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .theme-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+    background: color-mix(in oklab, var(--bg) 88%, transparent);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid var(--card-edge);
+    border-radius: 999px;
+    padding: 0.55rem 0.9rem;
+    color: var(--cream);
+    font-family: var(--sans);
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.25s ease;
+  }
+  .theme-btn:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+  }
+  .theme-btn--icon {
+    padding: 0.55rem;
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+  .theme-btn svg { width: 14px; height: 14px; stroke: currentColor; fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+  /* Show appropriate icon based on theme */
+  html[data-theme="light"] .icon--sun { display: none; }
+  html:not([data-theme="light"]) .icon--moon { display: none; }
+  /* Palette swap label flips text */
+  .theme-btn__palette-label::before { content: "Mira Mar"; }
+  html[data-palette="classic"] .theme-btn__palette-label::before { content: "Classic"; }
+
+  /* ── Archive Nav (top-right floating) ── */
+  .archive-nav {
+    position: fixed;
+    top: 1.25rem;
+    right: 1.25rem;
+    z-index: 60;
+  }
+  .archive-trigger {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: color-mix(in oklab, var(--bg) 88%, transparent);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid var(--card-edge);
+    border-radius: 999px;
+    padding: 0.55rem 1rem 0.55rem 0.85rem;
+    color: var(--cream);
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    transition: all 0.25s ease;
+  }
+  .archive-trigger:hover {
+    border-color: var(--gold);
+    background: color-mix(in oklab, var(--card-bg) 96%, transparent);
+  }
+  .archive-trigger__dot {
+    width: 6px; height: 6px;
+    background: var(--gold);
+    border-radius: 50%;
+    box-shadow: 0 0 12px var(--gold);
+  }
+  .archive-panel {
+    position: absolute;
+    top: calc(100% + 0.6rem);
+    right: 0;
+    min-width: 320px;
+    max-width: 90vw;
+    background: linear-gradient(180deg, var(--surface-grad-from) 0%, var(--surface-grad-to) 100%);
+    border: 1px solid var(--card-edge);
+    border-radius: 14px;
+    padding: 0.75rem;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.45);
+    display: none;
+    transform-origin: top right;
+    animation: panelIn 0.22s ease;
+  }
+  .archive-panel.is-open { display: block; }
+  @keyframes panelIn {
+    from { opacity: 0; transform: translateY(-6px) scale(0.98); }
+    to   { opacity: 1; transform: translateY(0) scale(1); }
+  }
+  .archive-panel__header {
+    font-family: var(--serif);
+    font-size: 0.95rem;
+    color: var(--gold);
+    padding: 0.4rem 0.75rem 0.6rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 0.4rem;
+  }
+  .archive-panel__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+  .archive-panel__list a {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 0.55rem 0.75rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--white);
+    transition: background 0.15s;
+  }
+  .archive-panel__list a:hover { background: color-mix(in oklab, var(--gold) 10%, transparent); }
+  .archive-panel__list a.is-current {
+    background: color-mix(in oklab, var(--gold) 14%, transparent);
+    border: 1px solid var(--line);
+  }
+  .archive-panel__date {
+    font-size: 0.85rem;
+    color: var(--cream);
+    font-weight: 500;
+  }
+  .archive-panel__period {
+    font-size: 0.7rem;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+  }
+  .archive-panel__current-tag {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--gold);
+    margin-left: 0.5rem;
+  }
+
+  /* ── Layout ── */
+  .report {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 4rem 1.5rem 4rem;
+  }
+
+  /* ── Hero ── */
+  .hero {
+    text-align: center;
+    padding: 3rem 0 4rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 3rem;
+    position: relative;
+  }
+  .hero__monogram {
+    font-family: var(--serif);
+    font-size: 0.7rem;
+    letter-spacing: 0.5em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+    opacity: 0;
+    animation: fadeUp 0.7s 0.05s ease forwards;
+  }
+  .hero__brand {
+    font-family: var(--serif);
+    font-size: 2.4rem;
+    color: var(--cream);
+    letter-spacing: 0.18em;
+    font-weight: 400;
+    margin-bottom: 0.2rem;
+    opacity: 0;
+    animation: fadeUp 0.7s 0.15s ease forwards;
+  }
+  .hero__rule {
+    width: 60px;
+    height: 1px;
+    margin: 1.4rem auto;
+    background: var(--gold);
+    transform: scaleX(0);
+    transform-origin: center;
+    animation: ruleIn 0.7s 0.4s ease forwards;
+  }
+  @keyframes ruleIn { to { transform: scaleX(1); } }
+  .hero__title {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 3.2rem;
+    line-height: 1.05;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 1rem;
+    letter-spacing: -0.01em;
+    opacity: 0;
+    animation: fadeUp 0.7s 0.3s ease forwards;
+  }
+  .hero__period {
+    font-family: var(--sans);
+    font-size: 0.95rem;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0;
+    animation: fadeUp 0.7s 0.45s ease forwards;
+  }
+  .hero__compare {
+    display: inline-block;
+    margin-top: 0.6rem;
+    padding: 0.3rem 0.9rem;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    font-size: 0.72rem;
+    color: var(--gold-soft);
+    letter-spacing: 0.05em;
+    opacity: 0;
+    animation: fadeUp 0.7s 0.6s ease forwards;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(14px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ── Section Card ── */
+  .section {
+    background: linear-gradient(180deg, var(--surface-grad-from) 0%, var(--surface-grad-to) 100%);
+    border: 1px solid var(--card-edge);
+    border-radius: 18px;
+    padding: 2.5rem 2rem;
+    margin-bottom: 1.75rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    opacity: 0.4;
+  }
+  .section--green::before { background: linear-gradient(90deg, transparent, var(--green), transparent); }
+  .section--yellow::before { background: linear-gradient(90deg, transparent, var(--yellow), transparent); }
+  .section--red::before { background: linear-gradient(90deg, transparent, var(--red), transparent); }
+
+  .section__header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+  .section__title {
+    font-family: var(--serif);
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: var(--cream);
+    letter-spacing: -0.005em;
+    line-height: 1.1;
+  }
+  .section__title em {
+    font-style: italic;
+    color: var(--gold);
+  }
+  .section__chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.35rem 0.8rem;
+    border-radius: 999px;
+    font-family: var(--sans);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    flex-shrink: 0;
+  }
+  .section__chip--green  { background: var(--green-bg);  color: var(--green); }
+  .section__chip--yellow { background: var(--yellow-bg); color: var(--yellow); }
+  .section__chip--red    { background: var(--red-bg);    color: var(--red); }
+  .section__chip--gold   { background: color-mix(in oklab, var(--gold) 12%, transparent); color: var(--gold); }
+  .section__chip-dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: currentColor;
+  }
+
+  .section__lede {
+    font-family: var(--serif);
+    font-size: 1.18rem;
+    line-height: 1.55;
+    color: var(--white);
+    margin-bottom: 1.6rem;
+    max-width: 64ch;
+  }
+  .section__lede strong { color: var(--gold); font-weight: 600; }
+
+  /* ── Stat Grid (KPI cards with deltas) ── */
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 0.85rem;
+    margin: 1.5rem 0;
+  }
+  /* Grids with emphasized (hero) tiles: force an even 4-across on desktop so
+     the four boxes sit on one row instead of wrapping 3 + 1. */
+  @media (min-width: 720px) {
+    .stat-grid:has(.stat--hero) { grid-template-columns: repeat(4, 1fr); }
+    .stat-grid:has(.stat--hero) .stat--hero { grid-column: span 1; }
+  }
+  .stat {
+    background: color-mix(in oklab, var(--white) 4%, transparent);
+    border: 1px solid var(--card-edge);
+    border-radius: 12px;
+    padding: 1rem 1.1rem;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+  }
+  .stat:hover {
+    transform: translateY(-2px);
+    border-color: var(--line);
+  }
+  .stat--hero {
+    grid-column: span 2;
+    padding: 1.4rem 1.5rem;
+  }
+  .stat__label {
+    font-size: 0.66rem;
+    color: var(--muted-soft);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    margin-bottom: 0.45rem;
+    font-weight: 600;
+  }
+  .stat__value {
+    font-family: var(--serif);
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: var(--cream);
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+  }
+  .stat--hero .stat__value { font-size: 2.7rem; }
+  .stat__delta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-top: 0.5rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+  }
+  .stat__delta--up    { color: var(--green); }
+  .stat__delta--down  { color: var(--red); }
+  .stat__delta--flat  { color: var(--muted); }
+  .stat__delta--good-down { color: var(--green); }
+  .stat__delta--bad-up    { color: var(--red); }
+  .stat__delta-prev {
+    color: var(--muted-soft);
+    font-weight: 400;
+    margin-left: 0.3rem;
+  }
+
+  /* ── Bar charts (animated) ── */
+  .chart {
+    margin: 1.75rem 0 0.75rem;
+  }
+  .chart__title {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--gold-soft);
+    margin-bottom: 0.85rem;
+    font-weight: 600;
+  }
+  .chart-row {
+    display: grid;
+    grid-template-columns: 150px 1fr 80px;
+    align-items: center;
+    gap: 0.85rem;
+    margin-bottom: 0.55rem;
+  }
+  .chart-row__label {
+    font-size: 0.82rem;
+    color: var(--muted);
+    text-align: right;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .chart-row__track {
+    height: 24px;
+    background: color-mix(in oklab, var(--white) 4%, transparent);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+  }
+  .chart-row__fill {
+    height: 100%;
+    border-radius: 4px;
+    transform-origin: left;
+    transform: scaleX(0);
+    animation: fillIn 1.1s cubic-bezier(0.22, 0.9, 0.3, 1) forwards;
+  }
+  @keyframes fillIn { to { transform: scaleX(1); } }
+  .chart-row__value {
+    font-size: 0.8rem;
+    color: var(--cream);
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+  .bar--gold   { background: linear-gradient(90deg, var(--gold) 0%, var(--gold-soft) 100%); }
+  .bar--green  { background: linear-gradient(90deg, var(--green) 0%, #98e2b8 100%); }
+  .bar--blue   { background: linear-gradient(90deg, #6791d1 0%, #88a8db 100%); }
+  .bar--purple { background: linear-gradient(90deg, #a78bfa 0%, #c1afff 100%); }
+  .bar--orange { background: linear-gradient(90deg, #fb923c 0%, #ffb47e 100%); }
+  .bar--red    { background: linear-gradient(90deg, var(--red) 0%, #f5a99c 100%); }
+  .bar--teal   { background: linear-gradient(90deg, #2dd4bf 0%, #6ee5d4 100%); }
+  .bar--muted  { background: color-mix(in oklab, var(--white) 22%, transparent); }
+
+  /* ── Compare strip (before / after) ── */
+  .compare {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 1rem;
+    align-items: center;
+    background: color-mix(in oklab, var(--gold) 6%, transparent);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  .compare__col { text-align: center; }
+  .compare__label {
+    font-size: 0.62rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--muted-soft);
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+  }
+  .compare__value {
+    font-family: var(--serif);
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: var(--cream);
+  }
+  .compare__col--prev .compare__value { color: var(--muted); }
+  .compare__arrow {
+    color: var(--gold);
+    font-size: 1.4rem;
+    line-height: 1;
+  }
+
+  /* ── Action callout ── */
+  .action {
+    margin-top: 1.5rem;
+    padding: 1.1rem 1.4rem;
+    background: color-mix(in oklab, var(--gold) 8%, transparent);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--gold);
+    border-radius: 8px;
+    font-family: var(--serif);
+    font-size: 1.05rem;
+    line-height: 1.5;
+    color: var(--cream);
+  }
+  .action__label {
+    display: inline-block;
+    font-family: var(--sans);
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+  }
+
+  /* ── Recommendations List ── */
+  .rec-list {
+    list-style: none;
+    counter-reset: rec;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+  }
+  .rec-item {
+    display: grid;
+    grid-template-columns: 2.2rem 1fr;
+    gap: 1rem;
+    padding: 1.1rem 1.2rem;
+    background: color-mix(in oklab, var(--white) 4%, transparent);
+    border: 1px solid var(--card-edge);
+    border-radius: 12px;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+  }
+  .rec-item:hover {
+    border-color: var(--line);
+    transform: translateX(2px);
+  }
+  .rec-num {
+    counter-increment: rec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    background: color-mix(in oklab, var(--gold) 14%, transparent);
+    border: 1px solid var(--line);
+    color: var(--gold);
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  .rec-num::before { content: counter(rec); }
+  .rec-content { display: flex; flex-direction: column; gap: 0.35rem; }
+  .rec-tag {
+    display: inline-block;
+    font-family: var(--sans);
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    padding: 0.18rem 0.55rem;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+    font-weight: 700;
+    align-self: flex-start;
+  }
+  .rec-tag--high { background: color-mix(in oklab, var(--red) 18%, transparent); color: var(--red); }
+  .rec-tag--med  { background: color-mix(in oklab, var(--yellow) 18%, transparent); color: var(--yellow); }
+  .rec-tag--low  { background: color-mix(in oklab, var(--green) 14%, transparent); color: var(--green); }
+  .rec-headline {
+    font-family: var(--serif);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--cream);
+    line-height: 1.3;
+  }
+  .rec-detail {
+    font-size: 0.92rem;
+    color: var(--muted);
+    line-height: 1.55;
+  }
+
+  /* ── Footer ── */
+  .footer {
+    text-align: center;
+    padding: 3rem 1rem 1rem;
+    border-top: 1px solid var(--line);
+    margin-top: 3rem;
+  }
+  .footer__monogram {
+    font-family: var(--serif);
+    font-style: italic;
+    color: var(--gold);
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+  }
+  .footer__line {
+    color: var(--muted-soft);
+    font-size: 0.78rem;
+    letter-spacing: 0.05em;
+  }
+
+  /* ── Reveal on scroll ── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 720px) {
+    .report { padding: 2rem 1rem; }
+    .hero { padding: 1.5rem 0 2.5rem; }
+    .hero__brand { font-size: 1.6rem; }
+    .hero__title { font-size: 2.1rem; }
+    .section { padding: 1.5rem 1.25rem; }
+    .section__title { font-size: 1.5rem; }
+    .stat--hero { grid-column: span 1; }
+    .stat--hero .stat__value { font-size: 2.1rem; }
+    .chart-row { grid-template-columns: 95px 1fr 60px; gap: 0.5rem; }
+    .chart-row__label { font-size: 0.72rem; }
+    .compare { grid-template-columns: 1fr; gap: 0.5rem; }
+    .compare__arrow { transform: rotate(90deg); }
+    .rec-item { grid-template-columns: 1fr; }
+    .rec-num { margin-bottom: 0.2rem; }
+    .archive-panel { right: -1rem; min-width: 280px; }
+  }
+
+  /* ── Print ── */
+  @media print {
+    body { background: #fff; color: #1a1a1a; }
+    body::before { display: none; }
+    .archive-nav { display: none; }
+    .report { max-width: 100%; padding: 0; }
+    .hero { padding: 1rem 0; border-bottom-color: #ddd; }
+    .hero__brand, .hero__title, .section__title { color: #1a1a1a; }
+    .hero__period { color: #555; }
+    .section { background: #fff; border: 1px solid #ddd; padding: 1.25rem; break-inside: avoid; }
+    .section::before { display: none; }
+    .section__lede, .stat__value, .compare__value { color: #1a1a1a; }
+    .stat__label, .stat__delta-prev { color: #555; }
+    .stat { background: #faf6ee; border-color: #e8dcc6; }
+    .chart-row__track { background: #eee; }
+    .chart-row__label, .chart-row__value, .rec-detail { color: #333; }
+    .action { background: #faf6ee; color: #333; border-left-color: #b8963e; }
+    .rec-item { background: #faf6ee; border-color: #e8dcc6; }
+    .footer { border-top-color: #ddd; color: #555; }
+  }
+
+  /* ───────── VISUALIZATION MODAL (v2 command view) ───────── */
+  .archive-nav { display: flex; align-items: center; gap: 0.5rem; }
+  .viz-trigger {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: color-mix(in oklab, var(--bg) 88%, transparent);
+    backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+    border: 1px solid var(--card-edge); border-radius: 999px;
+    padding: 0.55rem 1rem 0.55rem 0.85rem;
+    color: var(--cream); font-family: var(--sans); font-size: 0.78rem;
+    font-weight: 600; letter-spacing: 0.08em;
+    cursor: pointer; transition: border-color 0.2s, color 0.2s;
+  }
+  .viz-trigger:hover { border-color: var(--gold); color: var(--gold-soft); }
+  .viz-trigger__dot { width: 7px; height: 7px; border-radius: 50%; background: var(--gold); }
+  .viz-overlay { position: fixed; inset: 0; z-index: 90; display: none; background: var(--bg-deep); }
+  .viz-overlay.is-open { display: block; }
+  .viz-panel {
+    width: 100vw; height: 100vh; overflow-y: auto;
+    background: linear-gradient(160deg, var(--surface-grad-from), var(--surface-grad-to));
+    padding: 1rem 1.25rem 1.25rem; font-family: var(--sans);
+    animation: vizIn 0.4s cubic-bezier(0.22, 0.9, 0.3, 1);
+  }
+  @keyframes vizIn { from { opacity: 0; transform: scale(0.99); } }
+  .v2-head { display: flex; align-items: center; gap: 1rem; margin-bottom: 0.8rem; flex-wrap: wrap; }
+  .v2-head__title { font-family: var(--serif); font-size: 1.45rem; font-style: italic; font-weight: 600; color: var(--cream); white-space: nowrap; }
+  .v2-head__period { font-size: 0.66rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+  .v2-head__chips { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-left: auto; }
+  .viz-close {
+    background: none; border: 1px solid var(--card-edge); border-radius: 999px;
+    width: 32px; height: 32px; color: var(--muted); cursor: pointer; font-size: 0.9rem; line-height: 1;
+    transition: color 0.2s, border-color 0.2s; flex: none;
+  }
+  .viz-close:hover { color: var(--cream); border-color: var(--gold); }
+  .viz-status { display: inline-flex; align-items: center; gap: 0.3rem; font-size: 0.56rem; font-weight: 700; letter-spacing: 0.1em; padding: 0.22rem 0.55rem; border-radius: 999px; }
+  .viz-status__dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+  .viz-status--good { color: var(--green); background: var(--green-bg); }
+  .viz-status--watch { color: var(--yellow); background: var(--yellow-bg); }
+  .viz-status--fix { color: var(--red); background: var(--red-bg); }
+  .viz-up { color: var(--green); } .viz-down { color: var(--red); }
+  .v2-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 0.6rem; }
+  .v2-card {
+    border-radius: 10px; padding: 0.8rem 0.9rem;
+    min-width: 0;
+  }
+  .v2-card__title { display: flex; align-items: baseline; gap: 0.5rem; font-size: 0.6rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.6rem; }
+  .v2-card__title em { font-style: normal; color: var(--gold-soft); margin-left: auto; font-size: 0.58rem; letter-spacing: 0.06em; text-transform: none; }
+  .c3 { grid-column: span 3; } .c4 { grid-column: span 4; } .c5 { grid-column: span 5; }
+  .c6 { grid-column: span 6; } .c12 { grid-column: span 12; }
+  /* hero + kpis */
+  .v2-hero__value { font-family: var(--serif); font-size: 3rem; line-height: 1; color: var(--gold-soft); }
+  .v2-hero__delta { font-size: 0.7rem; font-weight: 600; margin: 0.3rem 0 0.8rem; }
+  .v2-hero__delta small { font-weight: 400; color: var(--muted); }
+  .v2-kpirow { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.5rem; border-top: 1px solid var(--card-edge); padding-top: 0.7rem; }
+  .v2-kpi__label { font-size: 0.56rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+  .v2-kpi__value { font-family: var(--serif); font-size: 1.25rem; color: var(--white); }
+  .v2-kpi__delta { font-size: 0.62rem; font-weight: 600; }
+  /* funnel */
+  .v2-funnel { display: flex; flex-direction: column; align-items: center; gap: 2px; }
+  .v2-fstage { color: var(--white); text-align: center; padding: 0.34rem 0.6rem; border-radius: 4px; width: var(--w); display: flex; justify-content: space-between; align-items: baseline; gap: 0.6rem; }
+  .v2-fstage__name { font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.85; }
+  .v2-fstage__num { font-family: var(--serif); font-size: 0.95rem; font-variant-numeric: tabular-nums; }
+  .v2-frate { font-size: 0.6rem; color: var(--muted); padding: 0.05rem 0; }
+  .v2-fdivider { width: 100%; display: flex; align-items: center; gap: 0.5rem; font-size: 0.56rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin: 0.35rem 0 0.2rem; }
+  .v2-fdivider::before, .v2-fdivider::after { content: ""; flex: 1; border-top: 1px dashed var(--card-edge); }
+  .v2-fnote { font-size: 0.6rem; color: var(--muted-soft); margin-top: 0.5rem; line-height: 1.4; text-align: center; }
+  /* svg charts */
+  .v2-svg { width: 100%; height: auto; display: block; }
+  .v2-svg text { font-family: var(--sans); }
+  /* gauges */
+  .v2-gauges { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.5rem; text-align: center; }
+  .v2-gauge__ring { width: 74px; height: 74px; border-radius: 50%; margin: 0 auto 0.4rem; display: grid; place-items: center; position: relative;
+    background: conic-gradient(var(--g-color) calc(var(--g-pct) * 1%), color-mix(in oklab, var(--muted) 14%, transparent) 0); }
+  .v2-gauge__ring::before { content: ""; position: absolute; inset: 7px; border-radius: 50%; background: var(--card-bg); }
+  .v2-gauge__val { position: relative; font-family: var(--serif); font-size: 0.98rem; color: var(--white); }
+  .v2-gauge__label { font-size: 0.56rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+  .v2-gauge__target { font-size: 0.58rem; color: var(--muted-soft); margin-top: 0.1rem; }
+  /* donut */
+  .v2-donutwrap { display: flex; align-items: center; gap: 0.9rem; }
+  .v2-donut { width: 96px; height: 96px; border-radius: 50%; position: relative; flex: none; background: var(--d-bg); }
+  .v2-donut::before { content: ""; position: absolute; inset: 13px; border-radius: 50%; background: var(--card-bg); }
+  .v2-donut__center { position: absolute; inset: 0; display: grid; place-items: center; }
+  .v2-donut__center b { font-family: var(--serif); font-weight: 600; font-size: 1rem; color: var(--white); }
+  .v2-donut--sm { width: 64px; height: 64px; }
+  .v2-donut--sm::before { inset: 9px; }
+  .v2-donut--sm .v2-donut__center b { font-size: 0.72rem; }
+  .v2-legend { font-size: 0.66rem; color: var(--cream); display: grid; gap: 0.3rem; min-width: 0; }
+  .v2-legend__row { display: flex; align-items: center; gap: 0.4rem; white-space: nowrap; }
+  .v2-legend__row small { color: var(--muted); }
+  .v2-swatch { width: 8px; height: 8px; border-radius: 2px; flex: none; }
+  .v2-trio { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.4rem; text-align: center; }
+  .v2-trio__label { font-size: 0.56rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-top: 0.3rem; }
+  .v2-trio__sub { font-size: 0.6rem; color: var(--cream); margin-top: 0.15rem; }
+  /* stacked bar */
+  .v2-stack { display: flex; height: 16px; border-radius: 4px; overflow: hidden; gap: 2px; margin-bottom: 0.55rem; }
+  .v2-stack span { display: block; }
+  /* bars (reused) */
+  .viz-bar { display: grid; grid-template-columns: 7.2rem 1fr 3.6rem; align-items: center; gap: 0.55rem; margin-bottom: 0.45rem; }
+  .viz-bar__name { font-size: 0.65rem; color: var(--cream); text-align: right; line-height: 1.15; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .viz-bar__track { display: block; height: 11px; border-radius: 4px; background: color-mix(in oklab, var(--muted) 14%, transparent); overflow: hidden; }
+  .viz-bar__fill { display: block; height: 100%; border-radius: 0 4px 4px 0; background: color-mix(in oklab, var(--cream) 45%, transparent); transform: scaleX(0); transform-origin: left; }
+  .is-open .viz-bar__fill { animation: fillIn 0.9s cubic-bezier(0.22, 0.9, 0.3, 1) forwards; }
+  .viz-bar--hot .viz-bar__fill { background: var(--gold); }
+  .viz-bar--hot .viz-bar__name, .viz-bar--hot .viz-bar__value { color: var(--gold-soft); font-weight: 600; }
+  .viz-bar__value { font-size: 0.68rem; color: var(--cream); font-variant-numeric: tabular-nums; }
+  .viz-note { font-size: 0.62rem; color: var(--muted); margin-top: 0.5rem; line-height: 1.45; border-top: 1px solid var(--card-edge); padding-top: 0.5rem; }
+  /* dumbbell */
+  .v2-dumbbell { position: relative; height: 46px; margin: 0.4rem 0.4rem 0.6rem; }
+  .v2-dumbbell__axis { position: absolute; left: 0; right: 0; top: 22px; border-top: 1px solid var(--card-edge); }
+  .v2-dumbbell__seg { position: absolute; top: 21px; height: 3px; background: var(--red); border-radius: 2px; }
+  .v2-dumbbell__pt { position: absolute; top: 16px; width: 13px; height: 13px; border-radius: 50%; transform: translateX(-50%); }
+  .v2-dumbbell__cap { position: absolute; font-size: 0.6rem; color: var(--cream); transform: translateX(-50%); }
+  /* leaderboard */
+  .v2-lb { width: 100%; border-collapse: collapse; font-size: 0.64rem; }
+  .v2-lb th { text-align: left; font-size: 0.54rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); font-weight: 600; padding: 0 0.4rem 0.35rem 0; }
+  .v2-lb td { padding: 0.28rem 0.4rem 0.28rem 0; color: var(--cream); border-top: 1px solid color-mix(in oklab, var(--card-edge) 55%, transparent); font-variant-numeric: tabular-nums; }
+  .v2-lb td:first-child { white-space: nowrap; }
+  .v2-lb .num { text-align: right; }
+  .v2-lb__bar { display: inline-block; height: 8px; border-radius: 3px; background: var(--gold); vertical-align: middle; }
+  /* website tiles */
+  .v2-webtiles { display: grid; grid-template-columns: 1fr 1fr; gap: 0.45rem; margin-bottom: 0.6rem; }
+  .v2-webtile { border: 1px solid color-mix(in oklab, var(--card-edge) 70%, transparent); border-radius: 8px; padding: 0.45rem 0.55rem; }
+  /* pipeline footer */
+  .v2-pipe { display: flex; align-items: center; gap: 1.2rem; flex-wrap: wrap; }
+  .v2-pipe__stat { text-align: center; }
+  .v2-pipe__num { font-family: var(--serif); font-size: 1.6rem; color: var(--white); line-height: 1; }
+  .v2-pipe__num--alert { color: var(--red); }
+  .v2-pipe__label { font-size: 0.54rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-top: 0.2rem; }
+  .v2-pipe__sep { width: 1px; align-self: stretch; background: var(--card-edge); }
+  .v2-recs { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-left: auto; }
+  .v2-rec { font-size: 0.62rem; color: var(--cream); border: 1px solid var(--card-edge); border-radius: 999px; padding: 0.3rem 0.7rem; }
+  .v2-rec b { color: var(--gold-soft); font-weight: 600; }
+
+  /* v2.1 — surface tiers + status tints + featured recs + creative tooltips */
+  .viz-overlay { background: #060505; }
+  .viz-panel {
+    /* modal-local dark blue-gray system (theme-independent) */
+    --card-bg: #241316;
+    --card-edge: rgba(164, 81, 94, 0.28);
+    --cream: #F3ECE7;
+    --white: #FFFDFB;
+    --muted: #B8AEA6;
+    --muted-soft: #8C8480;
+    --num: 'Space Grotesk', 'Work Sans', -apple-system, sans-serif;
+    background:
+      radial-gradient(ellipse at 15% -10%, #211C14, transparent 52%),
+      radial-gradient(ellipse at 88% 112%, #1A1610, transparent 46%),
+      linear-gradient(160deg, #14110C 0%, #070605 55%, #100D09 100%);
+  }
+  .v2-hero__value, .v2-kpi__value, .v2-gauge__val, .v2-donut__center b,
+  .v2-pipe__num, .v2-fstage__num, .viz-bar__value, .v2-lb td.num, .v2-lb td {
+    font-family: var(--num); font-variant-numeric: tabular-nums;
+  }
+  .v2-hero__value, .v2-kpi__value, .v2-pipe__num, .v2-donut__center b, .v2-gauge__val { font-weight: 600; letter-spacing: -0.01em; }
+  .v2-card, .v2-recs-panel {
+    position: relative;
+    background: linear-gradient(180deg, rgba(42, 20, 22, 0.8) 0%, rgba(26, 14, 16, 0.8) 100%);
+    border: 1px solid var(--card-edge);
+  }
+  .v2-card::before, .v2-recs-panel::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    opacity: 0.4;
+    pointer-events: none;
+  }
+  .v2-recs-panel {
+    grid-column: span 12; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
+    border-radius: 10px; padding: 0.9rem 1.1rem;
+  }
+  .v2-recs-panel__head { min-width: 12rem; }
+  .v2-recs-panel__kicker { font-size: 0.6rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold-soft); font-weight: 700; }
+  .v2-recs-panel__title { font-family: var(--serif); font-style: italic; font-size: 1.3rem; color: var(--cream); line-height: 1.15; }
+  .v2-recs--big { display: flex; gap: 0.55rem; flex-wrap: wrap; flex: 1; }
+  .v2-recs--big { flex-wrap: nowrap; }
+  @media (max-width: 1100px) { .v2-recs--big { flex-wrap: wrap; } }
+  .v2-recs--big .v2-rec { font-size: 0.78rem; white-space: nowrap; padding: 0.42rem 0.85rem; border-color: var(--card-edge); background: rgba(42, 20, 22, 0.8); }
+  .v2-tip { position: relative; cursor: default; }
+  .v2-tip:hover .v2-tip__img, .v2-tip:focus-within .v2-tip__img, .v2-tip:focus .v2-tip__img { display: block; }
+  .v2-tip__img {
+    display: none; position: absolute; left: 0; bottom: calc(100% + 6px); z-index: 5;
+    width: 200px; height: auto; border-radius: 8px;
+    border: 1px solid color-mix(in oklab, var(--gold) 50%, transparent);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+    pointer-events: none;
+  }
+  .v2-lb tbody tr:first-child .v2-tip__img { bottom: auto; top: calc(100% + 6px); }
+
+  @media (max-width: 1100px) {
+    .c3, .c4, .c5, .c6 { grid-column: span 6; }
+  }
+  @media (max-width: 720px) {
+    .c3, .c4, .c5, .c6, .c12 { grid-column: span 12; }
+    .v2-head__chips { margin-left: 0; }
+    .viz-trigger span.viz-trigger__text { display: none; }
+  }
+  @media print { .viz-overlay, .viz-trigger { display: none !important; } }
+
+  /* ── Data tables + lists (added 2026-09-13) ── */
+  .table-wrap { overflow-x: auto; }
+  .data-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+  .data-table th { text-align: left; font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted-soft); font-weight: 600; padding: 0 0.6rem 0.5rem 0; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  .data-table td { padding: 0.45rem 0.6rem 0.45rem 0; color: var(--cream); border-bottom: 1px solid color-mix(in oklab, var(--card-edge) 60%, transparent); font-variant-numeric: tabular-nums; }
+  .data-table .num { text-align: right; white-space: nowrap; }
+  .data-table__total td { font-weight: 600; color: var(--gold-soft); border-bottom: none; }
+  .data-table--compact td { padding: 0.32rem 0.6rem 0.32rem 0; font-size: 0.78rem; }
+  .data-table tr.is-wrong-city td { color: var(--red); }
+  .rank-list { list-style: none; counter-reset: rank; display: grid; grid-template-columns: 1fr 1fr; gap: 0.3rem 1.5rem; }
+  .rank-list li { counter-increment: rank; font-size: 0.86rem; color: var(--cream); padding: 0.3rem 0; border-bottom: 1px solid color-mix(in oklab, var(--card-edge) 60%, transparent); }
+  .rank-list li::before { content: counter(rank, decimal-leading-zero); font-family: var(--serif); color: var(--gold); margin-right: 0.7rem; font-size: 0.8rem; }
+  .ad-card { border: 1px solid var(--line); border-radius: 10px; padding: 1rem 1.2rem; background: color-mix(in oklab, var(--white) 4%, transparent); display: flex; flex-direction: column; gap: 0.25rem; }
+  .ad-card__headline { font-family: var(--serif); font-size: 1.1rem; color: var(--gold-soft); }
+  .ad-card__url { font-size: 0.72rem; color: var(--green); }
+  .ad-card__body { font-size: 0.86rem; color: var(--muted); line-height: 1.5; }
+  .prospect-list { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; }
+  .prospect-list li { font-size: 0.88rem; color: var(--muted); padding: 0.4rem 0; border-bottom: 1px solid color-mix(in oklab, var(--card-edge) 60%, transparent); line-height: 1.5; }
+  .prospect-list li strong { color: var(--cream); font-weight: 600; }
+  .prospect-list__older { font-size: 0.8rem !important; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0 2rem; }
+  .two-col .chart-row { grid-template-columns: 205px 1fr 52px; }
+  .two-col .chart-row__label { font-size: 0.74rem; }
+  .chart--wide .chart-row { grid-template-columns: 250px 1fr 80px; }
+  .call-strip { display: grid; grid-template-columns: repeat(31, 1fr); gap: 3px; }
+  .call-strip span { display: block; height: 18px; border-radius: 3px; }
+  .call-strip__axis { display: flex; justify-content: space-between; font-size: 0.62rem; color: var(--muted-soft); margin-top: 0.3rem; }
+  @media (max-width: 720px) { .two-col { grid-template-columns: 1fr; } .two-col .chart-row, .chart--wide .chart-row { grid-template-columns: 95px 1fr 60px; } .rank-list { grid-template-columns: 1fr; } }
+  @media print { .data-table td, .rank-list li, .prospect-list li { color: #333; } }
+  /* ── Added 2026-11-03: typographic creative tiles, CRM sparkline, explainer box, 30-day strip ── */
+  .call-strip--30 { grid-template-columns: repeat(30, 1fr); }
+  .explain { margin: 1.2rem 0 0.4rem; padding: 1rem 1.15rem; border: 1px solid var(--card-edge); border-radius: 10px;
+    background: color-mix(in oklab, var(--card-bg) 55%, transparent); }
+  .explain__title { font-size: 0.66rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold-soft); font-weight: 600; margin-bottom: 0.55rem; }
+  .explain p { font-size: 0.8rem; line-height: 1.6; color: var(--muted); }
+  .explain p + p { margin-top: 0.5rem; }
+  .explain strong { color: var(--cream); font-weight: 600; }
+  .explain--scope { border-style: dashed; }
+  .feature { margin: 1.6rem 0 0.6rem; padding: 1.2rem 1.25rem 1.1rem; border-radius: 12px;
+    border: 1px solid color-mix(in oklab, var(--gold) 45%, transparent);
+    background: linear-gradient(180deg, color-mix(in oklab, var(--gold) 12%, var(--surface-grad-from)) 0%, var(--surface-grad-to) 100%); }
+  .feature__kicker { font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold-soft); font-weight: 600; }
+  .feature__title { font-family: var(--serif); font-size: 1.45rem; color: var(--white); margin: 0.3rem 0 0.6rem; line-height: 1.2; }
+  .feature__title em { color: var(--gold-soft); font-style: italic; }
+  .feature p { font-size: 0.86rem; line-height: 1.65; color: var(--cream); }
+  .feature p + p { margin-top: 0.55rem; }
+  .feature p strong { color: var(--white); }
+  .cr-tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 0.55rem; margin-top: 1rem; }
+  .cr-tile { position: relative; border: 1px solid var(--card-edge); border-radius: 9px; padding: 0.7rem 0.75rem 0.65rem;
+    background: color-mix(in oklab, var(--card-bg) 70%, transparent); min-width: 0; }
+  .cr-tile--new { border-color: color-mix(in oklab, var(--gold) 70%, transparent);
+    background: color-mix(in oklab, var(--gold) 14%, var(--card-bg)); }
+  .cr-tile--lead { box-shadow: 0 0 0 1px var(--gold) inset; }
+  .cr-tile__name { font-family: var(--serif); font-size: 0.95rem; line-height: 1.2; color: var(--white); padding-right: 2.6rem; overflow-wrap: anywhere; }
+  .cr-tile__name small { display: block; font-family: var(--sans); font-size: 0.58rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted-soft); margin-bottom: 0.15rem; }
+  .cr-badge { position: absolute; top: 0.6rem; right: 0.6rem; font-size: 0.55rem; font-weight: 700; letter-spacing: 0.14em;
+    padding: 0.16rem 0.42rem; border-radius: 999px; background: var(--gold); color: var(--white); }
+  .cr-tile__nums { display: flex; align-items: baseline; gap: 0.4rem; margin-top: 0.55rem; }
+  .cr-tile__leads { font-family: var(--serif); font-size: 1.7rem; line-height: 1; color: var(--gold-soft); }
+  .cr-tile__unit { font-size: 0.62rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em; }
+  .cr-tile__meta { font-size: 0.68rem; color: var(--muted); margin-top: 0.35rem; line-height: 1.45; }
+  .cr-tile__meta b { color: var(--cream); font-weight: 600; }
+  .cr-mini { display: grid; grid-template-columns: 1fr 1fr; gap: 0.35rem; }
+  .cr-mini .cr-tile { padding: 0.5rem 0.55rem; }
+  .cr-mini .cr-tile__name { font-size: 0.78rem; padding-right: 2.3rem; }
+  .cr-mini .cr-tile__leads { font-size: 1.25rem; }
+  .cr-mini .cr-badge { top: 0.45rem; right: 0.45rem; }
+  .spark-svg { width: 100%; height: auto; display: block; }
+  .spark-svg text { font-family: var(--sans); }
+  .li-block { margin-top: 1.4rem; padding: 1rem 1.1rem; border-radius: 10px; border: 1px solid var(--card-edge);
+    border-left: 3px solid var(--gold); background: color-mix(in oklab, var(--card-bg) 55%, transparent); }
+  .li-block__title { font-family: var(--serif); font-size: 1.15rem; color: var(--white); }
+  .li-block__title em { color: var(--gold-soft); }
+  .li-block .stat-grid { margin: 0.9rem 0 0.4rem; }
+  .data-table td.is-good { color: var(--green); }
+  .data-table td.is-bad { color: var(--red); }
+  @media (max-width: 720px) {
+    .section__chip { white-space: normal; max-width: 100%; }
+    .feature__title { font-size: 1.2rem; }
+    .cr-tiles { grid-template-columns: 1fr 1fr; }
+    .data-table { font-size: 0.74rem; }
+  }
+  </style>
+</head>
+<body>
+
+<!-- ───────── THEME CONTROLS ───────── -->
+<div class="theme-controls" id="themeControls">
+  <button class="theme-btn theme-btn--icon" id="themeToggle" aria-label="Toggle light/dark mode" title="Toggle light/dark">
+    <svg class="icon--sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+    <svg class="icon--moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+  </button>
+  <button class="theme-btn" id="paletteToggle" aria-label="Switch palette" title="Switch palette">
+    <span class="theme-btn__palette-label"></span>
+  </button>
+</div>
+
+<!-- ───────── ARCHIVE NAV ───────── -->
+<nav class="archive-nav" id="archiveNav">
+  <button class="viz-trigger" id="vizTrigger" aria-haspopup="dialog">
+    <span class="viz-trigger__dot"></span>
+    <span class="viz-trigger__text">Visualization</span>
+  </button>
+  <button class="archive-trigger" id="archiveTrigger" aria-expanded="false">
+    <span class="archive-trigger__dot"></span>
+    Reports Archive
+    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 3.5L5 6.5L8 3.5"/></svg>
+  </button>
+  <div class="archive-panel" id="archivePanel" role="menu">
+    <div class="archive-panel__header">All Reports</div>
+    <ul class="archive-panel__list">
+      <li>
+        <a href="/reports/2026-11-03/" class="is-current" role="menuitem">
+          <span>
+            <span class="archive-panel__date">Nov 3, 2026</span>
+            <span class="archive-panel__current-tag">Latest</span>
+          </span>
+          <span class="archive-panel__period">Oct 5 – Nov 3</span>
+        </a>
+      </li>
+      <li>
+        <a href="/reports/2026-09-13/" role="menuitem">
+          <span>
+            <span class="archive-panel__date">Sep 13, 2026</span>
+          </span>
+          <span class="archive-panel__period">Aug 14 – Sep 13</span>
+        </a>
+      </li>
+      <li>
+        <a href="/reports/2026-08-13/" role="menuitem">
+          <span>
+            <span class="archive-panel__date">Aug 13, 2026</span>
+          </span>
+          <span class="archive-panel__period">Jul 30 – Aug 13</span>
+        </a>
+      </li>
+      <li>
+        <a href="/reports/2026-07-full/" role="menuitem">
+          <span>
+            <span class="archive-panel__date">July 2026</span>
+          </span>
+          <span class="archive-panel__period">Jul 1 – 30 · Full Month</span>
+        </a>
+      </li>
+      <li>
+        <a href="/reports/2026-07-30/" role="menuitem">
+          <span>
+            <span class="archive-panel__date">Jul 30, 2026</span>
+          </span>
+          <span class="archive-panel__period">Jul 16 – 30</span>
+        </a>
+      </li>
+      <li>
+        <a href="/reports/2026-07-27/" role="menuitem">
+          <span>
+            <span class="archive-panel__date">Jul 27, 2026</span>
+          </span>
+          <span class="archive-panel__period">Jun 28 – Jul 27</span>
+        </a>
+      </li>
+      <li>
+        <a href="/reports/2026-07-14/" role="menuitem">
+          <span>
+            <span class="archive-panel__date">Jul 14, 2026</span>
+          </span>
+          <span class="archive-panel__period">Jun 15 – Jul 14</span>
+        </a>
+      </li>
+      <li>
+        <a href="/reports/2026-06-04/" role="menuitem">
+          <span>
+            <span class="archive-panel__date">Jun 4, 2026</span>
+          </span>
+          <span class="archive-panel__period">Apr 26 – Jun 4</span>
+        </a>
+      </li>
+      <li>
+        <a href="/reports/2026-04-25/" role="menuitem">
+          <span>
+            <span class="archive-panel__date">Apr 25, 2026</span>
+          </span>
+          <span class="archive-panel__period">Mar 27 – Apr 25</span>
+        </a>
+      </li>
+      <li>
+        <a href="/reports/2026-03-11/" role="menuitem">
+          <span>
+            <span class="archive-panel__date">Mar 11, 2026</span>
+          </span>
+          <span class="archive-panel__period">Feb 11 – Mar 11</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="report">
+
+  <!-- ───────── HERO ───────── -->
+  <header class="hero">
+    <div class="hero__monogram">Established 1922 · Reborn</div>
+    <div class="hero__brand">MIRA MAR</div>
+    <div class="hero__rule"></div>
+    <h1 class="hero__title">Marketing<br>Performance <em>Report</em></h1>
+    <div class="hero__period">October 5 — November 3, 2026</div>
+    <div class="hero__compare">Comparing to September 5 – October 4, 2026 · the prior 30 days</div>
+    <div class="hero__compare" style="border:none; color: var(--muted); font-size: 0.66rem; max-width: 640px; margin-left:auto; margin-right:auto; line-height:1.6; text-transform:none; letter-spacing:0.02em;">Compared against the immediately preceding 30 days (Sep 5 – Oct 4), pulled fresh from the same dashboards for this edition — not against the Sep 13 report, whose Aug 14 – Sep 13 window overlaps. Equal-length windows, so raw volume deltas read cleanly.</div>
+  </header>
+
+  <!-- ───────── EXECUTIVE SUMMARY ───────── -->
+  <section class="section section--yellow reveal" id="summary">
+    <div class="section__header">
+      <h2 class="section__title">Executive <em>Summary</em></h2>
+      <span class="section__chip section__chip--yellow">
+        <span class="section__chip-dot"></span>
+        More Volume · Same Price · Quality Lags
+      </span>
+    </div>
+
+    <p class="section__lede">
+      The first full month at the higher budget bought <strong>more people, not cheaper ones</strong>. Google and Meta spend rose 33% to <strong>$32.4K</strong> and the CRM recorded <strong>125 genuinely new contacts against 80</strong> the month before (+56%), with paid Google up 38% (16 to 22) and Meta up 32% (41 to 54). LinkedIn, live only since October 28, added 24 more in its first week. Cost per CRM-verified lead from Google and Meta held flat at about <strong>$427</strong>, so the extra money scaled volume at the same price rather than buying efficiency.
+    </p>
+    <p class="section__lede">
+      Quality is where the month falls short: <strong>12 contacts are rated good today versus 10</strong>, and Meta produced just 1 of them from 62. Paid Google produced 3 and the sales center 3. <strong>39 contacts from this window have not been worked yet</strong>, so those quality numbers will move.
+    </p>
+    <p class="section__lede">
+      On creative, the new <strong>'Day at Mira Mar' video earned 7 leads from 5,192 views</strong>, the best rate of any video in the account, while the Yoga cuts never got enough delivery to judge. Two lines spent with nothing to show: <strong>YouTube ($1,609, zero clicks)</strong> and <strong>Display ($2,101, zero good leads)</strong>. Phone calls fell from 49 to 16, almost all on Google, and the answer rate stayed at 56%.
+    </p>
+    <div class="stat-grid">
+      <div class="stat stat--hero">
+        <div class="stat__label">Cost per Lead · platform</div>
+        <div class="stat__value">$251</div>
+        <div class="stat__delta stat__delta--flat">▼ 1.4% <span class="stat__delta-prev">vs $254.76</span></div>
+      </div>
+      <div class="stat stat--hero">
+        <div class="stat__label">Leads · platform-reported</div>
+        <div class="stat__value">129</div>
+        <div class="stat__delta stat__delta--up">▲ 34.4% <span class="stat__delta-prev">vs 96</span></div>
+      </div>
+      <div class="stat stat--hero">
+        <div class="stat__label">New Contacts · CRM-verified</div>
+        <div class="stat__value">125</div>
+        <div class="stat__delta stat__delta--up">▲ 56.2% <span class="stat__delta-prev">vs 80</span></div>
+      </div>
+      <div class="stat stat--hero">
+        <div class="stat__label">Total Spend · Google + Meta</div>
+        <div class="stat__value">$32,420</div>
+        <div class="stat__delta stat__delta--flat">▲ 32.6% <span class="stat__delta-prev">vs $24,456.83</span></div>
+      </div>
+    </div>
+    <div class="stat-grid">
+      <div class="stat">
+        <div class="stat__label">Cost per CRM-Verified Lead</div>
+        <div class="stat__value">$426.58</div>
+        <div class="stat__delta stat__delta--flat">▼ 0.6% <span class="stat__delta-prev">vs $429.07</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Good Leads · rated today</div>
+        <div class="stat__value">12</div>
+        <div class="stat__delta stat__delta--up">▲ 20.0% <span class="stat__delta-prev">vs 10</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Google Search CTR</div>
+        <div class="stat__value">7.68%</div>
+        <div class="stat__delta stat__delta--flat"><span class="stat__delta-prev" style="margin-left:0">search only · 0.34% blended</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Answer Rate</div>
+        <div class="stat__value">56%</div>
+        <div class="stat__delta stat__delta--up">▲ 2.2% <span class="stat__delta-prev">vs 55.1%</span></div>
+      </div>
+    </div>
+
+    <div class="explain">
+      <div class="explain__title">Two ways to count a lead</div>
+      <p><strong>Cost per lead</strong> is spend divided by leads. This report shows it two ways. The <strong>platform</strong> view divides spend by the leads Google and Meta report themselves: 129 this month, $251 each. The <strong>CRM-verified</strong> view divides the same spend by the people Spark (the CRM, the source of truth for real people) confirms as genuinely new: $426.58 per Google or Meta contact, against $429.07 last month.</p>
+      <p>Platform-reported: 39 Google Ads conversions + 90 Meta leads. Spark (the CRM, the source of truth for real people) recorded 125 genuinely new non-agent contacts in the same 30 days (138 before removing the Oct 15 back-fill), 100 of them from paid Google, Meta or LinkedIn.</p>
+      <p>On Oct 15 the sales team pushed 13 older incomplete-form leads (Jul–Oct) into Spark in one batch; they carry Oct 15 creation dates but are not new demand. They are removed from the &#x27;new demand&#x27; figures below (identified by clustered 10:39/10:47 timestamps; inference, not matched against the push log). All 13 are Non Responsive or Not A Buyer.</p>
+    </div>
+    <div class="chart">
+      <div class="chart__title">Spend by Channel</div>
+      <div class="chart-row">
+        <span class="chart-row__label">Google Ads</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--blue" style="width:100.0%"></div></div>
+        <span class="chart-row__value">$18,001</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Meta / Instagram</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--purple" style="width:80.1%"></div></div>
+        <span class="chart-row__value">$14,420</span>
+      </div>
+    </div>
+    <div class="explain explain--scope">
+      <div class="explain__title">What the spend covers</div>
+      <p>Spend covers Google Ads and Meta only — the two platforms connected to the reporting dashboard. LinkedIn (launched Oct 28), Microsoft/Bing search (6.4% of site traffic), print and Wall Street Journal placements are not in this total, so it will read lower than the full monthly media budget.</p>
+      <p>Requested as a last-30-days read. October 1 is when the monthly budget stepped up, so this window is the first full 30 days at the higher spend; the comparison window is mostly pre-increase (Sep 5 – Sep 30) plus Oct 1–4.</p>
+    </div>
+  </section>
+
+  <!-- ───────── BUDGET & ROI ───────── -->
+  <section class="section section--yellow reveal" id="budget-roi">
+    <div class="section__header">
+      <h2 class="section__title">Budget &amp; <em>ROI</em></h2>
+      <span class="section__chip section__chip--yellow">
+        <span class="section__chip-dot"></span>
+        Flat Cost per Lead · Two Lines Returned Nothing
+      </span>
+    </div>
+
+    <p class="section__lede">
+      Google and Meta spend rose <strong>32.6% to $32,420.36</strong>, from $24,456.83, and platform-reported leads rose 34.4% from 96 to 129, so the blended platform cost per lead barely moved: <strong>$251.32</strong> against $254.76. The CRM view tells the same story: each genuinely new Google or Meta contact in Spark cost <strong>$426.58</strong>, against $429.07 the month before. Underneath the flat blend the two channels moved in opposite directions: <strong>Google's cost per CRM contact improved 8.7% to $818.21</strong>, while <strong>Meta's rose 8.1% to $267.03</strong>, though Meta is still the far cheaper source of names. The cheapest campaigns were <strong>Google Branded search at $60.18</strong> per conversion and <strong>Meta Remarketing at $111.95</strong>; the most expensive were Google Non-Branded US at $778.79 and Competitors at $642.68, the largest Google line. Two lines spent with nothing to show: <strong>YouTube cost $1,608.98</strong> with zero clicks and zero conversions, and <strong>Display cost $2,100.67</strong> with zero good leads in Spark.
+    </p>
+    <div class="stat-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+      <div class="stat">
+        <div class="stat__label">Total Spend</div>
+        <div class="stat__value">$32,420.36</div>
+        <div class="stat__delta stat__delta--flat">▲ 32.6% <span class="stat__delta-prev">vs $24,456.83</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Cost / Lead · platform</div>
+        <div class="stat__value">$251.32</div>
+        <div class="stat__delta stat__delta--flat">▼ 1.4% <span class="stat__delta-prev">vs $254.76</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Cost / CRM-Verified Lead</div>
+        <div class="stat__value">$426.58</div>
+        <div class="stat__delta stat__delta--flat">▼ 0.6% <span class="stat__delta-prev">vs $429.07</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Cost / Good Lead</div>
+        <div class="stat__value">$8,105.09</div>
+        <div class="stat__delta stat__delta--flat"><span class="stat__delta-prev" style="margin-left:0">vs $8,152.28 · 4 good vs 3 · provisional</span></div>
+      </div>
+    </div>
+    <div class="chart">
+      <div class="chart__title">Cost per CRM-Verified Lead by Channel · spend ÷ new Spark contacts</div>
+      <div class="chart-row">
+        <span class="chart-row__label">Google Ads · now</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--blue" style="width:91.3%"></div></div>
+        <span class="chart-row__value">$818.21</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Google Ads · prior</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--muted" style="width:100.0%"></div></div>
+        <span class="chart-row__value">$895.73</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Meta · now</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--purple" style="width:29.8%"></div></div>
+        <span class="chart-row__value">$267.03</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Meta · prior</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--muted" style="width:27.6%"></div></div>
+        <span class="chart-row__value">$246.95</span>
+      </div>
+    </div>
+    <p style="font-size:0.72rem; color:var(--muted-soft); margin-top:0.6rem;">Spend ÷ Spark contacts from that channel (new demand, back-fill removed). This is the CRM-verified cost per real person, higher than platform CPL because platforms count duplicates, calls and thank-you-page re-fires. Google: ▼ 8.7% (better). Meta: ▲ 8.1% (worse).</p>
+    <div class="chart chart--wide">
+      <div class="chart__title">Cost per Lead by Campaign · platform · <span style="color:#a78bfa">Meta</span> vs <span style="color:#6791d1">Google</span></div>
+      <div class="chart-row">
+        <span class="chart-row__label">Google Branded</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--blue" style="width:7.7%"></div></div>
+        <span class="chart-row__value">$60.18</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Meta Remarketing</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--purple" style="width:14.4%"></div></div>
+        <span class="chart-row__value">$111.95</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Meta Brochure DL – KFM</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--purple" style="width:21.1%"></div></div>
+        <span class="chart-row__value">$164.01</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Meta Pros. Sarasota (New LP)</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--purple" style="width:22.4%"></div></div>
+        <span class="chart-row__value">$174.34</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Meta Brochure DL</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--purple" style="width:30.0%"></div></div>
+        <span class="chart-row__value">$233.28</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Meta Pros. KFM (New LP)</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--purple" style="width:31.7%"></div></div>
+        <span class="chart-row__value">$246.54</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Google NB US-FL Keywords</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--blue" style="width:51.6%"></div></div>
+        <span class="chart-row__value">$402.18</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Google Display</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--blue" style="width:53.9%"></div></div>
+        <span class="chart-row__value">$420.13</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Google NB Sarasota</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--blue" style="width:67.2%"></div></div>
+        <span class="chart-row__value">$523.16</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Google Competitors</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--blue" style="width:82.5%"></div></div>
+        <span class="chart-row__value">$642.68</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Google NB US</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--blue" style="width:100.0%"></div></div>
+        <span class="chart-row__value">$778.79</span>
+      </div>
+    </div>
+    <p style="font-size:0.72rem; color:var(--muted-soft); margin-top:0.6rem;">Platform cost per lead by campaign (Google: per conversion; Meta: per website lead). Branded search captures people already looking for Mira Mar, which is why it is so cheap. Display's $420.13 per conversion produced 0 good leads in Spark. Competitors, Non-Branded Sarasota and Non-Branded US all got more expensive; Non-Branded US went from 8.5 conversions at $233.81 to 4 at $778.79. YouTube is not in this list because it produced no conversions to divide by.</p>
+    <div class="chart">
+      <div class="chart__title">Spend With No Return · this window vs prior</div>
+      <div class="chart-row">
+        <span class="chart-row__label">YouTube · now</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--red" style="width:76.6%"></div></div>
+        <span class="chart-row__value">$1,608.98</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">YouTube · prior</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--muted" style="width:46.4%"></div></div>
+        <span class="chart-row__value">$974.95</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Display · now</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--orange" style="width:100.0%"></div></div>
+        <span class="chart-row__value">$2,100.67</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Display · prior</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--muted" style="width:79.1%"></div></div>
+        <span class="chart-row__value">$1,662.40</span>
+      </div>
+    </div>
+    <p style="font-size:0.72rem; color:var(--muted-soft); margin-top:0.6rem;">YouTube (Prospecting + Remarketing) cost $1,608.98 this window and $974.95 last window, with 0 clicks and 0 conversions in both. YouTube spend is up 65.0%. Display produced 5 platform conversions but 0 good leads in Spark. Good = currently rated Warm, Hot, Referral, Reservation Holder or Contract Holder in Spark. Google + Meta produced 4 good leads this window (3 Google, 1 Meta) vs 3 last window (2 Google, 1 Meta). 39 of this window&#x27;s contacts are still unworked (New/Lead), so this figure will improve as sales works the list.</p>
+    <div class="compare">
+      <div class="compare__col compare__col--prev">
+        <div class="compare__label">Prior Cost / CRM-Verified Lead</div>
+        <div class="compare__value">$429.07</div>
+      </div>
+      <div class="compare__arrow">→</div>
+      <div class="compare__col">
+        <div class="compare__label">This Period</div>
+        <div class="compare__value">$426.58</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── GOOGLE ADS ───────── -->
+  <section class="section section--yellow reveal" id="google-ads">
+    <div class="section__header">
+      <h2 class="section__title">Google <em>Ads</em></h2>
+      <span class="section__chip section__chip--yellow">
+        <span class="section__chip-dot"></span>
+        Search Healthy · Display &amp; YouTube Not
+      </span>
+    </div>
+
+    <p class="section__lede">
+      Google spent <strong>$18,000.57</strong>, up 25.6%, and returned <strong>39 conversions against 40</strong>, so its platform cost per lead rose 28.8% to <strong>$461.55</strong>. Clicks rose to 4,342 from 4,036, but cost per click climbed 16.9% to $4.15 and the blended conversion rate slipped to 0.90% from 0.99%. Behind the 39 are <strong>28 website form submissions</strong> (36 last month) and <strong>11 phone-call leads</strong> (29). The CRM tells a better story than the platform: Spark counts <strong>22 genuinely new paid-Google contacts against 16</strong>, up 38%, and paid Google produced 3 of the month's 12 good leads. Search itself is working: search-only click-through is <strong>7.68%</strong>, and <strong>Branded search is the cheapest line in the account at $60.18</strong> on 10 conversions. The weak spots are outside search. <strong>Display</strong> took 1,112,230 impressions and $2,100.67 for 5 conversions and no good leads, and 7 of the 11 call leads came from Display, 5 of them with no call duration. <strong>YouTube spent $1,608.98</strong> across two campaigns with zero clicks. Within search, Non-Branded US fell from 8.5 conversions at $233.81 to 4 at $778.79, and Non-Branded Sarasota from 12.5 at $446.84 to 7 at $523.16; the new US-FL Keywords campaign added 6 at $402.18. Conversions now come mostly from computers (58.6%), and clicks skew 65+.
+    </p>
+    <div class="stat-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+      <div class="stat">
+        <div class="stat__label">Clicks</div>
+        <div class="stat__value">4,342</div>
+        <div class="stat__delta stat__delta--flat"><span class="stat__delta-prev" style="margin-left:0">vs 4,036 · 0.34% blended CTR</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Search CTR</div>
+        <div class="stat__value">7.68%</div>
+        <div class="stat__delta stat__delta--flat"><span class="stat__delta-prev" style="margin-left:0">2,382 clicks · 31,005 search impr.</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Conversions</div>
+        <div class="stat__value">39</div>
+        <div class="stat__delta stat__delta--down">▼ 2.5% <span class="stat__delta-prev">vs 40</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Conv Rate · blended</div>
+        <div class="stat__value">0.90%</div>
+        <div class="stat__delta stat__delta--down">▼ 9.1% <span class="stat__delta-prev">vs 0.99%</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Cost / Lead</div>
+        <div class="stat__value">$461.55</div>
+        <div class="stat__delta stat__delta--bad-up">▲ 28.8% <span class="stat__delta-prev">vs $358.29</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Cost / Click</div>
+        <div class="stat__value">$4.15</div>
+        <div class="stat__delta stat__delta--bad-up">▲ 16.9% <span class="stat__delta-prev">vs $3.55</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Cost</div>
+        <div class="stat__value">$18,000.57</div>
+        <div class="stat__delta stat__delta--flat">▲ 25.6% <span class="stat__delta-prev">vs $14,331.69</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">New Contacts · Spark</div>
+        <div class="stat__value">22</div>
+        <div class="stat__delta stat__delta--up">▲ 37.5% <span class="stat__delta-prev">vs 16</span></div>
+      </div>
+    </div>
+    <div class="stat-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+      <div class="stat">
+        <div class="stat__label">Form Submissions</div>
+        <div class="stat__value">28</div>
+        <div class="stat__delta stat__delta--down">▼ 22.2% <span class="stat__delta-prev">vs 36</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Phone-Call Leads</div>
+        <div class="stat__value">11</div>
+        <div class="stat__delta stat__delta--down">▼ 62.1% <span class="stat__delta-prev">vs 29</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Blended CTR</div>
+        <div class="stat__value">0.34%</div>
+        <div class="stat__delta stat__delta--down">▼ 26.1% <span class="stat__delta-prev">vs 0.46%</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">YouTube Spend</div>
+        <div class="stat__value">$1,608.98</div>
+        <div class="stat__delta stat__delta--bad-up">▲ 65.0% <span class="stat__delta-prev">vs $974.95</span></div>
+      </div>
+    </div>
+    <div class="chart">
+      <div class="chart__title">Campaign-Level Breakdown · all 8 campaigns</div>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Campaign</th><th class="num">Impressions</th><th class="num">Clicks</th><th class="num">CTR</th><th class="num">Conv.</th><th class="num">Cost</th><th class="num">Cost / Conv.</th><th class="num">Prior conv · cost/conv</th></tr></thead>
+          <tbody>
+            <tr><td>Search_Competitors</td><td class="num">8,631</td><td class="num">454</td><td class="num">5.26%</td><td class="num">7</td><td class="num">$4,498.74</td><td class="num">$642.68</td><td class="num">6 · $554.91</td></tr>
+            <tr><td>Search_Non-Branded_Sarasota</td><td class="num">8,412</td><td class="num">667</td><td class="num">7.93%</td><td class="num">7</td><td class="num">$3,662.14</td><td class="num">$523.16</td><td class="num">12.5 · $446.84</td></tr>
+            <tr><td>Search_Non-Branded_US</td><td class="num">6,261</td><td class="num">570</td><td class="num">9.10%</td><td class="num">4</td><td class="num">$3,115.17</td><td class="num">$778.79</td><td class="num">8.5 · $233.81</td></tr>
+            <tr><td>Search_Non-Branded_US_FL Keywords</td><td class="num">7,019</td><td class="num">480</td><td class="num">6.84%</td><td class="num">6</td><td class="num">$2,413.07</td><td class="num">$402.18</td><td class="num">0 · —</td></tr>
+            <tr><td>Display_Placements_Feeder</td><td class="num">1,112,230</td><td class="num">1,960</td><td class="num">0.18%</td><td class="num">5</td><td class="num">$2,100.67</td><td class="num">$420.13</td><td class="num">6 · $277.07</td></tr>
+            <tr class="is-wrong-city"><td>YouTube_Video_Prospecting</td><td class="num">126,006</td><td class="num">0</td><td class="num">0.00%</td><td class="num">0</td><td class="num">$1,497.97</td><td class="num">—</td><td class="num">0 · —</td></tr>
+            <tr><td>Search_Branded</td><td class="num">682</td><td class="num">211</td><td class="num">30.94%</td><td class="num">10</td><td class="num">$601.80</td><td class="num">$60.18</td><td class="num">7 · $66.99</td></tr>
+            <tr class="is-wrong-city"><td>YouTube_Video_Remarketing</td><td class="num">983</td><td class="num">0</td><td class="num">0.00%</td><td class="num">0</td><td class="num">$111.01</td><td class="num">—</td><td class="num">0 · —</td></tr>
+            <tr class="data-table__total"><td>Total</td><td class="num">1,270,224</td><td class="num">4,342</td><td class="num">0.34%</td><td class="num">39</td><td class="num">$18,000.57</td><td class="num">$461.55</td><td class="num">40 · $358.29</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:0.72rem; color:var(--muted-soft); margin-top:0.6rem;">Rows in red are the two YouTube campaigns: $1,608.98 combined, 0 clicks, 0 conversions in both windows. The Looker campaign table only renders 5 rows; all 8 campaigns were recovered by re-sorting, and each period&#x27;s rows sum exactly to its grand total.</p>
+    </div>
+    <div class="two-col">
+      <div class="chart">
+        <div class="chart__title">Website Form Submissions by Campaign · 28</div>
+        <div class="chart-row">
+          <span class="chart-row__label">Non-Brand US / US-FL / Feeder</span>
+          <div class="chart-row__track"><div class="chart-row__fill bar--blue" style="width:100.0%"></div></div>
+          <span class="chart-row__value">13</span>
+        </div>
+        <div class="chart-row">
+          <span class="chart-row__label">Competitors</span>
+          <div class="chart-row__track"><div class="chart-row__fill bar--gold" style="width:38.5%"></div></div>
+          <span class="chart-row__value">5</span>
+        </div>
+        <div class="chart-row">
+          <span class="chart-row__label">Display Placements</span>
+          <div class="chart-row__track"><div class="chart-row__fill bar--muted" style="width:38.5%"></div></div>
+          <span class="chart-row__value">5</span>
+        </div>
+        <div class="chart-row">
+          <span class="chart-row__label">Branded Search</span>
+          <div class="chart-row__track"><div class="chart-row__fill bar--green" style="width:23.1%"></div></div>
+          <span class="chart-row__value">3</span>
+        </div>
+        <div class="chart-row">
+          <span class="chart-row__label">Non-Brand Sarasota</span>
+          <div class="chart-row__track"><div class="chart-row__fill bar--teal" style="width:15.4%"></div></div>
+          <span class="chart-row__value">2</span>
+        </div>
+      </div>
+      <div class="chart">
+        <div class="chart__title">Phone-Call Leads by Campaign · 11</div>
+        <div class="chart-row">
+          <span class="chart-row__label">Display Placements</span>
+          <div class="chart-row__track"><div class="chart-row__fill bar--muted" style="width:100.0%"></div></div>
+          <span class="chart-row__value">7</span>
+        </div>
+        <div class="chart-row">
+          <span class="chart-row__label">Non-Brand Sarasota</span>
+          <div class="chart-row__track"><div class="chart-row__fill bar--teal" style="width:28.6%"></div></div>
+          <span class="chart-row__value">2</span>
+        </div>
+        <div class="chart-row">
+          <span class="chart-row__label">Branded Search</span>
+          <div class="chart-row__track"><div class="chart-row__fill bar--green" style="width:28.6%"></div></div>
+          <span class="chart-row__value">2</span>
+        </div>
+      </div>
+    </div>
+    <p style="font-size:0.72rem; color:var(--muted-soft); margin-top:0.6rem;">7 of the 11 Google call leads came from Display; 5 of those 7 show no call duration and one lasted 9 seconds — click-to-call noise, not conversations. One branded &#x27;call lead&#x27; (2m41s) was an existing contract holder. Form submissions are the firmer signal: 13 of the 28 came from the non-branded US, US-FL and feeder-market search family.</p>
+    <div class="chart">
+      <div class="chart__title">Display &amp; Video Creative · conversions · impressions · cost</div>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Ad</th><th class="num">Impressions</th><th class="num">Clicks</th><th class="num">Conv.</th><th class="num">Cost</th></tr></thead>
+          <tbody>
+            <tr><td>Placements – living room with bay view</td><td class="num">410,473</td><td class="num">811</td><td class="num">2</td><td class="num">$805.15</td></tr>
+            <tr><td>Placements – terrace over the water</td><td class="num">85,563</td><td class="num">187</td><td class="num">1</td><td class="num">$212.90</td></tr>
+            <tr><td>Placements – bedroom</td><td class="num">24,754</td><td class="num">49</td><td class="num">1</td><td class="num">$53.40</td></tr>
+            <tr class="is-wrong-city"><td>Video_Construction (YouTube)</td><td class="num">81,502</td><td class="num">0</td><td class="num">0</td><td class="num">$1,018.49</td></tr>
+            <tr class="is-wrong-city"><td>Video_Sarasota Living (YouTube)</td><td class="num">45,487</td><td class="num">0</td><td class="num">0</td><td class="num">$590.48</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:0.72rem; color:var(--muted-soft); margin-top:0.6rem;">The living-room-with-bay-view placement carried Display with 2 of its conversions on $805.15. The two YouTube videos (red) cost $1,608.97 between them and drew no clicks. Placement rows with no conversions are omitted.</p>
+    </div>
+    <div class="chart">
+      <div class="chart__title">Who Converts and Who Clicks</div>
+      <div class="chart-row">
+        <span class="chart-row__label">Conv. · computer</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--blue" style="width:58.6%"></div></div>
+        <span class="chart-row__value">58.6%</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Conv. · mobile</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--blue" style="width:36.2%"></div></div>
+        <span class="chart-row__value">36.2%</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Conv. · tablet</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--blue" style="width:5.2%"></div></div>
+        <span class="chart-row__value">5.2%</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Clicks · male</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--teal" style="width:54.6%"></div></div>
+        <span class="chart-row__value">54.6%</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Clicks · female</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--teal" style="width:45.4%"></div></div>
+        <span class="chart-row__value">45.4%</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Clicks · non-agents</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--gold" style="width:79.7%"></div></div>
+        <span class="chart-row__value">79.7%</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Clicks · agents</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--gold" style="width:20.3%"></div></div>
+        <span class="chart-row__value">20.3%</span>
+      </div>
+    </div>
+    <p style="font-size:0.72rem; color:var(--muted-soft); margin-top:0.6rem;">Age is a ranking only (the chart was unlabeled): 65+ drew the most clicks, then 55–64, 45–54, 35–44 and 25–34. Top locations by clicks, also rank only: Sarasota, Chicago, New York, San Jose, Newark.</p>
+    <div class="chart">
+      <div class="chart__title">Top Search Keywords · ranked by conversions</div>
+      <ol class="rank-list">
+        <li>sarasota condos</li>
+        <li>mira mar sarasota condos</li>
+        <li>florida condos for sale</li>
+        <li>florida luxury condos</li>
+        <li>mira mar sarasota</li>
+        <li>sarasota condos for sale</li>
+        <li>one park sarasota</li>
+        <li>mira mar residences</li>
+        <li>amara sarasota</li>
+        <li>sarasota waterfront condos for sale</li>
+      </ol>
+      <p style="font-size:0.72rem; color:var(--muted-soft); margin-top:0.6rem;">Ranking only, no counts. Broader Florida terms ("florida condos for sale", "florida luxury condos") entered the top ten with the new US-FL Keywords campaign; last month's leader, "sarasota new condo development", dropped out. Competitor names (One Park, Amara) remain.</p>
+    </div>
+    <div class="chart">
+      <div class="chart__title">Top Performing Ad</div>
+      <blockquote class="ad-card">
+        <span class="ad-card__headline">Mira Mar Residences | Sarasota Luxury Condos | Historic Sarasota Icon Reborn</span>
+        <span class="ad-card__url">www.miramarsarasota.com</span>
+        <span class="ad-card__body">Once a beloved Sarasota landmark, now an enduring icon reborn in downtown. The revived Mira Mar presents a limited collection of 70 estate-style residences. Private Access · Sweeping Water Views · Refined I…</span>
+      </blockquote>
+      <p style="font-size:0.72rem; color:var(--muted-soft); margin-top:0.6rem;">Search ads rotate 30 headlines and 7 descriptions. Price messaging is mixed: some headlines say &#x27;Starting From The $4 Millions&#x27;, others &#x27;From The High $3 Millions&#x27;. Two Spark contacts carry utm_campaign &#x27;search_competitors?utm_source=google&#x27; — a query string pasted into the campaign value of a Google Ads final URL.</p>
+    </div>
+    <div class="action">
+      <span class="action__label">Recommendation</span>
+      Move YouTube and most of Display into the search campaigns that produce good leads: together they cost about $3,700 this month for zero clicks (YouTube) and zero good leads (Display). Branded, Competitors and Non-Branded search produced all 3 good Google leads. Fix the broken Competitors final-URL suffix and settle on one price line in the search headlines.
+    </div>
+  </section>
+
+  <!-- ───────── META ADS ───────── -->
+  <section class="section section--yellow reveal" id="meta-ads">
+    <div class="section__header">
+      <h2 class="section__title">Meta <em>Ads</em></h2>
+      <span class="section__chip section__chip--yellow">
+        <span class="section__chip-dot"></span>
+        Cheapest Names · Fewest Buyers
+      </span>
+    </div>
+
+    <p class="section__lede">
+      Meta spent <strong>$14,419.79</strong>, up 42.4%, and reported <strong>90 leads, up 60.7% from 56</strong>, so its platform cost per lead fell 11.4% to <strong>$160.22</strong>, the cheapest source of leads in the program. Of the 90, 75 came through the website and 15 were captured on Meta itself. After removing duplicates, agents and 8 Oct 15 back-fills, Spark recorded <strong>54 new Meta contacts against 41</strong> (+32%), at $267.03 each. The catch is quality: <strong>only 1 of 62 Meta contacts is currently rated good</strong> (Warm); 31 are Non Responsive and 12 Not A Buyer. Prospecting – Sarasota (New LP) is the volume leader with <strong>26 leads at $174.34</strong>; Prospecting – Key Feeder Market (New LP) took the biggest budget, <strong>$4,684.23 for 19 leads</strong> at $246.54. Remarketing is cheapest at $111.95 on 8 leads. Brochure Download weakened from 13 leads at $125.61 to 9 at $233.28, while its Key Feeder Market twin rose from 3 to 13 at $164.01. Click-through held at 1.62%.
+    </p>
+    <div class="stat-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+      <div class="stat">
+        <div class="stat__label">Leads · platform</div>
+        <div class="stat__value">90</div>
+        <div class="stat__delta stat__delta--up">▲ 60.7% <span class="stat__delta-prev">vs 56</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Cost per Lead</div>
+        <div class="stat__value">$160.22</div>
+        <div class="stat__delta stat__delta--good-down">▼ 11.4% <span class="stat__delta-prev">vs $180.81</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Spend</div>
+        <div class="stat__value">$14,419.79</div>
+        <div class="stat__delta stat__delta--flat">▲ 42.4% <span class="stat__delta-prev">vs $10,125.14</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">New Contacts · Spark</div>
+        <div class="stat__value">54</div>
+        <div class="stat__delta stat__delta--up">▲ 31.7% <span class="stat__delta-prev">vs 41</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Good Leads · Spark</div>
+        <div class="stat__value">1 of 62</div>
+        <div class="stat__delta stat__delta--down"><span class="stat__delta-prev" style="margin-left:0">vs 1 last month · 31 Non Responsive</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Click-Through</div>
+        <div class="stat__value">1.62%</div>
+        <div class="stat__delta stat__delta--down">▼ 3.6% <span class="stat__delta-prev">vs 1.68%</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Link Clicks</div>
+        <div class="stat__value">2,750</div>
+        <div class="stat__delta stat__delta--up">▲ 21.3% <span class="stat__delta-prev">vs 2,267</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Cost / Click</div>
+        <div class="stat__value">$5.57</div>
+        <div class="stat__delta stat__delta--bad-up">▲ <span class="stat__delta-prev">vs $4.84</span></div>
+      </div>
+    </div>
+    <div class="chart chart--wide">
+      <div class="chart__title">Website Leads by Campaign · leads · cost per lead</div>
+      <div class="chart-row">
+        <span class="chart-row__label">Pros. Sarasota (New LP)</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--gold" style="width:100.0%"></div></div>
+        <span class="chart-row__value">26 · $174</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Pros. KFM (New LP)</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--red" style="width:73.1%"></div></div>
+        <span class="chart-row__value">19 · $247</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Brochure DL – KFM</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--green" style="width:50.0%"></div></div>
+        <span class="chart-row__value">13 · $164</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Brochure DL</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--gold" style="width:34.6%"></div></div>
+        <span class="chart-row__value">9 · $233</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Remarketing</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--green" style="width:30.8%"></div></div>
+        <span class="chart-row__value">8 · $112</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Pros. KFM (Segmented)</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--muted" style="width:0.0%"></div></div>
+        <span class="chart-row__value">0 · —</span>
+      </div>
+    </div>
+    <p style="font-size:0.72rem; color:var(--muted-soft); margin-top:0.6rem;">Prior-window website leads: Prospecting – Sarasota (New LP) 15 ($212.64); Prospecting – Key Feeder Market (New LP) 9 ($255.26); Brochure Download – Key Feeder Market 3 ($151.30); Brochure Download 13 ($125.61); Remarketing 5 ($134.45); Prospecting – Key Feeder Market (Segmented) 4 ($349.41); Prospecting – Sarasota (old LP) 2 ($240.76). KFM = Key Feeder Market. The Meta KPI card reports 90 leads (75 website leads in the campaign table plus 15 on-platform). Spark recorded 54 new Meta contacts after removing duplicates, agents and 8 Oct 15 back-fills (62 before that adjustment). Segmented spent $75.49 for 0 leads; the old Sarasota LP did not run. Only 1 of 62 Meta contacts is currently rated good (Warm); 31 are Non Responsive and 12 Not A Buyer. Meta brings volume at the lowest cost per lead; it is not yet bringing buyers.</p>
+
+    <div class="feature">
+      <div class="feature__kicker">New creative · the question this month</div>
+      <div class="feature__title">Is the new creative outperforming the old? <em>Day at Mira Mar is. Yoga hasn't been tested.</em></div>
+      <p>Four ads entered rotation this window: Video_Day at Mira Mar, its v2, Video_Yoga and Yoga v2. Day at Mira Mar produced 7 leads from 5,192 views — 1.35 leads per 1,000 views, the best rate of any video (Sarasota Lifestyle 0.75, Amenity 0.79). The Yoga and v2 cuts barely delivered (224 views combined), so they have not been tested yet. Of the established ads, Amenity jumped from 4 to 16 leads and the Building brochure image from 15 to 23.</p>
+      <p>Meta's creative table reports leads, video views and engagements but <strong>no spend per ad</strong>, so the fair comparison is <strong>leads per 1,000 video views</strong>. On that basis the new video converts viewers at nearly twice the rate of the two established workhorses. The caveat is scale: 7 leads is an early read, and Last Great Address and Patrick reach 0.97 on just 2 leads each.</p>
+      <div class="chart">
+        <div class="chart__title">Leads per 1,000 Video Views · higher is better</div>
+        <div class="chart-row">
+          <span class="chart-row__label">Day at Mira Mar · NEW</span>
+          <div class="chart-row__track"><div class="chart-row__fill bar--gold" style="width:100.0%"></div></div>
+          <span class="chart-row__value">1.35</span>
+        </div>
+        <div class="chart-row">
+          <span class="chart-row__label">Last Great Address</span>
+          <div class="chart-row__track"><div class="chart-row__fill bar--muted" style="width:71.9%"></div></div>
+          <span class="chart-row__value">0.97</span>
+        </div>
+        <div class="chart-row">
+          <span class="chart-row__label">Patrick</span>
+          <div class="chart-row__track"><div class="chart-row__fill bar--muted" style="width:71.9%"></div></div>
+          <span class="chart-row__value">0.97</span>
+        </div>
+        <div class="chart-row">
+          <span class="chart-row__label">Amenity · was 0.65</span>
+          <div class="chart-row__track"><div class="chart-row__fill bar--purple" style="width:58.5%"></div></div>
+          <span class="chart-row__value">0.79</span>
+        </div>
+        <div class="chart-row">
+          <span class="chart-row__label">Lifestyle · was 0.59</span>
+          <div class="chart-row__track"><div class="chart-row__fill bar--purple" style="width:55.6%"></div></div>
+          <span class="chart-row__value">0.75</span>
+        </div>
+      </div>
+      <div class="cr-tiles">
+      <div class="cr-tile">
+        <div class="cr-tile__name"><small>Video</small>Sarasota Lifestyle</div>
+        <div class="cr-tile__nums"><span class="cr-tile__leads">36</span><span class="cr-tile__unit">leads · was 36</span></div>
+        <div class="cr-tile__meta">48,266 video views · 23,273 engagements<br><b>0.75</b> leads / 1K views</div>
+      </div>
+      <div class="cr-tile">
+        <div class="cr-tile__name"><small>Image</small>Building</div>
+        <div class="cr-tile__nums"><span class="cr-tile__leads">23</span><span class="cr-tile__unit">leads · was 15</span></div>
+        <div class="cr-tile__meta">0 video views · 1,425 engagements<br>image ad · no video views</div>
+      </div>
+      <div class="cr-tile">
+        <div class="cr-tile__name"><small>Video</small>Amenity</div>
+        <div class="cr-tile__nums"><span class="cr-tile__leads">16</span><span class="cr-tile__unit">leads · was 4</span></div>
+        <div class="cr-tile__meta">20,259 video views · 7,680 engagements<br><b>0.79</b> leads / 1K views</div>
+      </div>
+      <div class="cr-tile cr-tile--new cr-tile--lead"><span class="cr-badge">NEW</span>
+        <div class="cr-tile__name"><small>Video</small>Day at Mira Mar</div>
+        <div class="cr-tile__nums"><span class="cr-tile__leads">7</span><span class="cr-tile__unit">leads · new this window</span></div>
+        <div class="cr-tile__meta">5,192 video views · 2,297 engagements<br><b>1.35</b> leads / 1K views</div>
+      </div>
+      <div class="cr-tile">
+        <div class="cr-tile__name"><small>Video</small>Last Great Address</div>
+        <div class="cr-tile__nums"><span class="cr-tile__leads">2</span><span class="cr-tile__unit">leads · was 0</span></div>
+        <div class="cr-tile__meta">2,055 video views · 1,028 engagements<br><b>0.97</b> leads / 1K views</div>
+      </div>
+      <div class="cr-tile">
+        <div class="cr-tile__name"><small>Video</small>Patrick</div>
+        <div class="cr-tile__nums"><span class="cr-tile__leads">2</span><span class="cr-tile__unit">leads · was 0</span></div>
+        <div class="cr-tile__meta">2,053 video views · 902 engagements<br><b>0.97</b> leads / 1K views</div>
+      </div>
+      <div class="cr-tile cr-tile--new"><span class="cr-badge">NEW</span>
+        <div class="cr-tile__name"><small>Video</small>Yoga</div>
+        <div class="cr-tile__nums"><span class="cr-tile__leads">0</span><span class="cr-tile__unit">leads · new this window</span></div>
+        <div class="cr-tile__meta">120 video views · 48 engagements<br>too few views to rate</div>
+      </div>
+      <div class="cr-tile cr-tile--new"><span class="cr-badge">NEW</span>
+        <div class="cr-tile__name"><small>Video</small>Day at Mira Mar v2</div>
+        <div class="cr-tile__nums"><span class="cr-tile__leads">0</span><span class="cr-tile__unit">leads · new this window</span></div>
+        <div class="cr-tile__meta">89 video views · 34 engagements<br>too few views to rate</div>
+      </div>
+      <div class="cr-tile">
+        <div class="cr-tile__name"><small>Video</small>Rick</div>
+        <div class="cr-tile__nums"><span class="cr-tile__leads">0</span><span class="cr-tile__unit">leads · was 1</span></div>
+        <div class="cr-tile__meta">29 video views · 13 engagements<br>too few views to rate</div>
+      </div>
+      <div class="cr-tile cr-tile--new"><span class="cr-badge">NEW</span>
+        <div class="cr-tile__name"><small>Video</small>Yoga v2</div>
+        <div class="cr-tile__nums"><span class="cr-tile__leads">0</span><span class="cr-tile__unit">leads · new this window</span></div>
+        <div class="cr-tile__meta">15 video views · 3 engagements<br>too few views to rate</div>
+      </div>
+      </div>
+      <p style="font-size:0.72rem; color:var(--muted-soft); margin-top:0.8rem;">The creative table reports leads, video views and engagements only — no spend per ad — so creative is compared on leads per 1,000 video views. Creative leads sum to 86 this window and 56 last window. Video_Sarasota Lifestyle — 36 leads, the volume leader both windows, on 20% fewer views this time (more efficient). Tiles are typographic: no creative thumbnails were captured for this edition.</p>
+    </div>
+    <div class="action">
+      <span class="action__label">Recommendation</span>
+      Give Day at Mira Mar real budget, shifting weight from Sarasota Lifestyle, and force-deliver the Yoga cut for two weeks before judging it. Judge Meta on good leads, not lead count: hold spend flat, tighten feeder-market targeting, and report cost per good lead each month.
+    </div>
+  </section>
+
+  <!-- ───────── WEBSITE & ORGANIC ───────── -->
+  <section class="section section--yellow reveal" id="website-organic">
+    <div class="section__header">
+      <h2 class="section__title">Website &amp; <em>Organic</em></h2>
+      <span class="section__chip section__chip--yellow">
+        <span class="section__chip-dot"></span>
+        Traffic Soft · Brand Search Up
+      </span>
+    </div>
+
+    <p class="section__lede">
+      Site traffic softened slightly against the prior 30 days: <strong>9.3K active users (−5.2%)</strong>, 9.1K new users (−5.8%) and <strong>15.5K views (−6.7%)</strong>, with pages per user steady at 1.7. Paid media supplies <strong>47.6% of visits</strong> (Google paid 29.3%, Meta 21.0%, Microsoft/Bing 6.4%) against 22.3% direct and 10.7% organic. Google sessions rose to <strong>4,533 from 4,132</strong>, but <strong>1,803 of them (40%) came from Display</strong>, which produced no good leads. Organic search is mixed: impressions grew 7.6% to 9.8K and the core brand query "mira mar sarasota" rose from 21 to <strong>33 clicks</strong>, but distinct queries fell 20.9% to 238 and average position slipped from about 13.6 to <strong>14.9</strong> (a higher number is a lower ranking). Wrong-city Miramar, Florida apartment searches keep earning impressions with zero clicks. On the site, <strong>/residences/ (17.23% bounce, 2:01)</strong> and /amenities/ (13.11%, 2:03) hold visitors best, the Broker Toolkit averages 4:37, and the <strong>Contact page's bounce fell from 53.4% to 10.0%</strong>. The two single-purpose ad landing pages bounce highest: /reserve/ at 65.89% and /brochure-download/ at 61.43%.
+    </p>
+    <div class="stat-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+      <div class="stat">
+        <div class="stat__label">Active Users</div>
+        <div class="stat__value">9.3K</div>
+        <div class="stat__delta stat__delta--down">▼ 5.2% <span class="stat__delta-prev">vs 9.8K</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">New Users</div>
+        <div class="stat__value">9.1K</div>
+        <div class="stat__delta stat__delta--down">▼ 5.8% <span class="stat__delta-prev">vs 9.6K</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Views</div>
+        <div class="stat__value">15.5K</div>
+        <div class="stat__delta stat__delta--down">▼ 6.7% <span class="stat__delta-prev">vs 16.6K</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Pages / User</div>
+        <div class="stat__value">1.7</div>
+        <div class="stat__delta stat__delta--flat">▼ 1.6% <span class="stat__delta-prev">vs 1.7</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Avg Search Position</div>
+        <div class="stat__value">14.9</div>
+        <div class="stat__delta stat__delta--bad-up">▲ 9.3% · worse <span class="stat__delta-prev">vs ≈13.6 · prior derived</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Search Impressions</div>
+        <div class="stat__value">9.8K</div>
+        <div class="stat__delta stat__delta--up">▲ 7.6% <span class="stat__delta-prev">vs 9.1K</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Search Queries</div>
+        <div class="stat__value">238</div>
+        <div class="stat__delta stat__delta--down">▼ 20.9% <span class="stat__delta-prev">vs 301</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Google Sessions</div>
+        <div class="stat__value">4,533</div>
+        <div class="stat__delta stat__delta--flat"><span class="stat__delta-prev" style="margin-left:0">vs 4,132 · 1,803 from Display</span></div>
+      </div>
+    </div>
+    <p style="font-size:0.72rem; color:var(--muted-soft); margin-top:0.6rem;">Growth percentages are Looker's own tiles for these 30 days against the preceding 30. Higher number = lower ranking, so +9.3% is a slip (≈13.6 → 14.9). The prior figure is derived from Looker&#x27;s own comparison because that tile did not load for the prior window.</p>
+    <div class="chart">
+      <div class="chart__title">Traffic by Source / Medium · share of sessions</div>
+      <div class="chart-row">
+        <span class="chart-row__label">google / cpc</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--blue" style="width:100.0%"></div></div>
+        <span class="chart-row__value">29.3%</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">(direct) / (none)</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--gold" style="width:76.1%"></div></div>
+        <span class="chart-row__value">22.3%</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">meta / cpc</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--purple" style="width:71.7%"></div></div>
+        <span class="chart-row__value">21.0%</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">google / organic</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--green" style="width:32.8%"></div></div>
+        <span class="chart-row__value">9.6%</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">microsoft / cpc</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--teal" style="width:21.8%"></div></div>
+        <span class="chart-row__value">6.4%</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">other</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--muted" style="width:19.5%"></div></div>
+        <span class="chart-row__value">5.7%</span>
+      </div>
+    </div>
+    <div class="two-col">
+      <div class="chart">
+        <div class="chart__title">Google Sessions · 4,533</div>
+        <div class="chart-row">
+          <span class="chart-row__label">All Google sessions</span>
+          <div class="chart-row__track"><div class="chart-row__fill bar--blue" style="width:100.0%"></div></div>
+          <span class="chart-row__value">4,533</span>
+        </div>
+        <div class="chart-row">
+          <span class="chart-row__label">of which Display</span>
+          <div class="chart-row__track"><div class="chart-row__fill bar--muted" style="width:39.8%"></div></div>
+          <span class="chart-row__value">1,803</span>
+        </div>
+        <div class="chart-row">
+          <span class="chart-row__label">Prior 30 days</span>
+          <div class="chart-row__track"><div class="chart-row__fill bar--muted" style="width:91.2%"></div></div>
+          <span class="chart-row__value">4,132</span>
+        </div>
+      </div>
+      <div class="chart">
+        <div class="chart__title">Meta Sessions by Campaign · partial</div>
+        <div class="chart-row">
+          <span class="chart-row__label">prospecting_sarasota</span>
+          <div class="chart-row__track"><div class="chart-row__fill bar--purple" style="width:100.0%"></div></div>
+          <span class="chart-row__value">980</span>
+        </div>
+        <div class="chart-row">
+          <span class="chart-row__label">brochure_sarasota</span>
+          <div class="chart-row__track"><div class="chart-row__fill bar--purple" style="width:72.3%"></div></div>
+          <span class="chart-row__value">709</span>
+        </div>
+        <div class="chart-row">
+          <span class="chart-row__label">prospecting_keyfeedermarket</span>
+          <div class="chart-row__track"><div class="chart-row__fill bar--purple" style="width:52.1%"></div></div>
+          <span class="chart-row__value">511</span>
+        </div>
+        <div class="chart-row">
+          <span class="chart-row__label">brochure_keyfeedermarket</span>
+          <div class="chart-row__track"><div class="chart-row__fill bar--purple" style="width:39.9%"></div></div>
+          <span class="chart-row__value">391</span>
+        </div>
+        <div class="chart-row">
+          <span class="chart-row__label">leads_prospecting_sarasota</span>
+          <div class="chart-row__track"><div class="chart-row__fill bar--purple" style="width:30.9%"></div></div>
+          <span class="chart-row__value">303</span>
+        </div>
+      </div>
+    </div>
+    <p style="font-size:0.72rem; color:var(--muted-soft); margin-top:0.6rem;">Display (two tag variants) drove 1,803 of 4,533 Google sessions (40%) and produced 0 good leads in Spark. The Meta sessions widget was truncated, so only five campaigns are shown and no Meta total is given.</p>
+    <div class="chart">
+      <div class="chart__title">Top Pages · in order of views · bounce · avg time</div>
+      <div class="table-wrap">
+        <table class="data-table data-table--compact">
+          <thead><tr><th>Page</th><th class="num">Bounce</th><th class="num">Avg time</th></tr></thead>
+          <tbody>
+            <tr><td><code>/welcome-to-mira-mar-sarasota/</code></td><td class="num">45.87%</td><td class="num">1:14</td></tr>
+            <tr><td><code>/reserve/</code></td><td class="num">65.89%</td><td class="num">0:35</td></tr>
+            <tr><td><code>/residences/</code></td><td class="num">17.23%</td><td class="num">2:01</td></tr>
+            <tr><td><code>/ (home)</code></td><td class="num">42.7%</td><td class="num">1:25</td></tr>
+            <tr><td><code>/brochure-download/</code></td><td class="num">61.43%</td><td class="num">0:26</td></tr>
+            <tr><td><code>/gallery/</code></td><td class="num">17.57%</td><td class="num">1:55</td></tr>
+            <tr><td><code>/amenities/</code></td><td class="num">13.11%</td><td class="num">2:03</td></tr>
+            <tr><td><code>/contact/</code></td><td class="num">10.0% <small style="color:var(--muted-soft)">was 53.4%</small></td><td class="num">1:46</td></tr>
+            <tr><td><code>/broker-toolkit/</code></td><td class="num">30.0%</td><td class="num">4:37</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:0.72rem; color:var(--muted-soft); margin-top:0.6rem;">Ordered by views (view counts did not render as text). /reserve/ and /brochure-download/ are single-purpose ad landing pages where a high bounce is expected; /welcome-to-mira-mar-sarasota/ is the most-viewed page.</p>
+    </div>
+    <div class="chart">
+      <div class="chart__title">Top Organic Search Terms · Google Search Console</div>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Query</th><th class="num">Impressions</th><th class="num">Clicks</th><th class="num">CTR</th><th class="num">Prior impr · clicks</th></tr></thead>
+          <tbody>
+            <tr><td>mira mar sarasota</td><td class="num">1,208</td><td class="num">33</td><td class="num">2.73%</td><td class="num">1,082 · 21</td></tr>
+            <tr><td>miramar sarasota</td><td class="num">687</td><td class="num">21</td><td class="num">3.06%</td><td class="num">437 · 22</td></tr>
+            <tr><td>mira mar</td><td class="num">632</td><td class="num">11</td><td class="num">1.74%</td><td class="num">971 · 12</td></tr>
+            <tr><td>mira mar residences</td><td class="num">151</td><td class="num">11</td><td class="num">7.28%</td><td class="num">73 · 6</td></tr>
+            <tr><td>mira mar residences sarasota</td><td class="num">121</td><td class="num">4</td><td class="num">3.31%</td><td class="num">93 · 4</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:0.72rem; color:var(--muted-soft); margin-top:0.6rem;">Brand demand is growing: "mira mar sarasota" clicks rose from 21 to 33 and "mira mar residences" doubled its impressions (73 → 151). <span style="color:var(--red)">Wrong-city &#x27;Miramar, FL apartments&#x27; queries keep earning impressions with zero clicks (e.g. 225, 198, 115, 100, 90 impressions on five such terms) — they drag average position without costing anything.</span></p>
+    </div>
+    <div class="chart">
+      <div class="chart__title">Top Landing Pages in Search · impressions</div>
+      <div class="chart-row">
+        <span class="chart-row__label">/</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--green" style="width:100.0%"></div></div>
+        <span class="chart-row__value">3,509</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">/residences/</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--green" style="width:39.4%"></div></div>
+        <span class="chart-row__value">1,384</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">/team/</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--green" style="width:25.5%"></div></div>
+        <span class="chart-row__value">895</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">/gallery/</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--green" style="width:25.2%"></div></div>
+        <span class="chart-row__value">884</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">/amenities/</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--green" style="width:21.1%"></div></div>
+        <span class="chart-row__value">739 · was 529</span>
+      </div>
+    </div>
+    <p style="font-size:0.72rem; color:var(--muted-soft); margin-top:0.6rem;">/amenities/ grew from 529 to 739 search impressions.</p>
+    <div class="action">
+      <span class="action__label">Recommendation</span>
+      Cut the Display share of Google traffic: 40% of Google sessions produced no good leads. On organic, keep adding explicit "Sarasota" disambiguation to titles and structured data so the wrong-city Miramar, FL queries stop diluting average position, and add Microsoft/Bing spend to the dashboard: it drives 6.4% of site traffic with no cost figure.
+    </div>
+  </section>
+
+  <!-- ───────── LEAD PIPELINE & PHONE ───────── -->
+  <section class="section section--red reveal" id="lead-pipeline">
+    <div class="section__header">
+      <h2 class="section__title">Lead Pipeline &amp; <em>Phone</em></h2>
+      <span class="section__chip section__chip--red">
+        <span class="section__chip-dot"></span>
+        Volume Up · Quality &amp; Phones Down
+      </span>
+    </div>
+
+    <p class="section__lede">
+      Volume is up; quality and the phone line are not. Spark recorded <strong>138 new non-agent contacts</strong> in the window, <strong>125 once the Oct 15 back-fill of 13 is removed</strong>, against 80. <strong>12 are currently rated good</strong> (all Warm) against 10: 4 realtor-referred, 3 paid Google, 3 sales-center walk-ins, 1 Meta and 1 LinkedIn. <strong>39 contacts from this window are still New/Lead</strong>, not yet reached, against 0 from the prior window, so this month's quality rates are provisional. The negatives grew faster than the positives: Non Responsive rose from 24 to <strong>44</strong> and Not A Buyer from 22 to 31. LinkedIn, live since Oct 28, added 24 contacts in its first week. The phone line weakened sharply: <strong>16 calls against 49</strong> (−67%), almost entirely Google Ads (30 → 11). <strong>9 were answered and 7 missed</strong>, a 56.3% answer rate against 55.1%, still under the 70% floor, and none were tagged as leads. Pipeline stock on the Spark Digital Ads Leads page stands at <strong>16 hot/warm, 25 sales visits or tours and 4 reservations or contracts</strong>; those are lifetime counts for digital-ad leads, not this month's flow.
+    </p>
+    <div class="stat-grid">
+      <div class="stat stat--hero">
+        <div class="stat__label">New Contacts · CRM</div>
+        <div class="stat__value">125</div>
+        <div class="stat__delta stat__delta--up">▲ 56.2% <span class="stat__delta-prev">vs 80</span></div>
+      </div>
+      <div class="stat stat--hero">
+        <div class="stat__label">Good Leads · rated today</div>
+        <div class="stat__value">12</div>
+        <div class="stat__delta stat__delta--up">▲ 20.0% <span class="stat__delta-prev">vs 10 · all Warm</span></div>
+      </div>
+      <div class="stat stat--hero">
+        <div class="stat__label">Unworked · New/Lead</div>
+        <div class="stat__value">39</div>
+        <div class="stat__delta stat__delta--bad-up">▲ <span class="stat__delta-prev">vs 0 · quality provisional</span></div>
+      </div>
+      <div class="stat stat--hero">
+        <div class="stat__label">Answer Rate</div>
+        <div class="stat__value">56.3%</div>
+        <div class="stat__delta stat__delta--up">▲ 2.2% <span class="stat__delta-prev">vs 55.1%</span></div>
+      </div>
+    </div>
+    <div class="stat-grid" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));">
+      <div class="stat">
+        <div class="stat__label">Non Responsive</div>
+        <div class="stat__value">44</div>
+        <div class="stat__delta stat__delta--bad-up">▲ <span class="stat__delta-prev">vs 24</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Not A Buyer</div>
+        <div class="stat__value">31</div>
+        <div class="stat__delta stat__delta--bad-up">▲ <span class="stat__delta-prev">vs 22</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Hot / Warm · stock</div>
+        <div class="stat__value">16</div>
+        <div class="stat__delta stat__delta--flat"><span class="stat__delta-prev" style="margin-left:0">lifetime · digital-ad leads</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Sales Visits / Tours · stock</div>
+        <div class="stat__value">25</div>
+        <div class="stat__delta stat__delta--flat"><span class="stat__delta-prev" style="margin-left:0">lifetime · digital-ad leads</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Reservations / Contracts</div>
+        <div class="stat__value">4</div>
+        <div class="stat__delta stat__delta--flat"><span class="stat__delta-prev" style="margin-left:0">lifetime · digital-ad leads</span></div>
+      </div>
+    </div>
+    <div class="chart">
+      <div class="chart__title">New Spark Contacts by Channel · count and current rating</div>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Channel</th><th class="num">Contacts</th><th class="num">Good</th><th class="num">Not a buyer</th><th class="num">Non-resp.</th><th class="num">Unworked</th><th class="num">Prior · good</th></tr></thead>
+          <tbody>
+            <tr><td>Meta</td><td class="num">62</td><td class="num">1</td><td class="num">12</td><td class="num">31</td><td class="num">14</td><td class="num">41 · 1</td></tr>
+            <tr><td>Google paid</td><td class="num">26</td><td class="num">3</td><td class="num">6</td><td class="num">7</td><td class="num">10</td><td class="num">16 · 2</td></tr>
+            <tr><td>LinkedIn</td><td class="num">24</td><td class="num">1</td><td class="num">7</td><td class="num">2</td><td class="num">13</td><td class="num">0 · —</td></tr>
+            <tr><td>Direct / sales center</td><td class="num">9</td><td class="num">3</td><td class="num">2</td><td class="num">2</td><td class="num">0</td><td class="num">7 · 1</td></tr>
+            <tr><td>Realtor-referred (Agent Import source)</td><td class="num">9</td><td class="num">4</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">12 · 4</td></tr>
+            <tr><td>Reconciliation import</td><td class="num">6</td><td class="num">0</td><td class="num">4</td><td class="num">2</td><td class="num">—</td><td class="num">0 · —</td></tr>
+            <tr><td>Google organic</td><td class="num">0</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">4 · 2</td></tr>
+            <tr><td>Other</td><td class="num">2</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">0 · —</td></tr>
+            <tr class="data-table__total"><td>Total</td><td class="num">138</td><td class="num">12</td><td class="num">31</td><td class="num">44</td><td class="num">39</td><td class="num">80 · 10</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:0.72rem; color:var(--muted-soft); margin-top:0.6rem;">Counts here are before the Oct 15 back-fill is removed (138 total; Meta 62, Google paid 26). "Good" = currently rated Warm, Hot, Referral, Reservation Holder or Contract Holder. Current 12 (all Warm): 4 realtor-referred (Agent Import source, not agents themselves), 3 paid Google, 3 sales-center walk-ins (Display Sweet), 1 Meta, 1 LinkedIn. 6 incomplete-form contacts were added automatically by the missing-lead safeguard that went live Oct 15 (4 from Meta prospecting ads); 4 are Not A Buyer and 2 Non Responsive.</p>
+    </div>
+    <div class="chart">
+      <div class="chart__title">New Spark Contacts by Week · this window vs prior</div>
+      <div class="chart-row">
+        <span class="chart-row__label">Oct 5–11</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--gold" style="width:47.5%"></div></div>
+        <span class="chart-row__value">19</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label"><span style="color:var(--muted-soft)">Sep 5–11</span></span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--muted" style="width:35.0%"></div></div>
+        <span class="chart-row__value">14</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Oct 12–18</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--gold" style="width:87.5%"></div></div>
+        <span class="chart-row__value">35</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label"><span style="color:var(--muted-soft)">Sep 12–18</span></span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--muted" style="width:40.0%"></div></div>
+        <span class="chart-row__value">16</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Oct 19–25</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--gold" style="width:60.0%"></div></div>
+        <span class="chart-row__value">24</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label"><span style="color:var(--muted-soft)">Sep 19–25</span></span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--muted" style="width:55.0%"></div></div>
+        <span class="chart-row__value">22</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Oct 26–Nov 1</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--gold" style="width:100.0%"></div></div>
+        <span class="chart-row__value">40</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label"><span style="color:var(--muted-soft)">Sep 26–Oct 2</span></span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--muted" style="width:55.0%"></div></div>
+        <span class="chart-row__value">22</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Nov 2–3</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--gold" style="width:50.0%"></div></div>
+        <span class="chart-row__value">20</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label"><span style="color:var(--muted-soft)">Oct 3–4</span></span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--muted" style="width:15.0%"></div></div>
+        <span class="chart-row__value">6</span>
+      </div>
+    </div>
+    <p style="font-size:0.72rem; color:var(--muted-soft); margin-top:0.6rem;">Weekly counts include the Oct 15 back-fill (Oct 12–18) and run to the end of the window, so the last bucket in each period is a partial week (2 days).</p>
+    <div class="chart">
+      <div class="chart__title">New Spark Contacts by Day · <span style="color:var(--yellow)">Oct 15 back-fill</span></div>
+      <svg class="spark-svg" viewBox="0 0 720 170" role="img" aria-label="Daily new Spark contacts, Oct 5 to Nov 3"><line x1="26" y1="144" x2="712" y2="144" stroke="var(--card-edge)" stroke-width="1"/><text x="20" y="147.0" text-anchor="end" font-size="9" fill="var(--muted)">0</text><text x="20" y="88.0" text-anchor="end" font-size="9" fill="var(--muted)">8</text><line x1="26" y1="85.0" x2="712" y2="85.0" stroke="var(--card-edge)" stroke-width="0.6" stroke-dasharray="2 4"/><text x="20" y="29.0" text-anchor="end" font-size="9" fill="var(--muted)">16</text><line x1="26" y1="26.0" x2="712" y2="26.0" stroke="var(--card-edge)" stroke-width="0.6" stroke-dasharray="2 4"/><rect x="29.4" y="121.9" width="16.0" height="22.1" rx="2" fill="var(--gold)"><title>Oct 5 · 3 contacts</title></rect><rect x="52.3" y="129.2" width="16.0" height="14.8" rx="2" fill="var(--gold)"><title>Oct 6 · 2 contacts</title></rect><rect x="75.2" y="129.2" width="16.0" height="14.8" rx="2" fill="var(--gold)"><title>Oct 7 · 2 contacts</title></rect><rect x="98.0" y="136.6" width="16.0" height="7.4" rx="2" fill="var(--gold)"><title>Oct 8 · 1 contacts</title></rect><rect x="120.9" y="121.9" width="16.0" height="22.1" rx="2" fill="var(--gold)"><title>Oct 9 · 3 contacts</title></rect><rect x="143.8" y="114.5" width="16.0" height="29.5" rx="2" fill="var(--gold)"><title>Oct 10 · 4 contacts</title></rect><rect x="166.6" y="114.5" width="16.0" height="29.5" rx="2" fill="var(--gold)"><title>Oct 11 · 4 contacts</title></rect><rect x="189.5" y="99.8" width="16.0" height="44.2" rx="2" fill="var(--gold)"><title>Oct 12 · 6 contacts</title></rect><rect x="212.4" y="114.5" width="16.0" height="29.5" rx="2" fill="var(--gold)"><title>Oct 13 · 4 contacts</title></rect><rect x="235.2" y="144.0" width="16.0" height="0.0" rx="2" fill="var(--gold)"><title>Oct 14 · 0 contacts</title></rect><rect x="258.1" y="33.4" width="16.0" height="110.6" rx="2" fill="var(--yellow)"><title>Oct 15 · 15 contacts · mostly the 13-lead back-fill</title></rect><text x="266.1" y="19.4" text-anchor="middle" font-size="9" fill="var(--yellow)">Oct 15 · 15</text><text x="266.1" y="29.4" text-anchor="middle" font-size="8" fill="var(--yellow)">13 back-filled</text><rect x="281.0" y="114.5" width="16.0" height="29.5" rx="2" fill="var(--gold)"><title>Oct 16 · 4 contacts</title></rect><rect x="303.8" y="121.9" width="16.0" height="22.1" rx="2" fill="var(--gold)"><title>Oct 17 · 3 contacts</title></rect><rect x="326.7" y="121.9" width="16.0" height="22.1" rx="2" fill="var(--gold)"><title>Oct 18 · 3 contacts</title></rect><rect x="349.6" y="114.5" width="16.0" height="29.5" rx="2" fill="var(--gold)"><title>Oct 19 · 4 contacts</title></rect><rect x="372.4" y="129.2" width="16.0" height="14.8" rx="2" fill="var(--gold)"><title>Oct 20 · 2 contacts</title></rect><rect x="395.3" y="129.2" width="16.0" height="14.8" rx="2" fill="var(--gold)"><title>Oct 21 · 2 contacts</title></rect><rect x="418.2" y="114.5" width="16.0" height="29.5" rx="2" fill="var(--gold)"><title>Oct 22 · 4 contacts</title></rect><rect x="441.0" y="107.1" width="16.0" height="36.9" rx="2" fill="var(--gold)"><title>Oct 23 · 5 contacts</title></rect><rect x="463.9" y="136.6" width="16.0" height="7.4" rx="2" fill="var(--gold)"><title>Oct 24 · 1 contacts</title></rect><rect x="486.8" y="99.8" width="16.0" height="44.2" rx="2" fill="var(--gold)"><title>Oct 25 · 6 contacts</title></rect><rect x="509.6" y="114.5" width="16.0" height="29.5" rx="2" fill="var(--gold)"><title>Oct 26 · 4 contacts</title></rect><rect x="532.5" y="99.8" width="16.0" height="44.2" rx="2" fill="var(--gold)"><title>Oct 27 · 6 contacts</title></rect><rect x="555.4" y="77.6" width="16.0" height="66.4" rx="2" fill="var(--gold)"><title>Oct 28 · 9 contacts</title></rect><rect x="578.2" y="129.2" width="16.0" height="14.8" rx="2" fill="var(--gold)"><title>Oct 29 · 2 contacts</title></rect><rect x="601.1" y="92.4" width="16.0" height="51.6" rx="2" fill="var(--gold)"><title>Oct 30 · 7 contacts</title></rect><rect x="624.0" y="99.8" width="16.0" height="44.2" rx="2" fill="var(--gold)"><title>Oct 31 · 6 contacts</title></rect><rect x="646.8" y="99.8" width="16.0" height="44.2" rx="2" fill="var(--gold)"><title>Nov 1 · 6 contacts</title></rect><rect x="669.7" y="114.5" width="16.0" height="29.5" rx="2" fill="var(--gold)"><title>Nov 2 · 4 contacts</title></rect><rect x="692.6" y="26.0" width="16.0" height="118.0" rx="2" fill="var(--gold-soft)"><title>Nov 3 · 16 contacts · 8 LinkedIn + 8 website/ads</title></rect><text x="708.6" y="12.0" text-anchor="end" font-size="9" fill="var(--gold-soft)">Nov 3 · 16</text><text x="708.6" y="22.0" text-anchor="end" font-size="8" fill="var(--gold-soft)">8 LinkedIn</text><text x="26.0" y="162" text-anchor="start" font-size="9" fill="var(--muted)">Oct 5</text><text x="266.1" y="162" text-anchor="middle" font-size="9" fill="var(--muted)">Oct 15</text><text x="494.8" y="162" text-anchor="middle" font-size="9" fill="var(--muted)">Oct 25</text><text x="712.0" y="162" text-anchor="end" font-size="9" fill="var(--muted)">Nov 3</text></svg>
+      <p style="font-size:0.72rem; color:var(--muted-soft); margin-top:0.6rem;">Oct 15 (15 contacts) is mostly the 13-lead manual back-fill; Nov 3 (16) is real — 8 LinkedIn plus 8 website/ads contacts. 39 contacts from this window are still New/Lead (not yet reached) vs 0 from the prior window. Quality rates for this window are provisional.</p>
+    </div>
+    <div class="li-block">
+      <div class="li-block__title">LinkedIn · <em>first week live</em></div>
+    <div class="stat-grid" style="grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));">
+      <div class="stat">
+        <div class="stat__label">Spark Contacts</div>
+        <div class="stat__value">24</div>
+        <div class="stat__delta stat__delta--up">new <span class="stat__delta-prev">since Oct 28</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Good · Warm</div>
+        <div class="stat__value">1</div>
+        <div class="stat__delta stat__delta--flat"><span class="stat__delta-prev" style="margin-left:0">rated so far</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Not A Buyer</div>
+        <div class="stat__value">7</div>
+        <div class="stat__delta stat__delta--flat"><span class="stat__delta-prev" style="margin-left:0">rated so far</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Non Responsive</div>
+        <div class="stat__value">2</div>
+        <div class="stat__delta stat__delta--flat"><span class="stat__delta-prev" style="margin-left:0">rated so far</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Unworked</div>
+        <div class="stat__value">13</div>
+        <div class="stat__delta stat__delta--bad-up"><span class="stat__delta-prev" style="margin-left:0">still New/Lead</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Spend</div>
+        <div class="stat__value">—</div>
+        <div class="stat__delta stat__delta--flat"><span class="stat__delta-prev" style="margin-left:0">not in the dashboard</span></div>
+      </div>
+    </div>
+      <p style="font-size:0.72rem; color:var(--muted-soft); margin-top:0.4rem;">LinkedIn Lead Gen Forms went live Oct 28 and delivered 24 Spark contacts in the final week — 21% of all paid-channel contacts in the window. 13 are still unworked. Spend is not in the reporting dashboard, so cost per lead can&#x27;t be computed here. Leads arrive without zip code; hidden UTM fields are being added. Campaign: sarasota_brochure (utm linkedin / paid-social).</p>
+    </div>
+    <div class="stat-grid">
+      <div class="stat">
+        <div class="stat__label">Total Calls</div>
+        <div class="stat__value">16</div>
+        <div class="stat__delta stat__delta--down">▼ 67.3% <span class="stat__delta-prev">vs 49</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Answered · Missed</div>
+        <div class="stat__value">9 · 7</div>
+        <div class="stat__delta stat__delta--down">▼ 66.7% <span class="stat__delta-prev">vs 27 · 22</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">First-Time Callers</div>
+        <div class="stat__value">14</div>
+        <div class="stat__delta stat__delta--down">▼ <span class="stat__delta-prev">vs 39</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Avg Call Duration</div>
+        <div class="stat__value">276.8 s</div>
+        <div class="stat__delta stat__delta--flat"><span class="stat__delta-prev" style="margin-left:0">per call · 0 tagged as leads</span></div>
+      </div>
+    </div>
+    <div class="chart">
+      <div class="chart__title">Calls by Source · 16 · prior 30 days in grey text</div>
+      <div class="chart-row">
+        <span class="chart-row__label">Google Ads</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--blue" style="width:100.0%"></div></div>
+        <span class="chart-row__value">11 · was 30</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Print Ad</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--green" style="width:18.2%"></div></div>
+        <span class="chart-row__value">2 · was 4</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Direct</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--gold" style="width:9.1%"></div></div>
+        <span class="chart-row__value">1 · was 8</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">E-Blasts</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--gold" style="width:9.1%"></div></div>
+        <span class="chart-row__value">1 · was 0</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Instagram Ads</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--purple" style="width:9.1%"></div></div>
+        <span class="chart-row__value">1 · was 1</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Facebook Ads</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--purple" style="width:0.0%"></div></div>
+        <span class="chart-row__value">0 · was 4</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Bing Ads</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--gold" style="width:0.0%"></div></div>
+        <span class="chart-row__value">0 · was 1</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Google Organic</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--gold" style="width:0.0%"></div></div>
+        <span class="chart-row__value">0 · was 1</span>
+      </div>
+    </div>
+    <div class="chart">
+      <div class="chart__title">Daily Call Timeline · 30 days · <span style="color:var(--green)">answered</span> / <span style="color:var(--red)">missed</span> · 18 quiet days</div>
+      <div class="call-strip call-strip--30"><span title="Oct 5 · no calls" style="display:block; height:18px; border-radius:3px; background: color-mix(in oklab, var(--muted) 14%, transparent);"></span><span title="Oct 6 · no calls" style="display:block; height:18px; border-radius:3px; background: color-mix(in oklab, var(--muted) 14%, transparent);"></span><span title="Oct 7 · no calls" style="display:block; height:18px; border-radius:3px; background: color-mix(in oklab, var(--muted) 14%, transparent);"></span><span title="Oct 8 · 1 answered · avg 45s" style="display:block; height:18px; border-radius:3px; background: var(--green);"></span><span title="Oct 9 · no calls" style="display:block; height:18px; border-radius:3px; background: color-mix(in oklab, var(--muted) 14%, transparent);"></span><span title="Oct 10 · no calls" style="display:block; height:18px; border-radius:3px; background: color-mix(in oklab, var(--muted) 14%, transparent);"></span><span title="Oct 11 · 1 answered · avg 105s" style="display:block; height:18px; border-radius:3px; background: var(--green);"></span><span title="Oct 12 · no calls" style="display:block; height:18px; border-radius:3px; background: color-mix(in oklab, var(--muted) 14%, transparent);"></span><span title="Oct 13 · 1 missed · avg 27s" style="display:block; height:18px; border-radius:3px; background: var(--red);"></span><span title="Oct 14 · 2 answered + 1 missed · avg 45s" style="display:block; height:18px; border-radius:3px; background: linear-gradient(90deg, var(--green) 66.7%, var(--red) 66.7%);"></span><span title="Oct 15 · no calls" style="display:block; height:18px; border-radius:3px; background: color-mix(in oklab, var(--muted) 14%, transparent);"></span><span title="Oct 16 · 1 missed · avg 4s" style="display:block; height:18px; border-radius:3px; background: var(--red);"></span><span title="Oct 17 · 1 missed · avg 10s" style="display:block; height:18px; border-radius:3px; background: var(--red);"></span><span title="Oct 18 · no calls" style="display:block; height:18px; border-radius:3px; background: color-mix(in oklab, var(--muted) 14%, transparent);"></span><span title="Oct 19 · no calls" style="display:block; height:18px; border-radius:3px; background: color-mix(in oklab, var(--muted) 14%, transparent);"></span><span title="Oct 20 · no calls" style="display:block; height:18px; border-radius:3px; background: color-mix(in oklab, var(--muted) 14%, transparent);"></span><span title="Oct 21 · 1 answered + 1 missed · avg 1192s" style="display:block; height:18px; border-radius:3px; background: linear-gradient(90deg, var(--green) 50.0%, var(--red) 50.0%);"></span><span title="Oct 22 · 1 missed · avg 34s" style="display:block; height:18px; border-radius:3px; background: var(--red);"></span><span title="Oct 23 · no calls" style="display:block; height:18px; border-radius:3px; background: color-mix(in oklab, var(--muted) 14%, transparent);"></span><span title="Oct 24 · no calls" style="display:block; height:18px; border-radius:3px; background: color-mix(in oklab, var(--muted) 14%, transparent);"></span><span title="Oct 25 · no calls" style="display:block; height:18px; border-radius:3px; background: color-mix(in oklab, var(--muted) 14%, transparent);"></span><span title="Oct 26 · 1 missed · avg 3s" style="display:block; height:18px; border-radius:3px; background: var(--red);"></span><span title="Oct 27 · no calls" style="display:block; height:18px; border-radius:3px; background: color-mix(in oklab, var(--muted) 14%, transparent);"></span><span title="Oct 28 · 1 answered · avg 39s" style="display:block; height:18px; border-radius:3px; background: var(--green);"></span><span title="Oct 29 · no calls" style="display:block; height:18px; border-radius:3px; background: color-mix(in oklab, var(--muted) 14%, transparent);"></span><span title="Oct 30 · 1 answered · avg 185s" style="display:block; height:18px; border-radius:3px; background: var(--green);"></span><span title="Oct 31 · 2 answered · avg 65s" style="display:block; height:18px; border-radius:3px; background: var(--green);"></span><span title="Nov 1 · no calls" style="display:block; height:18px; border-radius:3px; background: color-mix(in oklab, var(--muted) 14%, transparent);"></span><span title="Nov 2 · no calls" style="display:block; height:18px; border-radius:3px; background: color-mix(in oklab, var(--muted) 14%, transparent);"></span><span title="Nov 3 · no calls" style="display:block; height:18px; border-radius:3px; background: color-mix(in oklab, var(--muted) 14%, transparent);"></span></div><div class="call-strip__axis"><span>Oct 5</span><span>Oct 19</span><span>Nov 3</span></div><p style="font-size:0.72rem; color:var(--muted-soft); margin-top:0.6rem;">One cell per day; hover a cell for the count. Green = every call answered that day, red = every call missed, split = mixed. 12 days had calls, 18 did not; The last call of the window came on Oct 31. The busiest day was Oct 14 with 3 calls (2 answered); Oct 21's two calls averaged 1,192 seconds, the longest of the month.</p>
+    </div>
+    <p style="font-size:0.72rem; color:var(--muted-soft); margin-top:0.6rem;">Calls fell from 49 to 16 (−67%), almost entirely Google Ads (30 → 11). The answer rate held at 56% — still under the 70% floor. Calls are logged in CallRail; none were tagged as leads. CallRail's tiles and daily table agree this period (16 total, 9 answered, 7 missed).</p>
+    <div class="compare">
+      <div class="compare__col compare__col--prev">
+        <div class="compare__label">Prior Answer Rate</div>
+        <div class="compare__value">55.1%</div>
+      </div>
+      <div class="compare__arrow">→</div>
+      <div class="compare__col">
+        <div class="compare__label">This Period</div>
+        <div class="compare__value">56.3%</div>
+      </div>
+    </div>
+    <div class="compare">
+      <div class="compare__col compare__col--prev">
+        <div class="compare__label">Prior Calls</div>
+        <div class="compare__value">49</div>
+      </div>
+      <div class="compare__arrow">→</div>
+      <div class="compare__col">
+        <div class="compare__label">This Period</div>
+        <div class="compare__value">16</div>
+      </div>
+    </div>
+    <div class="action">
+      <span class="action__label">Recommendation</span>
+      Work the 39 unworked contacts first, starting with LinkedIn's 13: speed to first contact matters most on fresh form fills. Then find out why Google calls fell from 30 to 11 (check call extensions and the tracking number around the landing-page switch) and assign a named owner for same-day callback: 7 of 16 calls were missed.
+    </div>
+  </section>
+
+  <!-- ───────── RECOMMENDATIONS ───────── -->
+  <section class="section reveal" id="recommendations" style="border: 1px solid var(--gold-dim); background: linear-gradient(180deg, color-mix(in oklab, var(--gold) 9%, var(--surface-grad-from)) 0%, var(--surface-grad-to) 100%);">
+    <div class="section__header">
+      <h2 class="section__title">Key <em>Recommendations</em></h2>
+      <span class="section__chip section__chip--gold">
+        <span class="section__chip-dot"></span>
+        Action Items
+      </span>
+    </div>
+
+    <ol class="rec-list">
+      <li class="rec-item">
+        <span class="rec-num"></span>
+        <div class="rec-content">
+          <span><span class="rec-tag rec-tag--high">High</span></span>
+          <span class="rec-headline">Move YouTube and most of Display into the search campaigns that produce good leads</span>
+          <span class="rec-detail">YouTube cost $1,609 with zero clicks and zero conversions (it was $975 with the same result last month). Display cost $2,101, drove 40% of Google&#x27;s website sessions and produced no good leads in Spark; 5 of its 7 &#x27;call leads&#x27; have no call duration. Branded, Competitors and Non-Branded search produced all 3 good Google leads. Reallocating roughly $3,700 a month into those search campaigns targets the leads sales can actually work.</span>
+        </div>
+      </li>
+      <li class="rec-item">
+        <span class="rec-num"></span>
+        <div class="rec-content">
+          <span><span class="rec-tag rec-tag--high">High</span></span>
+          <span class="rec-headline">Give &#x27;Day at Mira Mar&#x27; real budget and actually test the Yoga cut</span>
+          <span class="rec-detail">Day at Mira Mar delivered 7 leads on 5,192 views (1.35 per 1,000), almost double Sarasota Lifestyle (0.75) and Amenity (0.79). The Yoga and v2 cuts reached only 224 views combined, so the test never ran. Shift weight from Sarasota Lifestyle to Day at Mira Mar and force-deliver Yoga for two weeks before judging it.</span>
+        </div>
+      </li>
+      <li class="rec-item">
+        <span class="rec-num"></span>
+        <div class="rec-content">
+          <span><span class="rec-tag rec-tag--high">High</span></span>
+          <span class="rec-headline">Judge Meta on good leads, not lead count</span>
+          <span class="rec-detail">Meta is the cheapest source of names ($160 platform CPL, $267 per CRM contact) but 1 of 62 contacts is rated good and 31 are Non Responsive. Prospecting – Key Feeder Market (New LP) took the biggest Meta budget ($4,684) for 19 leads. Hold Meta spend flat, tighten feeder-market targeting, and report cost per good lead each month.</span>
+        </div>
+      </li>
+      <li class="rec-item">
+        <span class="rec-num"></span>
+        <div class="rec-content">
+          <span><span class="rec-tag rec-tag--high">High</span></span>
+          <span class="rec-headline">Work the 39 unworked contacts, especially LinkedIn&#x27;s 13</span>
+          <span class="rec-detail">39 of this window&#x27;s contacts are still New/Lead in Spark. LinkedIn&#x27;s 24 arrived in a single week with 1 already Warm; 13 are untouched. Speed to first contact matters most on fresh form fills.</span>
+        </div>
+      </li>
+      <li class="rec-item">
+        <span class="rec-num"></span>
+        <div class="rec-content">
+          <span><span class="rec-tag rec-tag--med">Medium</span></span>
+          <span class="rec-headline">Phone: find out why Google calls fell 63% and assign callback ownership</span>
+          <span class="rec-detail">Calls dropped from 49 to 16; Google Ads calls went from 30 to 11. Check whether call extensions or the call-tracking number changed around the landing-page switch. The answer rate is still 56%, under the 70% floor: 7 of 16 calls were missed.</span>
+        </div>
+      </li>
+      <li class="rec-item">
+        <span class="rec-num"></span>
+        <div class="rec-content">
+          <span><span class="rec-tag rec-tag--med">Medium</span></span>
+          <span class="rec-headline">Fix two tracking gaps</span>
+          <span class="rec-detail">(1) Two Google contacts carry utm_campaign &#x27;search_competitors?utm_source=google&#x27; — a broken final-URL suffix in the Competitors campaign. (2) LinkedIn leads arrive without UTM or zip; hidden fields are being added. Add LinkedIn and Microsoft Ads spend to the dashboard so next month&#x27;s cost per lead covers every paid channel.</span>
+        </div>
+      </li>
+      <li class="rec-item">
+        <span class="rec-num"></span>
+        <div class="rec-content">
+          <span><span class="rec-tag rec-tag--low">Opportunity</span></span>
+          <span class="rec-headline">Align price messaging in search ads</span>
+          <span class="rec-detail">Search headlines say both &#x27;Starting From The $4 Millions&#x27; and &#x27;From The High $3 Millions&#x27;. Pick one so the ad and the landing page agree.</span>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__monogram">M&middot;M</div>
+    <div class="footer__line">Generated November 4, 2026 · Clear pH Design · Data sourced from Looker Studio, Spark and CallRail</div>
+  </footer>
+
+</div>
+
+<script>
+  // Archive panel toggle
+  (function() {
+    const trigger = document.getElementById('archiveTrigger');
+    const panel = document.getElementById('archivePanel');
+    const nav = document.getElementById('archiveNav');
+    if (!trigger || !panel) return;
+    trigger.addEventListener('click', function(e) {
+      e.stopPropagation();
+      const open = panel.classList.toggle('is-open');
+      trigger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    document.addEventListener('click', function(e) {
+      if (!nav.contains(e.target)) {
+        panel.classList.remove('is-open');
+        trigger.setAttribute('aria-expanded', 'false');
+      }
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        panel.classList.remove('is-open');
+        trigger.setAttribute('aria-expanded', 'false');
+      }
+    });
+  })();
+
+  // Theme + palette toggles
+  (function() {
+    const themeBtn = document.getElementById('themeToggle');
+    const paletteBtn = document.getElementById('paletteToggle');
+    const root = document.documentElement;
+    if (themeBtn) {
+      themeBtn.addEventListener('click', function() {
+        const next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+        root.setAttribute('data-theme', next);
+        try { localStorage.setItem('mm-report-theme', next); } catch(e) {}
+      });
+    }
+    if (paletteBtn) {
+      paletteBtn.addEventListener('click', function() {
+        const next = root.getAttribute('data-palette') === 'classic' ? 'miramar' : 'classic';
+        root.setAttribute('data-palette', next);
+        try { localStorage.setItem('mm-report-palette', next); } catch(e) {}
+      });
+    }
+  })();
+
+  // Reveal-on-scroll
+  (function() {
+    const els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) {
+      els.forEach(el => el.classList.add('is-visible'));
+      return;
+    }
+    const obs = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    els.forEach(el => obs.observe(el));
+  })();
+</script>
+
+
+<!-- ───────── VISUALIZATION MODAL ───────── -->
+<div class="viz-overlay" id="vizOverlay" role="dialog" aria-modal="true" aria-label="Month visualization">
+  <div class="viz-panel">
+    <div class="v2-head">
+      <div class="v2-head__title">The Month, Visualized</div>
+      <div class="v2-head__period">Oct 5 – Nov 3, 2026 · vs Sep 5 – Oct 4 (prior 30 days)</div>
+      <div class="v2-head__chips">
+        <span class="viz-status viz-status--watch"><span class="viz-status__dot"></span>SUMMARY</span>
+        <span class="viz-status viz-status--watch"><span class="viz-status__dot"></span>BUDGET</span>
+        <span class="viz-status viz-status--watch"><span class="viz-status__dot"></span>GOOGLE</span>
+        <span class="viz-status viz-status--watch"><span class="viz-status__dot"></span>META</span>
+        <span class="viz-status viz-status--watch"><span class="viz-status__dot"></span>WEBSITE</span>
+        <span class="viz-status viz-status--fix"><span class="viz-status__dot"></span>PIPELINE</span>
+        </div>
+      <button class="viz-close" id="vizClose" aria-label="Close visualization">✕</button>
+    </div>
+
+    <div class="v2-grid">
+
+      <!-- RECOMMENDED ACTIONS (featured) -->
+      <div class="v2-recs-panel">
+        <div class="v2-recs-panel__head">
+          <div class="v2-recs-panel__kicker">Recommended Actions</div>
+          <div class="v2-recs-panel__title">Where to act next month</div>
+        </div>
+        <div class="v2-recs v2-recs--big">
+          <span class="v2-rec"><b>Move</b> YouTube + Display to search</span>
+          <span class="v2-rec"><b>Fund</b> Day at Mira Mar</span>
+          <span class="v2-rec"><b>Judge</b> Meta on good leads</span>
+          <span class="v2-rec"><b>Work</b> the 39 unworked</span>
+          <span class="v2-rec"><b>Own</b> callbacks</span>
+          <span class="v2-rec"><b>Fix</b> two tracking gaps</span>
+          <span class="v2-rec"><b>Align</b> price messaging</span>
+        </div>
+      </div>
+
+      <!-- HERO + KPIs -->
+      <div class="v2-card c3">
+        <div class="v2-card__title">Cost per lead <em>platform</em></div>
+        <div class="v2-hero__value">$251</div>
+        <div class="v2-hero__delta" style="color:var(--muted)">▼ 1.4% · flat <small>vs $254.76</small></div>
+        <div class="v2-kpirow">
+          <div><div class="v2-kpi__label">Platform leads</div><div class="v2-kpi__value">129</div><div class="v2-kpi__delta viz-up">▲ 34.4%</div></div>
+          <div><div class="v2-kpi__label">CRM contacts</div><div class="v2-kpi__value">125</div><div class="v2-kpi__delta viz-up">▲ 56.2%</div></div>
+          <div><div class="v2-kpi__label">Spend</div><div class="v2-kpi__value">$32.4K</div><div class="v2-kpi__delta" style="color:var(--muted)">▲ 32.6%</div></div>
+        </div>
+        <div class="viz-note">Per CRM-verified Google + Meta contact: <b>$426.58</b> vs $429.07 (flat). Google $818.21 (▼ 8.7%) · Meta $267.03 (▲ 8.1%). Spend is Google + Meta only.</div>
+      </div>
+
+      <!-- FUNNEL -->
+      <div class="v2-card c5">
+        <div class="v2-card__title">Paid media funnel <em>Google + Meta · this month</em></div>
+        <div class="v2-funnel">
+          <div class="v2-fstage" style="--w:100%; background: color-mix(in oklab, var(--gold) 30%, var(--card-bg));"><span class="v2-fstage__name">Impressions</span><span class="v2-fstage__num">1,440,461</span></div>
+          <div class="v2-frate">▾ click-through · Google 0.34% · Meta 1.62%</div>
+          <div class="v2-fstage" style="--w:82%; background: color-mix(in oklab, var(--gold) 45%, var(--card-bg));"><span class="v2-fstage__name">Clicks</span><span class="v2-fstage__num">7,092</span></div>
+          <div class="v2-frate">▾ platforms report</div>
+          <div class="v2-fstage" style="--w:64%; background: color-mix(in oklab, var(--gold) 62%, var(--card-bg));"><span class="v2-fstage__name">Platform leads</span><span class="v2-fstage__num">129</span></div>
+          <div class="v2-frate">▾ de-duplicated in Spark · back-fill removed</div>
+          <div class="v2-fstage" style="--w:50%; background: var(--gold); color: #FFFDFB;"><span class="v2-fstage__name">CRM contacts</span><span class="v2-fstage__num">76</span></div>
+          <div class="v2-frate">▾ rated good today</div>
+          <div class="v2-fstage" style="--w:36%; background: color-mix(in oklab, var(--green) 55%, var(--card-bg));"><span class="v2-fstage__name">Good leads</span><span class="v2-fstage__num">4</span></div>
+          <div class="v2-fdivider">Spark pipeline · digital ads · current stock</div>
+          <div class="v2-fstage" style="--w:44%; background: color-mix(in oklab, var(--gold-dim) 75%, var(--card-bg));"><span class="v2-fstage__name">Sales visits / tours</span><span class="v2-fstage__num">25</span></div>
+          <div class="v2-fstage" style="--w:34%; background: color-mix(in oklab, var(--gold-dim) 55%, var(--card-bg));"><span class="v2-fstage__name">Hot / warm</span><span class="v2-fstage__num">16</span></div>
+          <div class="v2-fstage" style="--w:26%; background: color-mix(in oklab, var(--gold-dim) 38%, var(--card-bg));"><span class="v2-fstage__name">Reservations / contracts</span><span class="v2-fstage__num">4</span></div>
+        </div>
+        <div class="v2-fnote">Stage widths are schematic — the labeled figures carry the data. Google 1,270,224 impr / 4,342 clicks / 39 conv · Meta 170,237 / 2,750 link clicks / 90 leads. CRM contacts = 22 Google + 54 Meta; LinkedIn's 24 sit outside this funnel (no spend data). Good leads = 3 Google + 1 Meta, with 39 contacts still unworked. Pipeline stages are lifetime stock, not conversions of this month's leads.</div>
+      </div>
+
+      <!-- EFFICIENCY SCATTER -->
+      <div class="v2-card c4">
+        <div class="v2-card__title">Campaign efficiency <em>CPL × leads · bubble = spend</em></div>
+        <svg class="v2-svg" viewBox="0 0 400 268" role="img" aria-label="Scatter plot of cost per lead versus leads per campaign"><line x1="34" y1="236" x2="390" y2="236" stroke="var(--card-edge)" stroke-width="1"/><line x1="34" y1="18" x2="34" y2="236" stroke="var(--card-edge)" stroke-width="1"/><line x1="34" y1="176.1" x2="390" y2="176.1" stroke="var(--yellow)" stroke-width="1" stroke-dasharray="4 4" opacity="0.55"/><text x="38" y="186.1" text-anchor="start" font-size="8" fill="var(--yellow)">Meta CPL red line $220</text><text x="30" y="239.0" text-anchor="end" font-size="9" fill="var(--muted)">$0</text><text x="30" y="130.0" text-anchor="end" font-size="9" fill="var(--muted)">$400</text><text x="30" y="21.0" text-anchor="end" font-size="9" fill="var(--muted)">$800</text><text x="34.0" y="247" text-anchor="middle" font-size="8" fill="var(--muted)">0</text><text x="161.1" y="247" text-anchor="middle" font-size="8" fill="var(--muted)">10</text><text x="288.3" y="247" text-anchor="middle" font-size="8" fill="var(--muted)">20</text><text x="212" y="262" text-anchor="middle" font-size="9" fill="var(--muted)">leads / conversions this month →</text><circle cx="275.6" cy="168.8" r="12.0" fill="var(--gold)" opacity="0.85"><title>Meta Pros. KFM · 19 leads · $246.54 · $4,684.23 spend</title></circle><text x="275.6" y="152.8" text-anchor="middle" font-size="8.5" font-weight="700" fill="var(--gold-soft)">Pros. KFM · $247</text><circle cx="364.6" cy="188.5" r="11.9" fill="var(--gold)" opacity="0.85"><title>Meta Pros. Sarasota · 26 leads · $174.34 · $4,532.83 spend</title></circle><text x="364.6" y="212.5" text-anchor="end" font-size="8.5" font-weight="700" fill="var(--gold-soft)">Pros. Sarasota · $174</text><circle cx="123.0" cy="60.9" r="11.8" fill="color-mix(in oklab, var(--cream) 55%, transparent)" opacity="0.85"><title>Google Competitors · 7 leads · $642.68 · $4,498.74 spend</title></circle><text x="137.0" y="64.9" text-anchor="start" font-size="8.5" fill="var(--cream)">G Competitors · $643</text><circle cx="123.0" cy="93.4" r="11.0" fill="color-mix(in oklab, var(--cream) 55%, transparent)" opacity="0.85"><title>Google NB Sarasota · 7 leads · $523.16 · $3,662.14 spend</title></circle><text x="135.0" y="97.4" text-anchor="start" font-size="8.5" fill="var(--cream)">G NB Sarasota · $523</text><circle cx="84.9" cy="23.8" r="10.3" fill="color-mix(in oklab, var(--cream) 55%, transparent)" opacity="0.85"><title>Google NB US · 4 leads · $778.79 · $3,115.17 spend</title></circle><text x="96.9" y="27.8" text-anchor="start" font-size="8.5" fill="var(--cream)">G NB US · $779</text><circle cx="110.3" cy="126.4" r="9.5" fill="color-mix(in oklab, var(--cream) 55%, transparent)" opacity="0.85"><title>Google NB US-FL · 6 leads · $402.18 · $2,413.07 spend</title></circle><text x="122.3" y="138.4" text-anchor="start" font-size="8.5" fill="var(--cream)">G NB US-FL · $402</text><circle cx="199.3" cy="191.3" r="9.1" fill="var(--gold)" opacity="0.85"><title>Meta Brochure – KFM · 13 leads · $164.01 · $2,132.18 spend</title></circle><text x="209.3" y="195.3" text-anchor="start" font-size="8.5" font-weight="700" fill="var(--gold-soft)">Brochure – KFM · $164</text><circle cx="97.6" cy="121.5" r="9.0" fill="color-mix(in oklab, var(--cream) 55%, transparent)" opacity="0.85"><title>Google Display · 5 leads · $420.13 · $2,100.67 spend</title></circle><text x="97.6" y="109.5" text-anchor="middle" font-size="8.5" fill="var(--cream)">G Display · $420</text><circle cx="148.4" cy="172.4" r="9.0" fill="var(--gold)" opacity="0.85"><title>Meta Brochure · 9 leads · $233.28 · $2,099.49 spend</title></circle><text x="148.4" y="159.4" text-anchor="middle" font-size="8.5" font-weight="700" fill="var(--gold-soft)">Brochure · $233</text><circle cx="135.7" cy="205.5" r="6.9" fill="var(--gold)" opacity="0.85"><title>Meta Remarketing · 8 leads · $111.95 · $895.57 spend</title></circle><text x="126.7" y="208.5" text-anchor="end" font-size="8.5" font-weight="700" fill="var(--gold-soft)">Remarketing · $112</text><circle cx="161.1" cy="219.6" r="6.2" fill="color-mix(in oklab, var(--cream) 55%, transparent)" opacity="0.85"><title>Google Branded · 10 leads · $60.18 · $601.80 spend</title></circle><text x="171.1" y="223.6" text-anchor="start" font-size="8.5" fill="var(--cream)">G Branded · $60</text></svg>
+        <div class="v2-legend" style="margin-top:0.3rem; display:flex; flex-wrap:wrap; gap:0.9rem;">
+          <span class="v2-legend__row"><span class="v2-swatch" style="background:var(--gold)"></span>Meta</span>
+          <span class="v2-legend__row"><span class="v2-swatch" style="background:color-mix(in oklab, var(--cream) 55%, transparent)"></span>Google (G)</span>
+          <span class="v2-legend__row" style="white-space:normal;"><small>Down + right = cheap volume. <b style="color:var(--red)">$0-result outliers, not plotted:</b> YouTube Prospecting $1,497.97 and Remarketing $111.01 (0 clicks); Meta KFM Segmented $75.49 (0 leads).</small></span>
+        </div>
+      </div>
+
+      <!-- SPEND DONUT -->
+      <div class="v2-card c3">
+        <div class="v2-card__title">Spend by channel <em>Google + Meta</em></div>
+        <div class="v2-donutwrap">
+          <div class="v2-donut" style="--d-bg: conic-gradient(color-mix(in oklab, var(--cream) 55%, transparent) 0 55.52%, var(--gold) 55.52% 100%);">
+            <div class="v2-donut__center"><b>$32.4K</b></div>
+          </div>
+          <div class="v2-legend">
+            <div class="v2-legend__row"><span class="v2-swatch" style="background:color-mix(in oklab, var(--cream) 55%, transparent)"></span>Google $18,001</div>
+            <div class="v2-legend__row"><span class="v2-swatch" style="background:var(--gold)"></span>Meta $14,420</div>
+            <div class="v2-legend__row"><small>Google: 39 conv · 22 CRM · 3 good</small></div>
+            <div class="v2-legend__row"><small>Meta: 90 leads · 54 CRM · 1 good</small></div>
+          </div>
+        </div>
+        <div class="viz-note">LinkedIn, Microsoft/Bing, print and WSJ spend are not in the dashboard.</div>
+      </div>
+
+      <!-- GAUGES -->
+      <div class="v2-card c3">
+        <div class="v2-card__title">Against thresholds <em>one per section</em></div>
+        <div class="v2-gauges" style="grid-template-columns: 1fr 1fr 1fr;">
+          <div><div class="v2-gauge__ring" style="--g-pct:50; --g-color:var(--yellow);"><span class="v2-gauge__val">Watch</span></div><div class="v2-gauge__label">Summary</div><div class="v2-gauge__target">5 watch · 1 fix</div></div>
+          <div><div class="v2-gauge__ring" style="--g-pct:58; --g-color:var(--yellow);"><span class="v2-gauge__val">$251</span></div><div class="v2-gauge__label">Blended CPL</div><div class="v2-gauge__target">green ≤$250 · red &gt;$400</div></div>
+          <div><div class="v2-gauge__ring" style="--g-pct:75; --g-color:var(--yellow);"><span class="v2-gauge__val">0.90%</span></div><div class="v2-gauge__label">Google conv</div><div class="v2-gauge__target">green ≥1.2% · red &lt;0.8%</div></div>
+          <div><div class="v2-gauge__ring" style="--g-pct:62; --g-color:var(--yellow);"><span class="v2-gauge__val">$160</span></div><div class="v2-gauge__label">Meta CPL</div><div class="v2-gauge__target">green &lt;$150 · red &gt;$220</div></div>
+          <div><div class="v2-gauge__ring" style="--g-pct:38; --g-color:var(--yellow);"><span class="v2-gauge__val">+7.6%</span></div><div class="v2-gauge__label">Search impr.</div><div class="v2-gauge__target">green ≥ +20%</div></div>
+          <div><div class="v2-gauge__ring" style="--g-pct:56.3; --g-color:var(--red);"><span class="v2-gauge__val">56%</span></div><div class="v2-gauge__label">Answer rate</div><div class="v2-gauge__target">red &lt;70% · green &gt;85%</div></div>
+        </div>
+      </div>
+
+      <!-- AUDIENCE TRIO -->
+      <div class="v2-card c3">
+        <div class="v2-card__title">Who's clicking <em>Google Ads</em></div>
+        <div class="v2-trio">
+          <div><div class="v2-donut v2-donut--sm" style="--d-bg: conic-gradient(var(--gold) 0 58.6%, color-mix(in oklab, var(--cream) 55%, transparent) 58.6% 94.8%, color-mix(in oklab, var(--muted) 30%, transparent) 94.8% 100%); margin:0 auto;"><div class="v2-donut__center"><b>58.6%</b></div></div>
+            <div class="v2-trio__label">Device</div><div class="v2-trio__sub">desktop 58.6 · mobile 36.2 · tablet 5.2</div></div>
+          <div><div class="v2-donut v2-donut--sm" style="--d-bg: conic-gradient(var(--gold) 0 54.6%, color-mix(in oklab, var(--cream) 55%, transparent) 54.6% 100%); margin:0 auto;"><div class="v2-donut__center"><b>54.6%</b></div></div>
+            <div class="v2-trio__label">Gender</div><div class="v2-trio__sub">male 54.6 · female 45.4</div></div>
+          <div><div class="v2-donut v2-donut--sm" style="--d-bg: conic-gradient(var(--gold) 0 79.7%, color-mix(in oklab, var(--cream) 55%, transparent) 79.7% 100%); margin:0 auto;"><div class="v2-donut__center"><b>79.7%</b></div></div>
+            <div class="v2-trio__label">Buyers</div><div class="v2-trio__sub">non-agents 79.7 · agents 20.3</div></div>
+        </div>
+        <div class="viz-note">Device split is conversions; gender and buyers are clicks. Age is a ranking only: 65+ › 55–64 › 45–54 › 35–44 › 25–34.</div>
+      </div>
+
+      <!-- TRAFFIC MIX -->
+      <div class="v2-card c3">
+        <div class="v2-card__title">Site traffic by source <em>share of sessions</em></div>
+        <div class="v2-stack"><span style="width:29.3%; background: var(--gold);"></span><span style="width:22.3%; background: color-mix(in oklab, var(--gold) 70%, var(--card-bg));"></span><span style="width:21.0%; background: color-mix(in oklab, var(--gold) 48%, var(--card-bg));"></span><span style="width:9.6%; background: color-mix(in oklab, var(--gold) 34%, var(--card-bg));"></span><span style="width:6.4%; background: color-mix(in oklab, var(--gold) 22%, var(--card-bg));"></span><span style="width:5.7%; background: color-mix(in oklab, var(--gold) 12%, var(--card-bg));"></span></div>
+        <div class="v2-legend"><div class="v2-legend__row"><span class="v2-swatch" style="background:var(--gold)"></span>Google paid <small>29.3%</small></div><div class="v2-legend__row"><span class="v2-swatch" style="background:color-mix(in oklab, var(--gold) 70%, var(--card-bg))"></span>Direct <small>22.3%</small></div><div class="v2-legend__row"><span class="v2-swatch" style="background:color-mix(in oklab, var(--gold) 48%, var(--card-bg))"></span>Meta paid <small>21.0%</small></div><div class="v2-legend__row"><span class="v2-swatch" style="background:color-mix(in oklab, var(--gold) 34%, var(--card-bg))"></span>Google organic <small>9.6%</small></div><div class="v2-legend__row"><span class="v2-swatch" style="background:color-mix(in oklab, var(--gold) 22%, var(--card-bg))"></span>Microsoft paid <small>6.4%</small></div><div class="v2-legend__row"><span class="v2-swatch" style="background:color-mix(in oklab, var(--gold) 12%, var(--card-bg))"></span>Other <small>5.7%</small></div></div>
+        <div class="viz-note">Google sessions 4,533 (vs 4,132); <b style="color:var(--red)">1,803 (40%) from Display</b>, 0 good leads. Paid 47.6% · organic 10.7%.</div>
+      </div>
+
+      <!-- SEARCH -->
+      <div class="v2-card c4">
+        <div class="v2-card__title">Organic search <em>238 queries · 9.8K impr</em></div>
+        <div style="font-size:0.6rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--muted);">Average position · lower is better</div>
+        <div class="v2-dumbbell">
+          <div class="v2-dumbbell__axis"></div>
+          <div class="v2-dumbbell__seg" style="left:45.0%; width:16.25%;"></div>
+          <div class="v2-dumbbell__pt" style="left:45.0%; background:color-mix(in oklab, var(--cream) 55%, transparent);"></div>
+          <div class="v2-dumbbell__pt" style="left:61.25%; background:var(--red);"></div>
+          <div class="v2-dumbbell__cap" style="left:45.0%; top:0;">≈13.6 was</div>
+          <div class="v2-dumbbell__cap" style="left:61.25%; top:33px; color:var(--red);">14.9 now</div>
+        </div>
+        <div class="viz-bar"><span class="viz-bar__name">mira mar sarasota</span><span class="viz-bar__track"><span class="viz-bar__fill" style="width:100.0%"></span></span><span class="viz-bar__value">1,208 · 33c</span></div><div class="viz-bar"><span class="viz-bar__name">miramar sarasota</span><span class="viz-bar__track"><span class="viz-bar__fill" style="width:56.9%"></span></span><span class="viz-bar__value">687 · 21c</span></div><div class="viz-bar"><span class="viz-bar__name">mira mar</span><span class="viz-bar__track"><span class="viz-bar__fill" style="width:52.3%"></span></span><span class="viz-bar__value">632 · 11c</span></div><div class="viz-bar"><span class="viz-bar__name">mira mar residences</span><span class="viz-bar__track"><span class="viz-bar__fill" style="width:12.5%"></span></span><span class="viz-bar__value">151 · 11c</span></div><div class="viz-bar"><span class="viz-bar__name">mira mar residences sarasota</span><span class="viz-bar__track"><span class="viz-bar__fill" style="width:10.0%"></span></span><span class="viz-bar__value">121 · 4c</span></div>
+        <div class="viz-note">Impressions ▲ 7.6%, queries ▼ 20.9%. "mira mar sarasota" clicks 21 → 33. Wrong-city Miramar, FL apartment queries still earn impressions with zero clicks. Prior position derived from Looker's delta.</div>
+      </div>
+
+      <!-- CREATIVE LEADERBOARD -->
+      <div class="v2-card c4">
+        <div class="v2-card__title">Meta creative leaderboard <em>leads · leads per 1K views</em></div>
+        <div class="cr-mini"><div class="cr-tile"><div class="cr-tile__name"><small>Video</small>Sarasota Lifestyle</div><div class="cr-tile__nums"><span class="cr-tile__leads">36</span><span class="cr-tile__unit">leads</span></div><div class="cr-tile__meta"><b>0.75</b> leads / 1K views</div></div><div class="cr-tile"><div class="cr-tile__name"><small>Image</small>Building</div><div class="cr-tile__nums"><span class="cr-tile__leads">23</span><span class="cr-tile__unit">leads</span></div><div class="cr-tile__meta">image ad · no video views</div></div><div class="cr-tile"><div class="cr-tile__name"><small>Video</small>Amenity</div><div class="cr-tile__nums"><span class="cr-tile__leads">16</span><span class="cr-tile__unit">leads</span></div><div class="cr-tile__meta"><b>0.79</b> leads / 1K views</div></div><div class="cr-tile cr-tile--new cr-tile--lead"><span class="cr-badge">NEW</span><div class="cr-tile__name"><small>Video</small>Day at Mira Mar</div><div class="cr-tile__nums"><span class="cr-tile__leads">7</span><span class="cr-tile__unit">leads</span></div><div class="cr-tile__meta"><b>1.35</b> leads / 1K views</div></div><div class="cr-tile"><div class="cr-tile__name"><small>Video</small>Last Great Address</div><div class="cr-tile__nums"><span class="cr-tile__leads">2</span><span class="cr-tile__unit">leads</span></div><div class="cr-tile__meta"><b>0.97</b> leads / 1K views</div></div><div class="cr-tile"><div class="cr-tile__name"><small>Video</small>Patrick</div><div class="cr-tile__nums"><span class="cr-tile__leads">2</span><span class="cr-tile__unit">leads</span></div><div class="cr-tile__meta"><b>0.97</b> leads / 1K views</div></div></div>
+        <div class="viz-note"><b style="color:var(--gold-soft)">Day at Mira Mar (new) converts at 1.35 per 1K views</b> vs Lifestyle 0.75 and Amenity 0.79. The three other new cuts (Yoga, Yoga v2, Day v2) drew 224 views combined and no leads: untested, not failed. No per-ad spend is reported.</div>
+      </div>
+
+      <!-- CRM DAILY -->
+      <div class="v2-card c4">
+        <div class="v2-card__title">New CRM contacts by day <em>138 incl. back-fill · 125 new demand</em></div>
+        <svg class="spark-svg" viewBox="0 0 400 190" role="img" aria-label="Daily new Spark contacts, Oct 5 to Nov 3"><line x1="26" y1="164" x2="392" y2="164" stroke="var(--card-edge)" stroke-width="1"/><text x="20" y="167.0" text-anchor="end" font-size="9" fill="var(--muted)">0</text><text x="20" y="98.0" text-anchor="end" font-size="9" fill="var(--muted)">8</text><line x1="26" y1="95.0" x2="392" y2="95.0" stroke="var(--card-edge)" stroke-width="0.6" stroke-dasharray="2 4"/><text x="20" y="29.0" text-anchor="end" font-size="9" fill="var(--muted)">16</text><line x1="26" y1="26.0" x2="392" y2="26.0" stroke="var(--card-edge)" stroke-width="0.6" stroke-dasharray="2 4"/><rect x="27.8" y="138.1" width="8.5" height="25.9" rx="2" fill="var(--gold)"><title>Oct 5 · 3 contacts</title></rect><rect x="40.0" y="146.8" width="8.5" height="17.2" rx="2" fill="var(--gold)"><title>Oct 6 · 2 contacts</title></rect><rect x="52.2" y="146.8" width="8.5" height="17.2" rx="2" fill="var(--gold)"><title>Oct 7 · 2 contacts</title></rect><rect x="64.4" y="155.4" width="8.5" height="8.6" rx="2" fill="var(--gold)"><title>Oct 8 · 1 contacts</title></rect><rect x="76.6" y="138.1" width="8.5" height="25.9" rx="2" fill="var(--gold)"><title>Oct 9 · 3 contacts</title></rect><rect x="88.8" y="129.5" width="8.5" height="34.5" rx="2" fill="var(--gold)"><title>Oct 10 · 4 contacts</title></rect><rect x="101.0" y="129.5" width="8.5" height="34.5" rx="2" fill="var(--gold)"><title>Oct 11 · 4 contacts</title></rect><rect x="113.2" y="112.2" width="8.5" height="51.8" rx="2" fill="var(--gold)"><title>Oct 12 · 6 contacts</title></rect><rect x="125.4" y="129.5" width="8.5" height="34.5" rx="2" fill="var(--gold)"><title>Oct 13 · 4 contacts</title></rect><rect x="137.6" y="164.0" width="8.5" height="0.0" rx="2" fill="var(--gold)"><title>Oct 14 · 0 contacts</title></rect><rect x="149.8" y="34.6" width="8.5" height="129.4" rx="2" fill="var(--yellow)"><title>Oct 15 · 15 contacts · mostly the 13-lead back-fill</title></rect><text x="154.1" y="20.6" text-anchor="middle" font-size="9" fill="var(--yellow)">Oct 15 · 15</text><text x="154.1" y="30.6" text-anchor="middle" font-size="8" fill="var(--yellow)">13 back-filled</text><rect x="162.0" y="129.5" width="8.5" height="34.5" rx="2" fill="var(--gold)"><title>Oct 16 · 4 contacts</title></rect><rect x="174.2" y="138.1" width="8.5" height="25.9" rx="2" fill="var(--gold)"><title>Oct 17 · 3 contacts</title></rect><rect x="186.4" y="138.1" width="8.5" height="25.9" rx="2" fill="var(--gold)"><title>Oct 18 · 3 contacts</title></rect><rect x="198.6" y="129.5" width="8.5" height="34.5" rx="2" fill="var(--gold)"><title>Oct 19 · 4 contacts</title></rect><rect x="210.8" y="146.8" width="8.5" height="17.2" rx="2" fill="var(--gold)"><title>Oct 20 · 2 contacts</title></rect><rect x="223.0" y="146.8" width="8.5" height="17.2" rx="2" fill="var(--gold)"><title>Oct 21 · 2 contacts</title></rect><rect x="235.2" y="129.5" width="8.5" height="34.5" rx="2" fill="var(--gold)"><title>Oct 22 · 4 contacts</title></rect><rect x="247.4" y="120.9" width="8.5" height="43.1" rx="2" fill="var(--gold)"><title>Oct 23 · 5 contacts</title></rect><rect x="259.6" y="155.4" width="8.5" height="8.6" rx="2" fill="var(--gold)"><title>Oct 24 · 1 contacts</title></rect><rect x="271.8" y="112.2" width="8.5" height="51.8" rx="2" fill="var(--gold)"><title>Oct 25 · 6 contacts</title></rect><rect x="284.0" y="129.5" width="8.5" height="34.5" rx="2" fill="var(--gold)"><title>Oct 26 · 4 contacts</title></rect><rect x="296.2" y="112.2" width="8.5" height="51.8" rx="2" fill="var(--gold)"><title>Oct 27 · 6 contacts</title></rect><rect x="308.4" y="86.4" width="8.5" height="77.6" rx="2" fill="var(--gold)"><title>Oct 28 · 9 contacts</title></rect><rect x="320.6" y="146.8" width="8.5" height="17.2" rx="2" fill="var(--gold)"><title>Oct 29 · 2 contacts</title></rect><rect x="332.8" y="103.6" width="8.5" height="60.4" rx="2" fill="var(--gold)"><title>Oct 30 · 7 contacts</title></rect><rect x="345.0" y="112.2" width="8.5" height="51.8" rx="2" fill="var(--gold)"><title>Oct 31 · 6 contacts</title></rect><rect x="357.2" y="112.2" width="8.5" height="51.8" rx="2" fill="var(--gold)"><title>Nov 1 · 6 contacts</title></rect><rect x="369.4" y="129.5" width="8.5" height="34.5" rx="2" fill="var(--gold)"><title>Nov 2 · 4 contacts</title></rect><rect x="381.6" y="26.0" width="8.5" height="138.0" rx="2" fill="var(--gold-soft)"><title>Nov 3 · 16 contacts · 8 LinkedIn + 8 website/ads</title></rect><text x="390.2" y="12.0" text-anchor="end" font-size="9" fill="var(--gold-soft)">Nov 3 · 16</text><text x="390.2" y="22.0" text-anchor="end" font-size="8" fill="var(--gold-soft)">8 LinkedIn</text><text x="26.0" y="182" text-anchor="start" font-size="9" fill="var(--muted)">Oct 5</text><text x="154.1" y="182" text-anchor="middle" font-size="9" fill="var(--muted)">Oct 15</text><text x="276.1" y="182" text-anchor="middle" font-size="9" fill="var(--muted)">Oct 25</text><text x="392.0" y="182" text-anchor="end" font-size="9" fill="var(--muted)">Nov 3</text></svg>
+        <div class="viz-note">Oct 15's 15 is mostly the 13-lead back-fill, not new demand. Nov 3's 16 is real: 8 LinkedIn + 8 website/ads. Weekly: 19 · 35 · 24 · 40 · 20 (2 days).</div>
+      </div>
+
+      <!-- PIPELINE FOOTER -->
+      <div class="v2-card c12">
+        <div class="v2-pipe">
+          <div class="v2-pipe__stat"><div class="v2-pipe__num">12</div><div class="v2-pipe__label">Good leads · was 10</div></div>
+          <div class="v2-pipe__stat"><div class="v2-pipe__num v2-pipe__num--alert">39</div><div class="v2-pipe__label">Unworked · was 0</div></div>
+          <div class="v2-pipe__stat"><div class="v2-pipe__num">24</div><div class="v2-pipe__label">LinkedIn · 1 week</div></div>
+          <div class="v2-pipe__stat"><div class="v2-pipe__num">16</div><div class="v2-pipe__label">Hot / warm · stock</div></div>
+          <div class="v2-pipe__sep"></div>
+          <div class="v2-pipe__stat"><div class="v2-pipe__num">16</div><div class="v2-pipe__label">Calls · was 49 · GA 11</div></div>
+          <div class="v2-pipe__stat"><div class="v2-pipe__num v2-pipe__num--alert">7</div><div class="v2-pipe__label">Missed · 56% answered</div></div>
+          <div class="v2-pipe__sep"></div>
+          <div style="min-width:260px; flex:1;"><div class="v2-pipe__label" style="margin:0 0 0.3rem; text-align:left;">Call timeline · 30 days · <span style="color:var(--green)">answered</span> / <span style="color:var(--red)">missed</span> · 18 quiet days · 0 tagged as leads</div><div style="display:grid; grid-template-columns: repeat(30, 1fr); gap:2px;"><span title="Oct 5 · no calls" style="display:block; height:14px; border-radius:3px; background: color-mix(in oklab, var(--muted) 14%, transparent);"></span><span title="Oct 6 · no calls" style="display:block; height:14px; border-radius:3px; background: color-mix(in oklab, var(--muted) 14%, transparent);"></span><span title="Oct 7 · no calls" style="display:block; height:14px; border-radius:3px; background: color-mix(in oklab, var(--muted) 14%, transparent);"></span><span title="Oct 8 · 1 answered · avg 45s" style="display:block; height:14px; border-radius:3px; background: var(--green);"></span><span title="Oct 9 · no calls" style="display:block; height:14px; border-radius:3px; background: color-mix(in oklab, var(--muted) 14%, transparent);"></span><span title="Oct 10 · no calls" style="display:block; height:14px; border-radius:3px; background: color-mix(in oklab, var(--muted) 14%, transparent);"></span><span title="Oct 11 · 1 answered · avg 105s" style="display:block; height:14px; border-radius:3px; background: var(--green);"></span><span title="Oct 12 · no calls" style="display:block; height:14px; border-radius:3px; background: color-mix(in oklab, var(--muted) 14%, transparent);"></span><span title="Oct 13 · 1 missed · avg 27s" style="display:block; height:14px; border-radius:3px; background: var(--red);"></span><span title="Oct 14 · 2 answered + 1 missed · avg 45s" style="display:block; height:14px; border-radius:3px; background: linear-gradient(90deg, var(--green) 66.7%, var(--red) 66.7%);"></span><span title="Oct 15 · no calls" style="display:block; height:14px; border-radius:3px; background: color-mix(in oklab, var(--muted) 14%, transparent);"></span><span title="Oct 16 · 1 missed · avg 4s" style="display:block; height:14px; border-radius:3px; background: var(--red);"></span><span title="Oct 17 · 1 missed · avg 10s" style="display:block; height:14px; border-radius:3px; background: var(--red);"></span><span title="Oct 18 · no calls" style="display:block; height:14px; border-radius:3px; background: color-mix(in oklab, var(--muted) 14%, transparent);"></span><span title="Oct 19 · no calls" style="display:block; height:14px; border-radius:3px; background: color-mix(in oklab, var(--muted) 14%, transparent);"></span><span title="Oct 20 · no calls" style="display:block; height:14px; border-radius:3px; background: color-mix(in oklab, var(--muted) 14%, transparent);"></span><span title="Oct 21 · 1 answered + 1 missed · avg 1192s" style="display:block; height:14px; border-radius:3px; background: linear-gradient(90deg, var(--green) 50.0%, var(--red) 50.0%);"></span><span title="Oct 22 · 1 missed · avg 34s" style="display:block; height:14px; border-radius:3px; background: var(--red);"></span><span title="Oct 23 · no calls" style="display:block; height:14px; border-radius:3px; background: color-mix(in oklab, var(--muted) 14%, transparent);"></span><span title="Oct 24 · no calls" style="display:block; height:14px; border-radius:3px; background: color-mix(in oklab, var(--muted) 14%, transparent);"></span><span title="Oct 25 · no calls" style="display:block; height:14px; border-radius:3px; background: color-mix(in oklab, var(--muted) 14%, transparent);"></span><span title="Oct 26 · 1 missed · avg 3s" style="display:block; height:14px; border-radius:3px; background: var(--red);"></span><span title="Oct 27 · no calls" style="display:block; height:14px; border-radius:3px; background: color-mix(in oklab, var(--muted) 14%, transparent);"></span><span title="Oct 28 · 1 answered · avg 39s" style="display:block; height:14px; border-radius:3px; background: var(--green);"></span><span title="Oct 29 · no calls" style="display:block; height:14px; border-radius:3px; background: color-mix(in oklab, var(--muted) 14%, transparent);"></span><span title="Oct 30 · 1 answered · avg 185s" style="display:block; height:14px; border-radius:3px; background: var(--green);"></span><span title="Oct 31 · 2 answered · avg 65s" style="display:block; height:14px; border-radius:3px; background: var(--green);"></span><span title="Nov 1 · no calls" style="display:block; height:14px; border-radius:3px; background: color-mix(in oklab, var(--muted) 14%, transparent);"></span><span title="Nov 2 · no calls" style="display:block; height:14px; border-radius:3px; background: color-mix(in oklab, var(--muted) 14%, transparent);"></span><span title="Nov 3 · no calls" style="display:block; height:14px; border-radius:3px; background: color-mix(in oklab, var(--muted) 14%, transparent);"></span></div><div style="display:flex; justify-content:space-between; font-size:0.52rem; color:var(--muted-soft); margin-top:0.2rem;"><span>Oct 5</span><span>Oct 19</span><span>Nov 3</span></div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<script>
+  // Visualization modal
+  (function() {
+    const trigger = document.getElementById('vizTrigger');
+    const overlay = document.getElementById('vizOverlay');
+    const closeBtn = document.getElementById('vizClose');
+    if (!trigger || !overlay) return;
+    function open() {
+      overlay.classList.remove('is-open');
+      void overlay.offsetWidth; // restart bar animations
+      overlay.classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+      closeBtn.focus();
+    }
+    function close() {
+      overlay.classList.remove('is-open');
+      document.body.style.overflow = '';
+      trigger.focus();
+    }
+    trigger.addEventListener('click', open);
+    closeBtn.addEventListener('click', close);
+    overlay.addEventListener('click', function(e) { if (e.target === overlay) close(); });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && overlay.classList.contains('is-open')) close();
+    });
+  })();
+</script>
+</body>
+</html>

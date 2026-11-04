@@ -1,0 +1,1316 @@
+{
+  "id": "2026-11-03",
+  "label": "Oct 5 – Nov 3, 2026",
+  "period_start": "2026-10-05",
+  "period_end": "2026-11-03",
+  "period_days": 30,
+  "compare_to": "prior-30 (Sep 5 – Oct 4, 2026)",
+  "compare_period_days": 30,
+  "compare_note": "Compared against the immediately preceding 30 days (Sep 5 – Oct 4), pulled fresh from the same dashboards for this edition — not against the Sep 13 report, whose Aug 14 – Sep 13 window overlaps. Equal-length windows, so raw volume deltas read cleanly.",
+  "period_mismatch_note": null,
+  "generated_at": "2026-11-04",
+  "cadence_note": "Requested as a last-30-days read. October 1 is when the monthly budget stepped up, so this window is the first full 30 days at the higher spend; the comparison window is mostly pre-increase (Sep 5 – Sep 30) plus Oct 1–4.",
+  "spend_scope_note": "Spend covers Google Ads and Meta only — the two platforms connected to the reporting dashboard. LinkedIn (launched Oct 28), Microsoft/Bing search (6.4% of site traffic), print and Wall Street Journal placements are not in this total, so it will read lower than the full monthly media budget.",
+  "status": {
+    "executive_summary": "yellow",
+    "budget_roi": "yellow",
+    "google_ads": "yellow",
+    "meta_ads": "yellow",
+    "website_organic": "yellow",
+    "lead_pipeline": "red"
+  },
+  "summary": {
+    "total_spend": 32420,
+    "total_leads": 129,
+    "cost_per_lead": 251,
+    "total_leads_note": "Platform-reported: 39 Google Ads conversions + 90 Meta leads. Spark (the CRM, the source of truth for real people) recorded 125 genuinely new non-agent contacts in the same 30 days (138 before removing the Oct 15 back-fill), 100 of them from paid Google, Meta or LinkedIn.",
+    "spark_verified_leads": 125,
+    "spark_paid_leads": 100,
+    "good_leads": 12,
+    "good_leads_prev": 10,
+    "google_ctr_pct": 7.68,
+    "google_ctr_note": "Search-only click-through rate: 2,382 clicks on 31,005 search impressions. Blended with Display and YouTube it is 0.34%.",
+    "answer_rate_pct": 56,
+    "answer_rate_note": "9 of 16 calls answered = 56.3% (CallRail tiles and daily table agree).",
+    "narrative": "The first full month at the higher budget bought more people, not cheaper ones. Google and Meta spend rose 33% to $32.4K and the CRM recorded 125 genuinely new contacts against 80 the month before (+56%), with paid Google up 38% (16 to 22) and Meta up 32% (41 to 54). LinkedIn, live only since October 28, added 24 more in its first week. Cost per CRM-verified lead from Google and Meta held flat at about $427, so the extra money scaled volume at the same price rather than buying efficiency. Quality is where the month falls short: 12 contacts are rated good today versus 10, and Meta produced just 1 of them from 62. Paid Google produced 3 and the sales center 3. 39 contacts from this window have not been worked yet, so those quality numbers will move. On creative, the new 'Day at Mira Mar' video earned 7 leads from 5,192 views, the best rate of any video in the account, while the Yoga cuts never got enough delivery to judge. Two lines spent with nothing to show: YouTube ($1,609, zero clicks) and Display ($2,101, zero good leads). Phone calls fell from 49 to 16, almost all on Google, and the answer rate stayed at 56%."
+  },
+  "spend_by_channel": {
+    "google_ads": 18000.57,
+    "meta_instagram": 14419.79
+  },
+  "spend_by_channel_prev": {
+    "google_ads": 14331.69,
+    "meta_instagram": 10125.14
+  },
+  "budget_roi": {
+    "total_spend": 32420.36,
+    "total_spend_prev": 24456.83,
+    "total_leads": 129,
+    "total_leads_prev": 96,
+    "cost_per_lead": 251.32,
+    "cost_per_lead_prev": 254.76,
+    "cost_per_spark_lead_google_meta": 426.58,
+    "cost_per_spark_lead_google_meta_prev": 429.07,
+    "cost_per_good_lead_google_meta": 8105.09,
+    "cost_per_good_lead_google_meta_prev": 8152.28,
+    "cost_per_good_lead_note": "Good = currently rated Warm, Hot, Referral, Reservation Holder or Contract Holder in Spark. Google + Meta produced 4 good leads this window (3 Google, 1 Meta) vs 3 last window (2 Google, 1 Meta). 39 of this window's contacts are still unworked (New/Lead), so this figure will improve as sales works the list.",
+    "youtube_spend": 1608.98,
+    "youtube_spend_prev": 974.95,
+    "youtube_note": "YouTube (Prospecting + Remarketing) cost $1,608.98 this window and $974.95 last window, with 0 clicks and 0 conversions in both.",
+    "display_spend": 2100.67,
+    "display_spend_prev": 1662.4,
+    "cpl_by_campaign": [
+      {
+        "campaign": "Google Search_Branded",
+        "cpl": 60.18,
+        "channel": "google",
+        "note": "10 conversions on $601.80 — branded search, captures people already looking for Mira Mar"
+      },
+      {
+        "campaign": "Meta Remarketing",
+        "cpl": 111.95,
+        "channel": "meta",
+        "note": "8 website leads on $895.57"
+      },
+      {
+        "campaign": "Meta Brochure Download – Key Feeder Market",
+        "cpl": 164.01,
+        "channel": "meta",
+        "note": "13 website leads on $2,132.18"
+      },
+      {
+        "campaign": "Meta Prospecting – Sarasota (New LP)",
+        "cpl": 174.34,
+        "channel": "meta",
+        "note": "26 website leads on $4,532.83 — Meta's volume leader"
+      },
+      {
+        "campaign": "Meta Brochure Download",
+        "cpl": 233.28,
+        "channel": "meta",
+        "note": "9 website leads on $2,099.49 (was 13 at $125.61)"
+      },
+      {
+        "campaign": "Meta Prospecting – Key Feeder Market (New LP)",
+        "cpl": 246.54,
+        "channel": "meta",
+        "note": "19 website leads on $4,684.23 — biggest Meta budget"
+      },
+      {
+        "campaign": "Google Search_Non-Branded_US_FL Keywords",
+        "cpl": 402.18,
+        "channel": "google",
+        "note": "6 conversions on $2,413.07 (new campaign, launched end of September)"
+      },
+      {
+        "campaign": "Google Display_Placements_Feeder",
+        "cpl": 420.13,
+        "channel": "google",
+        "note": "5 conversions on $2,100.67; 0 good leads in Spark"
+      },
+      {
+        "campaign": "Google Search_Non-Branded_Sarasota",
+        "cpl": 523.16,
+        "channel": "google",
+        "note": "7 conversions on $3,662.14 (was 12.5 at $446.84)"
+      },
+      {
+        "campaign": "Google Search_Competitors",
+        "cpl": 642.68,
+        "channel": "google",
+        "note": "7 conversions on $4,498.74 — the largest Google line"
+      },
+      {
+        "campaign": "Google Search_Non-Branded_US",
+        "cpl": 778.79,
+        "channel": "google",
+        "note": "4 conversions on $3,115.17 (was 8.5 at $233.81)"
+      }
+    ],
+    "cost_per_spark_lead_google": 818.21,
+    "cost_per_spark_lead_google_prev": 895.73,
+    "cost_per_spark_lead_meta": 267.03,
+    "cost_per_spark_lead_meta_prev": 246.95,
+    "cost_per_spark_lead_note": "Spend ÷ Spark contacts from that channel (new demand, back-fill removed). This is the CRM-verified cost per real person, higher than platform CPL because platforms count duplicates, calls and thank-you-page re-fires."
+  },
+  "google_ads": {
+    "total_cost": 18000.57,
+    "total_cost_prev": 14331.69,
+    "conversions": 39,
+    "conversions_prev": 40,
+    "cost_per_lead": 461.55,
+    "cost_per_lead_prev": 358.29,
+    "clicks": 4342,
+    "clicks_prev": 4036,
+    "impressions": 1270224,
+    "impressions_prev": 883652,
+    "ctr_pct": 0.34,
+    "ctr_pct_prev": 0.46,
+    "conv_rate_pct": 0.9,
+    "conv_rate_pct_prev": 0.99,
+    "cpc": 4.15,
+    "cpc_prev": 3.55,
+    "impr_share_pct": 0.35,
+    "impr_share_pct_prev": 0.42,
+    "form_submissions": 28,
+    "form_submissions_prev": 36,
+    "phone_call_leads": 11,
+    "phone_call_leads_prev": 29,
+    "spark_paid_google_leads": 22,
+    "spark_paid_google_leads_prev": 16,
+    "spark_note": "Spark counts 22 new paid-Google contacts this window (26 before removing 4 Oct 15 back-fills) vs 16 last window: +38%. The Google Ads conversion count (39) runs higher than Spark because it also counts phone-call clicks and fires on both form submit and the thank-you page (flagged to the ads team Oct 13).",
+    "campaign_detail": [
+      {
+        "campaign": "Search_Competitors",
+        "impressions": 8631,
+        "clicks": 454,
+        "conversions": 7,
+        "ctr_pct": 5.26,
+        "cost": 4498.74,
+        "cpl": 642.68,
+        "prev": {
+          "impressions": 6044,
+          "clicks": 344,
+          "conversions": 6,
+          "cost": 3329.44,
+          "cpl": 554.91
+        }
+      },
+      {
+        "campaign": "Search_Non-Branded_Sarasota",
+        "impressions": 8412,
+        "clicks": 667,
+        "conversions": 7,
+        "ctr_pct": 7.93,
+        "cost": 3662.14,
+        "cpl": 523.16,
+        "prev": {
+          "impressions": 12133,
+          "clicks": 1048,
+          "conversions": 12.5,
+          "cost": 5585.44,
+          "cpl": 446.84
+        }
+      },
+      {
+        "campaign": "Search_Non-Branded_US",
+        "impressions": 6261,
+        "clicks": 570,
+        "conversions": 4,
+        "ctr_pct": 9.1,
+        "cost": 3115.17,
+        "cpl": 778.79,
+        "prev": {
+          "impressions": 4453,
+          "clicks": 409,
+          "conversions": 8.5,
+          "cost": 1987.38,
+          "cpl": 233.81
+        }
+      },
+      {
+        "campaign": "Search_Non-Branded_US_FL Keywords",
+        "impressions": 7019,
+        "clicks": 480,
+        "conversions": 6,
+        "ctr_pct": 6.84,
+        "cost": 2413.07,
+        "cpl": 402.18,
+        "prev": {
+          "impressions": 842,
+          "clicks": 64,
+          "conversions": 0,
+          "cost": 323.17,
+          "cpl": null
+        }
+      },
+      {
+        "campaign": "Display_Placements_Feeder",
+        "impressions": 1112230,
+        "clicks": 1960,
+        "conversions": 5,
+        "ctr_pct": 0.18,
+        "cost": 2100.67,
+        "cpl": 420.13,
+        "prev": {
+          "impressions": 764991,
+          "clicks": 1964,
+          "conversions": 6,
+          "cost": 1662.4,
+          "cpl": 277.07
+        }
+      },
+      {
+        "campaign": "YouTube_Video_Prospecting",
+        "impressions": 126006,
+        "clicks": 0,
+        "conversions": 0,
+        "ctr_pct": 0,
+        "cost": 1497.97,
+        "cpl": null,
+        "prev": {
+          "impressions": 94275,
+          "clicks": 0,
+          "conversions": 0,
+          "cost": 943.51,
+          "cpl": null
+        }
+      },
+      {
+        "campaign": "Search_Branded",
+        "impressions": 682,
+        "clicks": 211,
+        "conversions": 10,
+        "ctr_pct": 30.94,
+        "cost": 601.8,
+        "cpl": 60.18,
+        "prev": {
+          "impressions": 604,
+          "clicks": 207,
+          "conversions": 7,
+          "cost": 468.91,
+          "cpl": 66.99
+        }
+      },
+      {
+        "campaign": "YouTube_Video_Remarketing",
+        "impressions": 983,
+        "clicks": 0,
+        "conversions": 0,
+        "ctr_pct": 0,
+        "cost": 111.01,
+        "cpl": null,
+        "prev": {
+          "impressions": 310,
+          "clicks": 0,
+          "conversions": 0,
+          "cost": 31.44,
+          "cpl": null
+        }
+      }
+    ],
+    "campaign_table_note": "The Looker campaign table only renders 5 rows; all 8 campaigns were recovered by re-sorting, and each period's rows sum exactly to its grand total.",
+    "form_submissions_by_campaign": {
+      "Non-Branded US / US-FL / Feeder (all variants)": 13,
+      "Search_Competitors": 5,
+      "Display_Placements_Feeder": 5,
+      "Search_Branded": 3,
+      "Search_Non-Branded_Sarasota": 2
+    },
+    "phone_calls_by_campaign": {
+      "Display_Placements_Feeder": 7,
+      "Search_Non-Branded_Sarasota": 2,
+      "Search_Branded": 2
+    },
+    "phone_call_quality_note": "7 of the 11 Google call leads came from Display; 5 of those 7 show no call duration and one lasted 9 seconds — click-to-call noise, not conversations. One branded 'call lead' (2m41s) was an existing contract holder.",
+    "device_split": {
+      "computer_pct": 58.6,
+      "mobile_pct": 36.2,
+      "tablet_pct": 5.2
+    },
+    "agents_pct": 20.3,
+    "gender": {
+      "male_pct": 54.6,
+      "female_pct": 45.4
+    },
+    "age_rank": "65+ > 55–64 > 45–54 > 35–44 > 25–34 (by clicks; chart unlabeled, rank only)",
+    "top_locations_rank": [
+      "Sarasota",
+      "Chicago",
+      "New York",
+      "San Jose",
+      "Newark"
+    ],
+    "top_keywords": [
+      "sarasota condos",
+      "mira mar sarasota condos",
+      "florida condos for sale",
+      "florida luxury condos",
+      "mira mar sarasota",
+      "sarasota condos for sale",
+      "one park sarasota",
+      "mira mar residences",
+      "amara sarasota",
+      "sarasota waterfront condos for sale"
+    ],
+    "top_keywords_prev": [
+      "sarasota new condo development",
+      "sarasota condos",
+      "mira mar sarasota condos",
+      "mira mar sarasota",
+      "sarasota condos for sale",
+      "one park sarasota",
+      "new construction sarasota",
+      "new condos sarasota",
+      "luxury condos for sale sarasota",
+      "waldorf astoria sarasota"
+    ],
+    "top_ad": "Mira Mar Residences | Sarasota Luxury Condos | Historic Sarasota Icon Reborn",
+    "display_creative": [
+      {
+        "ad": "Placements – living room with bay view",
+        "conversions": 2,
+        "impressions": 410473,
+        "clicks": 811,
+        "cost": 805.15
+      },
+      {
+        "ad": "Placements – terrace over the water",
+        "conversions": 1,
+        "impressions": 85563,
+        "clicks": 187,
+        "cost": 212.9
+      },
+      {
+        "ad": "Placements – bedroom",
+        "conversions": 1,
+        "impressions": 24754,
+        "clicks": 49,
+        "cost": 53.4
+      },
+      {
+        "ad": "Video_Construction (YouTube)",
+        "conversions": 0,
+        "impressions": 81502,
+        "clicks": 0,
+        "cost": 1018.49
+      },
+      {
+        "ad": "Video_Sarasota Living (YouTube)",
+        "conversions": 0,
+        "impressions": 45487,
+        "clicks": 0,
+        "cost": 590.48
+      }
+    ],
+    "search_copy_note": "Search ads rotate 30 headlines and 7 descriptions. Price messaging is mixed: some headlines say 'Starting From The $4 Millions', others 'From The High $3 Millions'.",
+    "tracking_issue": "Two Spark contacts carry utm_campaign 'search_competitors?utm_source=google' — a query string pasted into the campaign value of a Google Ads final URL."
+  },
+  "meta_ads": {
+    "total_spend": 14419.79,
+    "total_spend_prev": 10125.14,
+    "leads": 90,
+    "leads_prev": 56,
+    "website_leads": 75,
+    "website_leads_prev": 51,
+    "cost_per_lead": 160.22,
+    "cost_per_lead_prev": 180.81,
+    "link_clicks": 2750,
+    "link_clicks_prev": 2267,
+    "ctr_pct": 1.62,
+    "ctr_pct_prev": 1.68,
+    "impressions": 170237,
+    "impressions_prev": 135035,
+    "cpc": 5.57,
+    "cpc_prev": 4.84,
+    "leads_reconciliation_note": "The Meta KPI card reports 90 leads (75 website leads in the campaign table plus 15 on-platform). Spark recorded 54 new Meta contacts after removing duplicates, agents and 8 Oct 15 back-fills (62 before that adjustment).",
+    "spark_meta_leads": 54,
+    "spark_meta_leads_prev": 41,
+    "spark_meta_good": 1,
+    "spark_meta_good_prev": 1,
+    "quality_note": "Only 1 of 62 Meta contacts is currently rated good (Warm); 31 are Non Responsive and 12 Not A Buyer. Meta brings volume at the lowest cost per lead; it is not yet bringing buyers.",
+    "leads_by_campaign": [
+      {
+        "campaign": "Prospecting – Sarasota (New LP)",
+        "leads": 26,
+        "cpl": 174.34,
+        "cost": 4532.83,
+        "prev_leads": 15,
+        "prev_cpl": 212.64
+      },
+      {
+        "campaign": "Prospecting – Key Feeder Market (New LP)",
+        "leads": 19,
+        "cpl": 246.54,
+        "cost": 4684.23,
+        "prev_leads": 9,
+        "prev_cpl": 255.26
+      },
+      {
+        "campaign": "Brochure Download – Key Feeder Market",
+        "leads": 13,
+        "cpl": 164.01,
+        "cost": 2132.18,
+        "prev_leads": 3,
+        "prev_cpl": 151.3
+      },
+      {
+        "campaign": "Brochure Download",
+        "leads": 9,
+        "cpl": 233.28,
+        "cost": 2099.49,
+        "prev_leads": 13,
+        "prev_cpl": 125.61
+      },
+      {
+        "campaign": "Remarketing",
+        "leads": 8,
+        "cpl": 111.95,
+        "cost": 895.57,
+        "prev_leads": 5,
+        "prev_cpl": 134.45
+      },
+      {
+        "campaign": "Prospecting – Key Feeder Market (Segmented)",
+        "leads": 0,
+        "cpl": null,
+        "cost": 75.49,
+        "prev_leads": 4,
+        "prev_cpl": 349.41
+      },
+      {
+        "campaign": "Prospecting – Sarasota (old LP)",
+        "leads": 0,
+        "cpl": null,
+        "cost": 0,
+        "prev_leads": 2,
+        "prev_cpl": 240.76
+      }
+    ],
+    "creative_detail": [
+      {
+        "ad": "Video_Sarasota Lifestyle",
+        "leads": 36,
+        "video_views": 48266,
+        "engagements": 23273,
+        "prev_leads": 36,
+        "prev_video_views": 60513,
+        "is_new": false
+      },
+      {
+        "ad": "Image_Building",
+        "leads": 23,
+        "video_views": 0,
+        "engagements": 1425,
+        "prev_leads": 15,
+        "prev_video_views": 0,
+        "is_new": false
+      },
+      {
+        "ad": "Video_Amenity",
+        "leads": 16,
+        "video_views": 20259,
+        "engagements": 7680,
+        "prev_leads": 4,
+        "prev_video_views": 6132,
+        "is_new": false
+      },
+      {
+        "ad": "Video_Day at Mira Mar",
+        "leads": 7,
+        "video_views": 5192,
+        "engagements": 2297,
+        "prev_leads": 0,
+        "prev_video_views": 0,
+        "is_new": true
+      },
+      {
+        "ad": "Video_Last Great Address",
+        "leads": 2,
+        "video_views": 2055,
+        "engagements": 1028,
+        "prev_leads": 0,
+        "prev_video_views": 1780,
+        "is_new": false
+      },
+      {
+        "ad": "Video_Patrick",
+        "leads": 2,
+        "video_views": 2053,
+        "engagements": 902,
+        "prev_leads": 0,
+        "prev_video_views": 560,
+        "is_new": false
+      },
+      {
+        "ad": "Video_Yoga",
+        "leads": 0,
+        "video_views": 120,
+        "engagements": 48,
+        "prev_leads": 0,
+        "prev_video_views": 0,
+        "is_new": true
+      },
+      {
+        "ad": "Video_Day at Mira Mar v2",
+        "leads": 0,
+        "video_views": 89,
+        "engagements": 34,
+        "prev_leads": 0,
+        "prev_video_views": 0,
+        "is_new": true
+      },
+      {
+        "ad": "Video_Rick",
+        "leads": 0,
+        "video_views": 29,
+        "engagements": 13,
+        "prev_leads": 1,
+        "prev_video_views": 254,
+        "is_new": false
+      },
+      {
+        "ad": "Video_Yoga v2",
+        "leads": 0,
+        "video_views": 15,
+        "engagements": 3,
+        "prev_leads": 0,
+        "prev_video_views": 0,
+        "is_new": true
+      }
+    ],
+    "creative_detail_note": "The creative table reports leads, video views and engagements only — no spend per ad — so creative is compared on leads per 1,000 video views. Creative leads sum to 86 this window and 56 last window.",
+    "new_creatives_note": "Four ads entered rotation this window: Video_Day at Mira Mar, its v2, Video_Yoga and Yoga v2. Day at Mira Mar produced 7 leads from 5,192 views — 1.35 leads per 1,000 views, the best rate of any video (Sarasota Lifestyle 0.75, Amenity 0.79). The Yoga and v2 cuts barely delivered (224 views combined), so they have not been tested yet. Of the established ads, Amenity jumped from 4 to 16 leads and the Building brochure image from 15 to 23.",
+    "leads_per_1k_views": {
+      "Video_Day at Mira Mar": 1.35,
+      "Video_Amenity": 0.79,
+      "Video_Sarasota Lifestyle": 0.75,
+      "Video_Last Great Address": 0.97,
+      "Video_Patrick": 0.97
+    },
+    "leads_per_1k_views_prev": {
+      "Video_Sarasota Lifestyle": 0.59,
+      "Video_Amenity": 0.65
+    },
+    "top_creative": "Video_Sarasota Lifestyle — 36 leads, the volume leader both windows, on 20% fewer views this time (more efficient)."
+  },
+  "linkedin": {
+    "launched": "2026-10-28",
+    "spark_leads": 24,
+    "good": 1,
+    "not_a_buyer": 7,
+    "non_responsive": 2,
+    "unworked": 13,
+    "campaign": "sarasota_brochure (utm linkedin / paid-social)",
+    "spend": null,
+    "note": "LinkedIn Lead Gen Forms went live Oct 28 and delivered 24 Spark contacts in the final week — 21% of all paid-channel contacts in the window. 13 are still unworked. Spend is not in the reporting dashboard, so cost per lead can't be computed here. Leads arrive without zip code; hidden UTM fields are being added."
+  },
+  "website_organic": {
+    "active_users": 9300,
+    "active_users_prev": 9800,
+    "active_users_growth_pct": -5.2,
+    "new_users": 9100,
+    "new_users_prev": 9600,
+    "new_users_growth_pct": -5.8,
+    "views": 15500,
+    "views_prev": 16600,
+    "views_growth_pct": -6.7,
+    "pages_per_user": 1.7,
+    "pages_per_user_prev": 1.7,
+    "pages_per_user_growth_pct": -1.6,
+    "avg_search_position": 14.9,
+    "avg_search_position_prev": 13.6,
+    "avg_position_growth_pct": 9.3,
+    "avg_position_note": "Higher number = lower ranking, so +9.3% is a slip (≈13.6 → 14.9). The prior figure is derived from Looker's own comparison because that tile did not load for the prior window.",
+    "search_impressions": 9800,
+    "search_impressions_prev": 9100,
+    "impressions_growth_pct": 7.6,
+    "queries": 238,
+    "queries_prev": 301,
+    "queries_growth_pct": -20.9,
+    "channel_mix": {
+      "google_cpc": 29.3,
+      "direct": 22.3,
+      "meta_cpc": 21.0,
+      "google_organic": 9.6,
+      "microsoft_cpc": 6.4,
+      "other": 5.7
+    },
+    "paid_share_pct": 47.6,
+    "organic_share_pct": 10.7,
+    "google_sessions": 4533,
+    "google_sessions_prev": 4132,
+    "display_sessions": 1803,
+    "display_sessions_note": "Display (two tag variants) drove 1,803 of 4,533 Google sessions (40%) and produced 0 good leads in Spark.",
+    "meta_sessions_partial": {
+      "prospecting_sarasota": 980,
+      "brochure_sarasota": 709,
+      "prospecting_keyfeedermarket": 511,
+      "brochure_keyfeedermarket": 391,
+      "leads_prospecting_sarasota": 303
+    },
+    "top_pages": [
+      {
+        "page": "/welcome-to-mira-mar-sarasota/",
+        "bounce_pct": 45.87,
+        "avg_time": "1:14"
+      },
+      {
+        "page": "/reserve/",
+        "bounce_pct": 65.89,
+        "avg_time": "0:35"
+      },
+      {
+        "page": "/residences/",
+        "bounce_pct": 17.23,
+        "avg_time": "2:01"
+      },
+      {
+        "page": "/ (home)",
+        "bounce_pct": 42.7,
+        "avg_time": "1:25"
+      },
+      {
+        "page": "/brochure-download/",
+        "bounce_pct": 61.43,
+        "avg_time": "0:26"
+      },
+      {
+        "page": "/gallery/",
+        "bounce_pct": 17.57,
+        "avg_time": "1:55"
+      },
+      {
+        "page": "/amenities/",
+        "bounce_pct": 13.11,
+        "avg_time": "2:03"
+      },
+      {
+        "page": "/contact/",
+        "bounce_pct": 10.0,
+        "avg_time": "1:46",
+        "prev_bounce_pct": 53.4
+      },
+      {
+        "page": "/broker-toolkit/",
+        "bounce_pct": 30.0,
+        "avg_time": "4:37"
+      }
+    ],
+    "top_search_terms": [
+      {
+        "query": "mira mar sarasota",
+        "impressions": 1208,
+        "clicks": 33,
+        "ctr_pct": 2.73,
+        "prev_impressions": 1082,
+        "prev_clicks": 21
+      },
+      {
+        "query": "miramar sarasota",
+        "impressions": 687,
+        "clicks": 21,
+        "ctr_pct": 3.06,
+        "prev_impressions": 437,
+        "prev_clicks": 22
+      },
+      {
+        "query": "mira mar",
+        "impressions": 632,
+        "clicks": 11,
+        "ctr_pct": 1.74,
+        "prev_impressions": 971,
+        "prev_clicks": 12
+      },
+      {
+        "query": "mira mar residences",
+        "impressions": 151,
+        "clicks": 11,
+        "ctr_pct": 7.28,
+        "prev_impressions": 73,
+        "prev_clicks": 6
+      },
+      {
+        "query": "mira mar residences sarasota",
+        "impressions": 121,
+        "clicks": 4,
+        "ctr_pct": 3.31,
+        "prev_impressions": 93,
+        "prev_clicks": 4
+      }
+    ],
+    "wrong_city_note": "Wrong-city 'Miramar, FL apartments' queries keep earning impressions with zero clicks (e.g. 225, 198, 115, 100, 90 impressions on five such terms) — they drag average position without costing anything.",
+    "top_landing_pages": [
+      {
+        "page": "/",
+        "impressions": 3509
+      },
+      {
+        "page": "/residences/",
+        "impressions": 1384
+      },
+      {
+        "page": "/team/",
+        "impressions": 895
+      },
+      {
+        "page": "/gallery/",
+        "impressions": 884
+      },
+      {
+        "page": "/amenities/",
+        "impressions": 739,
+        "prev": 529
+      }
+    ]
+  },
+  "lead_pipeline": {
+    "spark_new_contacts": 138,
+    "spark_new_contacts_prev": 80,
+    "spark_by_channel": {
+      "now": {
+        "total": 138,
+        "excl_agent_import": 129,
+        "good": 12,
+        "not_a_buyer": 31,
+        "non_responsive": 44,
+        "unworked": 39,
+        "channels": {
+          "meta": {
+            "n": 62,
+            "good": 1,
+            "nab": 12,
+            "nonresp": 31,
+            "unworked": 14
+          },
+          "google_paid": {
+            "n": 26,
+            "good": 3,
+            "nab": 6,
+            "nonresp": 7,
+            "unworked": 10
+          },
+          "linkedin": {
+            "n": 24,
+            "good": 1,
+            "nab": 7,
+            "nonresp": 2,
+            "unworked": 13
+          },
+          "direct_sales_center": {
+            "n": 9,
+            "good": 3,
+            "nab": 2,
+            "nonresp": 2,
+            "unworked": 0
+          },
+          "agent_import_non_agent": {
+            "n": 9,
+            "good": 4
+          },
+          "reconciliation_import": {
+            "n": 6,
+            "good": 0,
+            "nab": 4,
+            "nonresp": 2
+          },
+          "google_organic": {
+            "n": 0
+          },
+          "other": {
+            "n": 2
+          }
+        }
+      },
+      "prior": {
+        "total": 80,
+        "excl_agent_import": 68,
+        "good": 10,
+        "not_a_buyer": 22,
+        "non_responsive": 24,
+        "unworked": 0,
+        "channels": {
+          "meta": {
+            "n": 41,
+            "good": 1,
+            "nab": 12,
+            "nonresp": 19
+          },
+          "google_paid": {
+            "n": 16,
+            "good": 2,
+            "nab": 9,
+            "nonresp": 2
+          },
+          "linkedin": {
+            "n": 0
+          },
+          "direct_sales_center": {
+            "n": 7,
+            "good": 1,
+            "nab": 1,
+            "nonresp": 2
+          },
+          "agent_import_non_agent": {
+            "n": 12,
+            "good": 4
+          },
+          "reconciliation_import": {
+            "n": 0
+          },
+          "google_organic": {
+            "n": 4,
+            "good": 2,
+            "nab": 0,
+            "nonresp": 1
+          },
+          "other": {
+            "n": 0
+          }
+        }
+      }
+    },
+    "good_leads": 12,
+    "good_leads_prev": 10,
+    "good_leads_breakdown": "Current 12 (all Warm): 4 realtor-referred (Agent Import source, not agents themselves), 3 paid Google, 3 sales-center walk-ins (Display Sweet), 1 Meta, 1 LinkedIn.",
+    "unworked": 39,
+    "unworked_note": "39 contacts from this window are still New/Lead (not yet reached) vs 0 from the prior window. Quality rates for this window are provisional.",
+    "non_responsive": 44,
+    "non_responsive_prev": 24,
+    "not_a_buyer": 31,
+    "not_a_buyer_prev": 22,
+    "pipeline_stock": {
+      "reservations_contracts": 4,
+      "sales_visits_tours": 25,
+      "hot_warm": 16,
+      "note": "Spark Digital Ads Leads page KPI cards — lifetime stock for digital-ad leads, not in-period flow."
+    },
+    "leads_by_week": {
+      "Oct 5–11": 19,
+      "Oct 12–18": 35,
+      "Oct 19–25": 24,
+      "Oct 26–Nov 1": 40,
+      "Nov 2–3": 20
+    },
+    "leads_by_week_prev": {
+      "Sep 5–11": 14,
+      "Sep 12–18": 16,
+      "Sep 19–25": 22,
+      "Sep 26–Oct 2": 22,
+      "Oct 3–4": 6
+    },
+    "leads_by_day": {
+      "2026-10-05": 3,
+      "2026-10-06": 2,
+      "2026-10-07": 2,
+      "2026-10-08": 1,
+      "2026-10-09": 3,
+      "2026-10-10": 4,
+      "2026-10-11": 4,
+      "2026-10-12": 6,
+      "2026-10-13": 4,
+      "2026-10-14": 0,
+      "2026-10-15": 15,
+      "2026-10-16": 4,
+      "2026-10-17": 3,
+      "2026-10-18": 3,
+      "2026-10-19": 4,
+      "2026-10-20": 2,
+      "2026-10-21": 2,
+      "2026-10-22": 4,
+      "2026-10-23": 5,
+      "2026-10-24": 1,
+      "2026-10-25": 6,
+      "2026-10-26": 4,
+      "2026-10-27": 6,
+      "2026-10-28": 9,
+      "2026-10-29": 2,
+      "2026-10-30": 7,
+      "2026-10-31": 6,
+      "2026-11-01": 6,
+      "2026-11-02": 4,
+      "2026-11-03": 16
+    },
+    "spike_note": "Oct 15 (15 contacts) is mostly the 13-lead manual back-fill; Nov 3 (16) is real — 8 LinkedIn plus 8 website/ads contacts.",
+    "reconciliation_import": 6,
+    "reconciliation_import_note": "6 incomplete-form contacts were added automatically by the missing-lead safeguard that went live Oct 15 (4 from Meta prospecting ads); 4 are Not A Buyer and 2 Non Responsive.",
+    "total_calls": 16,
+    "total_calls_prev": 49,
+    "first_time_callers": 14,
+    "first_time_callers_prev": 39,
+    "answered_calls": 9,
+    "answered_calls_prev": 27,
+    "missed_calls": 7,
+    "missed_calls_prev": 22,
+    "answer_rate_pct": 56.3,
+    "answer_rate_pct_prev": 55.1,
+    "avg_call_duration_sec": 276.8,
+    "calls_by_source": [
+      {
+        "source": "Google Ads",
+        "calls": 11,
+        "prev": 30
+      },
+      {
+        "source": "Print Ad",
+        "calls": 2,
+        "prev": 4
+      },
+      {
+        "source": "Direct",
+        "calls": 1,
+        "prev": 8
+      },
+      {
+        "source": "E-Blasts",
+        "calls": 1,
+        "prev": 0
+      },
+      {
+        "source": "Instagram Ads",
+        "calls": 1,
+        "prev": 1
+      },
+      {
+        "source": "Facebook Ads",
+        "calls": 0,
+        "prev": 4
+      },
+      {
+        "source": "Bing Ads",
+        "calls": 0,
+        "prev": 1
+      },
+      {
+        "source": "Google Organic",
+        "calls": 0,
+        "prev": 1
+      }
+    ],
+    "phone_note": "Calls fell from 49 to 16 (−67%), almost entirely Google Ads (30 → 11). The answer rate held at 56% — still under the 70% floor. Calls are logged in CallRail; none were tagged as leads.",
+    "daily_calls": [
+      {
+        "date": "2026-10-08",
+        "total": 1,
+        "answered": 1,
+        "missed": 0,
+        "avg_duration_sec": 45
+      },
+      {
+        "date": "2026-10-11",
+        "total": 1,
+        "answered": 1,
+        "missed": 0,
+        "avg_duration_sec": 105
+      },
+      {
+        "date": "2026-10-13",
+        "total": 1,
+        "answered": 0,
+        "missed": 1,
+        "avg_duration_sec": 27
+      },
+      {
+        "date": "2026-10-14",
+        "total": 3,
+        "answered": 2,
+        "missed": 1,
+        "avg_duration_sec": 45
+      },
+      {
+        "date": "2026-10-16",
+        "total": 1,
+        "answered": 0,
+        "missed": 1,
+        "avg_duration_sec": 4
+      },
+      {
+        "date": "2026-10-17",
+        "total": 1,
+        "answered": 0,
+        "missed": 1,
+        "avg_duration_sec": 10
+      },
+      {
+        "date": "2026-10-21",
+        "total": 2,
+        "answered": 1,
+        "missed": 1,
+        "avg_duration_sec": 1192
+      },
+      {
+        "date": "2026-10-22",
+        "total": 1,
+        "answered": 0,
+        "missed": 1,
+        "avg_duration_sec": 34
+      },
+      {
+        "date": "2026-10-26",
+        "total": 1,
+        "answered": 0,
+        "missed": 1,
+        "avg_duration_sec": 3
+      },
+      {
+        "date": "2026-10-28",
+        "total": 1,
+        "answered": 1,
+        "missed": 0,
+        "avg_duration_sec": 39
+      },
+      {
+        "date": "2026-10-30",
+        "total": 1,
+        "answered": 1,
+        "missed": 0,
+        "avg_duration_sec": 185
+      },
+      {
+        "date": "2026-10-31",
+        "total": 2,
+        "answered": 2,
+        "missed": 0,
+        "avg_duration_sec": 65
+      }
+    ],
+    "daily_calls_note": "All other days in the window had zero calls.",
+    "new_demand_adjusted": {
+      "note": "On Oct 15 the sales team pushed 13 older incomplete-form leads (Jul–Oct) into Spark in one batch; they carry Oct 15 creation dates but are not new demand. They are removed from the 'new demand' figures below (identified by clustered 10:39/10:47 timestamps; inference, not matched against the push log). All 13 are Non Responsive or Not A Buyer.",
+      "backfilled_oct15": 13,
+      "total": 125,
+      "meta": 54,
+      "google_paid": 22,
+      "linkedin": 24,
+      "total_prev": 80,
+      "meta_prev": 41,
+      "google_paid_prev": 16
+    }
+  },
+  "comparisons": {
+    "vs_prior_30": {
+      "total_spend": {
+        "prev": 24456.83,
+        "now": 32420.36,
+        "delta_pct": 32.6,
+        "class": "flat-neutral"
+      },
+      "platform_leads": {
+        "prev": 96,
+        "now": 129,
+        "delta_pct": 34.4,
+        "class": "up"
+      },
+      "blended_cpl": {
+        "prev": 254.76,
+        "now": 251.32,
+        "delta_pct": -1.4,
+        "class": "flat"
+      },
+      "spark_new_contacts": {
+        "prev": 80,
+        "now": 138,
+        "delta_pct": 72.5,
+        "class": "up"
+      },
+      "spark_paid_google": {
+        "prev": 16,
+        "now": 22,
+        "delta_pct": 37.5,
+        "class": "up"
+      },
+      "spark_meta": {
+        "prev": 41,
+        "now": 54,
+        "delta_pct": 31.7,
+        "class": "up"
+      },
+      "good_leads": {
+        "prev": 10,
+        "now": 12,
+        "delta_pct": 20.0,
+        "class": "up"
+      },
+      "google_cost": {
+        "prev": 14331.69,
+        "now": 18000.57,
+        "delta_pct": 25.6,
+        "class": "flat-neutral"
+      },
+      "google_conversions": {
+        "prev": 40,
+        "now": 39,
+        "delta_pct": -2.5,
+        "class": "down"
+      },
+      "google_cpl": {
+        "prev": 358.29,
+        "now": 461.55,
+        "delta_pct": 28.8,
+        "class": "bad-up"
+      },
+      "google_cpc": {
+        "prev": 3.55,
+        "now": 4.15,
+        "delta_pct": 16.9,
+        "class": "bad-up"
+      },
+      "google_ctr_blended": {
+        "prev": 0.46,
+        "now": 0.34,
+        "delta_pct": -26.1,
+        "class": "down"
+      },
+      "google_conv_rate": {
+        "prev": 0.99,
+        "now": 0.9,
+        "delta_pct": -9.1,
+        "class": "down"
+      },
+      "google_form_submissions": {
+        "prev": 36,
+        "now": 28,
+        "delta_pct": -22.2,
+        "class": "down"
+      },
+      "google_phone_leads": {
+        "prev": 29,
+        "now": 11,
+        "delta_pct": -62.1,
+        "class": "down"
+      },
+      "meta_spend": {
+        "prev": 10125.14,
+        "now": 14419.79,
+        "delta_pct": 42.4,
+        "class": "flat-neutral"
+      },
+      "meta_leads": {
+        "prev": 56,
+        "now": 90,
+        "delta_pct": 60.7,
+        "class": "up"
+      },
+      "meta_cpl": {
+        "prev": 180.81,
+        "now": 160.22,
+        "delta_pct": -11.4,
+        "class": "good-down"
+      },
+      "meta_ctr": {
+        "prev": 1.68,
+        "now": 1.62,
+        "delta_pct": -3.6,
+        "class": "down"
+      },
+      "meta_link_clicks": {
+        "prev": 2267,
+        "now": 2750,
+        "delta_pct": 21.3,
+        "class": "up"
+      },
+      "active_users": {
+        "prev": 9800,
+        "now": 9300,
+        "delta_pct": -5.1,
+        "class": "down"
+      },
+      "views": {
+        "prev": 16600,
+        "now": 15500,
+        "delta_pct": -6.6,
+        "class": "down"
+      },
+      "pages_per_user": {
+        "prev": 1.7,
+        "now": 1.7,
+        "delta_pct": -1.6,
+        "class": "flat"
+      },
+      "search_position": {
+        "prev": 13.6,
+        "now": 14.9,
+        "delta_pct": 9.3,
+        "class": "bad-up",
+        "note": "prior derived"
+      },
+      "search_impressions": {
+        "prev": 9100,
+        "now": 9800,
+        "delta_pct": 7.7,
+        "class": "up"
+      },
+      "queries": {
+        "prev": 301,
+        "now": 238,
+        "delta_pct": -20.9,
+        "class": "down"
+      },
+      "total_calls": {
+        "prev": 49,
+        "now": 16,
+        "delta_pct": -67.3,
+        "class": "down"
+      },
+      "answered_calls": {
+        "prev": 27,
+        "now": 9,
+        "delta_pct": -66.7,
+        "class": "down"
+      },
+      "answer_rate": {
+        "prev": 55.1,
+        "now": 56.3,
+        "delta_pct": 2.2,
+        "class": "up"
+      },
+      "youtube_spend": {
+        "prev": 974.95,
+        "now": 1608.98,
+        "delta_pct": 65.0,
+        "class": "bad-up"
+      },
+      "spark_new_demand": {
+        "prev": 80,
+        "now": 125,
+        "delta_pct": 56.2,
+        "class": "up"
+      },
+      "cost_per_spark_lead": {
+        "prev": 429.07,
+        "now": 426.58,
+        "delta_pct": -0.6,
+        "class": "flat"
+      },
+      "cost_per_spark_lead_google": {
+        "prev": 895.73,
+        "now": 818.21,
+        "delta_pct": -8.7,
+        "class": "good-down"
+      },
+      "cost_per_spark_lead_meta": {
+        "prev": 246.95,
+        "now": 267.03,
+        "delta_pct": 8.1,
+        "class": "bad-up"
+      }
+    }
+  },
+  "recommendations": [
+    {
+      "priority": "high",
+      "headline": "Move YouTube and most of Display into the search campaigns that produce good leads",
+      "detail": "YouTube cost $1,609 with zero clicks and zero conversions (it was $975 with the same result last month). Display cost $2,101, drove 40% of Google's website sessions and produced no good leads in Spark; 5 of its 7 'call leads' have no call duration. Branded, Competitors and Non-Branded search produced all 3 good Google leads. Reallocating roughly $3,700 a month into those search campaigns targets the leads sales can actually work."
+    },
+    {
+      "priority": "high",
+      "headline": "Give 'Day at Mira Mar' real budget and actually test the Yoga cut",
+      "detail": "Day at Mira Mar delivered 7 leads on 5,192 views (1.35 per 1,000), almost double Sarasota Lifestyle (0.75) and Amenity (0.79). The Yoga and v2 cuts reached only 224 views combined, so the test never ran. Shift weight from Sarasota Lifestyle to Day at Mira Mar and force-deliver Yoga for two weeks before judging it."
+    },
+    {
+      "priority": "high",
+      "headline": "Judge Meta on good leads, not lead count",
+      "detail": "Meta is the cheapest source of names ($160 platform CPL, $267 per CRM contact) but 1 of 62 contacts is rated good and 31 are Non Responsive. Prospecting – Key Feeder Market (New LP) took the biggest Meta budget ($4,684) for 19 leads. Hold Meta spend flat, tighten feeder-market targeting, and report cost per good lead each month."
+    },
+    {
+      "priority": "high",
+      "headline": "Work the 39 unworked contacts, especially LinkedIn's 13",
+      "detail": "39 of this window's contacts are still New/Lead in Spark. LinkedIn's 24 arrived in a single week with 1 already Warm; 13 are untouched. Speed to first contact matters most on fresh form fills."
+    },
+    {
+      "priority": "medium",
+      "headline": "Phone: find out why Google calls fell 63% and assign callback ownership",
+      "detail": "Calls dropped from 49 to 16; Google Ads calls went from 30 to 11. Check whether call extensions or the call-tracking number changed around the landing-page switch. The answer rate is still 56%, under the 70% floor: 7 of 16 calls were missed."
+    },
+    {
+      "priority": "medium",
+      "headline": "Fix two tracking gaps",
+      "detail": "(1) Two Google contacts carry utm_campaign 'search_competitors?utm_source=google' — a broken final-URL suffix in the Competitors campaign. (2) LinkedIn leads arrive without UTM or zip; hidden fields are being added. Add LinkedIn and Microsoft Ads spend to the dashboard so next month's cost per lead covers every paid channel."
+    },
+    {
+      "priority": "opportunity",
+      "headline": "Align price messaging in search ads",
+      "detail": "Search headlines say both 'Starting From The $4 Millions' and 'From The High $3 Millions'. Pick one so the ad and the landing page agree."
+    }
+  ]
+}
