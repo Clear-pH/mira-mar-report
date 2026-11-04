@@ -193,12 +193,7 @@
       { "source": "Bing Ads", "calls": 1 },
       { "source": "Print Ad", "calls": 1 }
     ],
-    "named_warm_prospects": [
-      "Elizabeth Gomez — builder relocating from WA, ~$4M range, sent units 702 & 705",
-      "Ken Rollyson — bayfront resident, long-term prospect, sent renderings",
-      "Michael Williams Jones — lives near Mira Mar, in NY for summer, on drip",
-      "Gail Trippi — warm from Feeder Market"
-    ],
+    "warm_prospects_named_in_spark": 4,
     "phone_note": "CallRail KPI tiles are authoritative (8 total / 7 answered → 1 missed = 88% answer rate). Answered calls rose 40% versus the prior fortnight — the phone-coverage issue flagged red in the last three reports is resolved for this period."
   },
   "comparisons": {
@@ -264,7 +259,7 @@
     {
       "priority": "opportunity",
       "headline": "Work the warm bench — 23 warm, buyers progressing",
-      "detail": "The warm count sits at 23 with two reservation holders and six sales visits or meetings in motion, and four new agent registrations arrived this period. Named buyers are advancing: Elizabeth Gomez (relocating builder, ~$4M, reviewing units 702 and 705), Ken Rollyson and Michael Williams Jones (both local, long-lead), and Gail Trippi. These are the relationships most likely to convert to reservations next quarter."
+      "detail": "The warm count sits at 23 with two reservation holders and six sales visits or meetings in motion, and four new agent registrations arrived this period. Four warm buyers are advancing: a relocating buyer reviewing specific units, two local long-lead prospects, and a feeder-market lead. These are the relationships most likely to convert to reservations next quarter."
     }
   ]
 }

@@ -450,7 +450,7 @@
    "google_ads": 12
   },
   "agent_registrations": null,
-  "agent_registrations_note": "Every in-range row in the Spark Digital Ads Leads table carried an 'Agent' rating, so a discrete count of new agent registrations cannot be separated from the table as extracted. Notable agent activity this period includes Kelly Dunlop (Coldwell Banker Lakewood Ranch, showing request) and Linda Scheller (Coldwell Banker, meeting at RASM).",
+  "agent_registrations_note": "Every in-range row in the Spark Digital Ads Leads table carried an 'Agent' rating, so a discrete count of new agent registrations cannot be separated from the table as extracted. Notable agent activity this period includes a broker showing request and a broker meeting at RASM.",
   "total_calls": 6,
   "answer_rate_pct": 33,
   "first_time_callers": 4,
@@ -475,15 +475,7 @@
     "calls": 1
    }
   ],
-  "named_warm_prospects": [
-   "Michael Williams Jones — Meta Brochure Download (Jul 10), lives near Mira Mar, still on drip",
-   "Paul Rogers — Google Search Non-Branded Sarasota (Jul 8), active in pipeline",
-   "Darlana Cauley-Draves — Meta Key Feeder Market (Jun 28), active in pipeline",
-   "Vlad Nesterenco — Google Search Non-Branded Sarasota (Apr 23), long-lead prospect",
-   "Cameron Knuth — Google Branded Search (Mar 29), long-lead prospect",
-   "Steve Shuhet — Google Search Non-Branded Sarasota DMA (Jan 22), long-lead prospect",
-   "Anthony Koblinski — Google Search Non-Branded (Dec 11), longest-running warm lead"
-  ],
+  "warm_prospects_named_in_spark": 7,
   "phone_note": "Only 6 calls came in this fortnight and, per the daily CallRail table, just 2 were answered — a 33% answer rate, down from 88% last period, reversing the coverage fix reported then. (The dashboard's summary tile claimed 3 answered, but that contradicts its own totals — 3 answered + 4 missed ≠ 6 calls; the self-consistent daily table is authoritative.) Nine of the 15 days saw zero calls. Zero of the six calls were tagged as leads. Two of the missed calls came from paid Google Ads clicks the program paid for.",
   "avg_call_duration_sec": 55,
   "daily_calls": [
@@ -780,7 +772,7 @@
   {
    "priority": "opportunity",
    "headline": "Zero hot leads — the bench needs working, not more volume",
-   "detail": "There are no hot leads this period, the warm bench reads 7, and 4 sales visits or meetings are in motion alongside 2 reservation holders. Seven named warm prospects are still live, several dating back to December through April — Anthony Koblinski, Steve Shuhet, Cameron Knuth and Vlad Nesterenco are all long-lead Google search leads worth a direct touch. With cost per lead at its best level of the year, the constraint on reservations right now is follow-up capacity, not lead supply."
+   "detail": "There are no hot leads this period, the warm bench reads 7, and 4 sales visits or meetings are in motion alongside 2 reservation holders. Seven warm prospects are still live, several dating back to December through April — four of them are long-lead Google search leads worth a direct touch. With cost per lead at its best level of the year, the constraint on reservations right now is follow-up capacity, not lead supply."
   }
  ]
 }

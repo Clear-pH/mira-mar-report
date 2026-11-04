@@ -36,6 +36,7 @@ If `/reports/<END>/` already exists, **ask before overwriting**.
 
 - **Never fabricate, estimate, or interpolate a number.** Every figure in the JSON, the report, and the visualization must trace to the Looker extraction or a prior period JSON.
 - **If a needed metric is not visible in Data Studio, STOP and ask the user for it.** This includes: table rows hidden by widget virtualization (only N of M rows render), chart values with no text labels (approximate bar reads don't count), and pages that fail to load. Do not ship a partial metric silently — either get the data or omit the panel and say so.
+- **No personal data in published files — ever.** The site is public static HTML/JSON with no auth (Vercel security finding 01M6KXXV3DG06MSNHSD0HCZNZN, 2026-11-04). Never put a prospect's, buyer's, agent's or contact's name, initials, email, phone, budget, unit numbers, visit plans or CRM free-text notes into `/data/*.json`, the report HTML, the visualization, or the commit. Report pipeline people only as counts by channel/rating/status (e.g. "7 new warm prospects: 4 Google Search, 2 Instagram, 1 Facebook"). Named-lead detail stays in Spark. There is no `named_warm_prospects` field any more; use count fields (`warm_prospects_new_in_period`, `warm_prospects_carried_over`, `warm_prospects_new_by_channel`).
 - **Cross-check summary tiles against their own detail tables.** If a KPI tile contradicts the table it summarizes (e.g. answered + missed ≠ total), the self-consistent detail table wins — note the discrepancy in the JSON. CallRail's tiles have done this before (2026-08-13: tile said 3 answered, daily table proved 2).
 
 ## Pre-flight
@@ -142,6 +143,14 @@ python3 -m http.server 8765 > /tmp/mira-mar-server.log 2>&1 &
 ```
 
 Open `http://localhost:8765/` (the new latest) and `http://localhost:8765/reports/<END>/` (the archive entry).
+
+Before asking, run the PII gate and fix anything it prints (an empty result is required):
+
+```bash
+grep -rnE '<strong>[A-Z][a-z]+ [A-Z][a-z]+</strong> —|named_warm_prospects|@[a-z0-9-]+\.(com|net)' data reports index.html
+```
+
+Also skim the new lead-pipeline narrative for any person's name by eye; the grep only catches the common shapes.
 
 Pause and ask: "Looks good to commit and deploy? (y/n)"
 
