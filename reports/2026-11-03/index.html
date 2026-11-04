@@ -1105,6 +1105,21 @@
   .tl-table tr.is-current td { color: var(--gold); font-weight: 600; }
   .tl-table tr.is-unpub td:first-child { font-style: italic; }
   .tl-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+  /* ── Conversions (added 2026-11-04) ── */
+  .cv-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; margin-top: 0.75rem; }
+  .cv-table th, .cv-table td { padding: 0.5rem 0.55rem; border-bottom: 1px solid var(--card-edge); text-align: left; white-space: nowrap; }
+  .cv-table td.num, .cv-table th.num { text-align: right; }
+  .cv-table th { font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
+  .cv-table tr.is-pending td { color: var(--gold); }
+  .cv-pill { display: inline-block; padding: 0.1rem 0.5rem; border-radius: 999px; font-size: 0.68rem; border: 1px solid var(--card-edge); color: var(--cream); }
+  .cv-months { display: grid; grid-template-columns: repeat(12, 1fr); gap: 6px; align-items: end; height: 150px; margin-top: 0.75rem; }
+  .cv-months__col { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 100%; }
+  .cv-months__bar { width: 100%; max-width: 34px; border-radius: 4px 4px 0 0; background: var(--gold); }
+  .cv-months__bar.is-window { background: var(--green); }
+  .cv-months__val { font-size: 0.68rem; color: var(--cream); margin-bottom: 3px; }
+  .cv-months__lab { font-size: 0.6rem; color: var(--muted); margin-top: 4px; }
+  .cv-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
   </style>
 </head>
 <body>
@@ -1341,6 +1356,120 @@
 <div class="tl-card"><div class="tl-card__head"><span class="tl-card__title">Blended cost per lead</span><span class="tl-card__now">$251 <span style="color:var(--muted)">▼ 2%</span></span></div><svg viewBox="0 0 330 150" class="tl-svg" role="img" aria-label="Blended cost per lead by report period"><line x1="10" y1="120" x2="320" y2="120" stroke="var(--card-edge)" stroke-width="1"/><path d="M10.0,47.0 L61.7,52.3 L113.3,41.7 L165.0,62.3 L216.7,63.1 L268.3,45.3 L320.0,46.4" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linejoin="round"/><circle cx="10.0" cy="47.0" r="3" fill="var(--gold)" stroke="var(--gold)" stroke-width="1.5"><title>Feb 11 – Mar 11, 2026 · $249</title></circle><text x="10.0" y="38.0" text-anchor="start" font-size="10" font-weight="400" fill="var(--muted)">$249</text><circle cx="61.7" cy="52.3" r="3" fill="var(--gold)" stroke="var(--gold)" stroke-width="1.5"><title>Mar 27 – Apr 25, 2026 · $231</title></circle><circle cx="113.3" cy="41.7" r="3" fill="var(--gold)" stroke="var(--gold)" stroke-width="1.5"><title>Apr 26 – Jun 4, 2026 · $267</title></circle><circle cx="165.0" cy="62.3" r="3" fill="var(--gold)" stroke="var(--gold)" stroke-width="1.5"><title>Jul 1 – 30, 2026 (Full Month) · $197</title></circle><circle cx="216.7" cy="63.1" r="3" fill="var(--gold)" stroke="var(--gold)" stroke-width="1.5"><title>Aug 14 – Sep 13, 2026 · $194</title></circle><circle cx="268.3" cy="45.3" r="3" fill="var(--bg)" stroke="var(--gold)" stroke-width="1.5"><title>Sep 5 – Oct 4 · $255</title></circle><text x="268.3" y="36.3" text-anchor="middle" font-size="10" font-weight="400" fill="var(--muted)">$255</text><circle cx="320.0" cy="46.4" r="4.5" fill="var(--gold)" stroke="var(--gold)" stroke-width="1.5"><title>Oct 5 – Nov 3 · $251</title></circle><text x="320.0" y="37.4" text-anchor="end" font-size="10" font-weight="600" fill="var(--gold)">$251</text><text x="10.0" y="140" text-anchor="start" font-size="9" fill="var(--muted)">Mar 11</text><text x="113.3" y="140" text-anchor="middle" font-size="9" fill="var(--muted)">Jun 4</text><text x="216.7" y="140" text-anchor="middle" font-size="9" fill="var(--muted)">Sep 13</text><text x="320.0" y="140" text-anchor="end" font-size="9" fill="var(--muted)">Nov 3</text></svg></div><div class="tl-card"><div class="tl-card__head"><span class="tl-card__title">Platform leads per day</span><span class="tl-card__now">4.3 <span style="color:var(--green)">▲ 34%</span></span></div><svg viewBox="0 0 330 150" class="tl-svg" role="img" aria-label="Platform leads per day by report period"><line x1="10" y1="120" x2="320" y2="120" stroke="var(--card-edge)" stroke-width="1"/><path d="M10.0,78.0 L61.7,77.6 L113.3,84.9 L165.0,55.0 L216.7,57.8 L268.3,61.8 L320.0,41.7" fill="none" stroke="var(--green)" stroke-width="2" stroke-linejoin="round"/><circle cx="10.0" cy="78.0" r="3" fill="var(--green)" stroke="var(--green)" stroke-width="1.5"><title>Feb 11 – Mar 11, 2026 · 2.3</title></circle><text x="10.0" y="69.0" text-anchor="start" font-size="10" font-weight="400" fill="var(--muted)">2.3</text><circle cx="61.7" cy="77.6" r="3" fill="var(--green)" stroke="var(--green)" stroke-width="1.5"><title>Mar 27 – Apr 25, 2026 · 2.3</title></circle><circle cx="113.3" cy="84.9" r="3" fill="var(--green)" stroke="var(--green)" stroke-width="1.5"><title>Apr 26 – Jun 4, 2026 · 1.9</title></circle><circle cx="165.0" cy="55.0" r="3" fill="var(--green)" stroke="var(--green)" stroke-width="1.5"><title>Jul 1 – 30, 2026 (Full Month) · 3.6</title></circle><circle cx="216.7" cy="57.8" r="3" fill="var(--green)" stroke="var(--green)" stroke-width="1.5"><title>Aug 14 – Sep 13, 2026 · 3.4</title></circle><circle cx="268.3" cy="61.8" r="3" fill="var(--bg)" stroke="var(--green)" stroke-width="1.5"><title>Sep 5 – Oct 4 · 3.2</title></circle><text x="268.3" y="52.8" text-anchor="middle" font-size="10" font-weight="400" fill="var(--muted)">3.2</text><circle cx="320.0" cy="41.7" r="4.5" fill="var(--green)" stroke="var(--green)" stroke-width="1.5"><title>Oct 5 – Nov 3 · 4.3</title></circle><text x="320.0" y="32.7" text-anchor="end" font-size="10" font-weight="600" fill="var(--green)">4.3</text><text x="10.0" y="140" text-anchor="start" font-size="9" fill="var(--muted)">Mar 11</text><text x="113.3" y="140" text-anchor="middle" font-size="9" fill="var(--muted)">Jun 4</text><text x="216.7" y="140" text-anchor="middle" font-size="9" fill="var(--muted)">Sep 13</text><text x="320.0" y="140" text-anchor="end" font-size="9" fill="var(--muted)">Nov 3</text></svg></div><div class="tl-card"><div class="tl-card__head"><span class="tl-card__title">Google + Meta spend per day</span><span class="tl-card__now">$1,081 <span style="color:var(--green)">▲ 33%</span></span></div><svg viewBox="0 0 330 150" class="tl-svg" role="img" aria-label="Google + Meta spend per day by report period"><line x1="10" y1="120" x2="320" y2="120" stroke="var(--card-edge)" stroke-width="1"/><path d="M10.0,78.4 L61.7,81.0 L113.3,82.7 L165.0,69.2 L216.7,72.0 L268.3,61.0 L320.0,41.7" fill="none" stroke="var(--gold-soft)" stroke-width="2" stroke-linejoin="round"/><circle cx="10.0" cy="78.4" r="3" fill="var(--gold-soft)" stroke="var(--gold-soft)" stroke-width="1.5"><title>Feb 11 – Mar 11, 2026 · $575</title></circle><text x="10.0" y="69.4" text-anchor="start" font-size="10" font-weight="400" fill="var(--muted)">$575</text><circle cx="61.7" cy="81.0" r="3" fill="var(--gold-soft)" stroke="var(--gold-soft)" stroke-width="1.5"><title>Mar 27 – Apr 25, 2026 · $539</title></circle><circle cx="113.3" cy="82.7" r="3" fill="var(--gold-soft)" stroke="var(--gold-soft)" stroke-width="1.5"><title>Apr 26 – Jun 4, 2026 · $515</title></circle><circle cx="165.0" cy="69.2" r="3" fill="var(--gold-soft)" stroke="var(--gold-soft)" stroke-width="1.5"><title>Jul 1 – 30, 2026 (Full Month) · $702</title></circle><circle cx="216.7" cy="72.0" r="3" fill="var(--gold-soft)" stroke="var(--gold-soft)" stroke-width="1.5"><title>Aug 14 – Sep 13, 2026 · $663</title></circle><circle cx="268.3" cy="61.0" r="3" fill="var(--bg)" stroke="var(--gold-soft)" stroke-width="1.5"><title>Sep 5 – Oct 4 · $815</title></circle><text x="268.3" y="52.0" text-anchor="middle" font-size="10" font-weight="400" fill="var(--muted)">$815</text><circle cx="320.0" cy="41.7" r="4.5" fill="var(--gold-soft)" stroke="var(--gold-soft)" stroke-width="1.5"><title>Oct 5 – Nov 3 · $1,081</title></circle><text x="320.0" y="32.7" text-anchor="end" font-size="10" font-weight="600" fill="var(--gold-soft)">$1,081</text><text x="10.0" y="140" text-anchor="start" font-size="9" fill="var(--muted)">Mar 11</text><text x="113.3" y="140" text-anchor="middle" font-size="9" fill="var(--muted)">Jun 4</text><text x="216.7" y="140" text-anchor="middle" font-size="9" fill="var(--muted)">Sep 13</text><text x="320.0" y="140" text-anchor="end" font-size="9" fill="var(--muted)">Nov 3</text></svg></div><div class="tl-card"><div class="tl-card__head"><span class="tl-card__title">Meta cost per lead</span><span class="tl-card__now">$160 <span style="color:var(--green)">▼ 11%</span></span></div><svg viewBox="0 0 330 150" class="tl-svg" role="img" aria-label="Meta cost per lead by report period"><line x1="10" y1="120" x2="320" y2="120" stroke="var(--card-edge)" stroke-width="1"/><path d="M10.0,79.2 L61.7,60.8 L113.3,41.7 L165.0,80.4 L216.7,73.3 L268.3,58.0 L320.0,65.0" fill="none" stroke="var(--mm-rose, #c98a9a)" stroke-width="2" stroke-linejoin="round"/><circle cx="10.0" cy="79.2" r="3" fill="var(--mm-rose, #c98a9a)" stroke="var(--mm-rose, #c98a9a)" stroke-width="1.5"><title>Feb 11 – Mar 11, 2026 · $119</title></circle><text x="10.0" y="70.2" text-anchor="start" font-size="10" font-weight="400" fill="var(--muted)">$119</text><circle cx="61.7" cy="60.8" r="3" fill="var(--mm-rose, #c98a9a)" stroke="var(--mm-rose, #c98a9a)" stroke-width="1.5"><title>Mar 27 – Apr 25, 2026 · $173</title></circle><circle cx="113.3" cy="41.7" r="3" fill="var(--mm-rose, #c98a9a)" stroke="var(--mm-rose, #c98a9a)" stroke-width="1.5"><title>Apr 26 – Jun 4, 2026 · $228</title></circle><circle cx="165.0" cy="80.4" r="3" fill="var(--mm-rose, #c98a9a)" stroke="var(--mm-rose, #c98a9a)" stroke-width="1.5"><title>Jul 1 – 30, 2026 (Full Month) · $116</title></circle><circle cx="216.7" cy="73.3" r="3" fill="var(--mm-rose, #c98a9a)" stroke="var(--mm-rose, #c98a9a)" stroke-width="1.5"><title>Aug 14 – Sep 13, 2026 · $136</title></circle><circle cx="268.3" cy="58.0" r="3" fill="var(--bg)" stroke="var(--mm-rose, #c98a9a)" stroke-width="1.5"><title>Sep 5 – Oct 4 · $181</title></circle><text x="268.3" y="49.0" text-anchor="middle" font-size="10" font-weight="400" fill="var(--muted)">$181</text><circle cx="320.0" cy="65.0" r="4.5" fill="var(--mm-rose, #c98a9a)" stroke="var(--mm-rose, #c98a9a)" stroke-width="1.5"><title>Oct 5 – Nov 3 · $160</title></circle><text x="320.0" y="56.0" text-anchor="end" font-size="10" font-weight="600" fill="var(--mm-rose, #c98a9a)">$160</text><text x="10.0" y="140" text-anchor="start" font-size="9" fill="var(--muted)">Mar 11</text><text x="113.3" y="140" text-anchor="middle" font-size="9" fill="var(--muted)">Jun 4</text><text x="216.7" y="140" text-anchor="middle" font-size="9" fill="var(--muted)">Sep 13</text><text x="320.0" y="140" text-anchor="end" font-size="9" fill="var(--muted)">Nov 3</text></svg></div><div class="tl-card"><div class="tl-card__head"><span class="tl-card__title">Google cost per conversion</span><span class="tl-card__now">$462 <span style="color:var(--red)">▲ 29%</span></span></div><svg viewBox="0 0 330 150" class="tl-svg" role="img" aria-label="Google cost per conversion by report period"><line x1="10" y1="120" x2="320" y2="120" stroke="var(--card-edge)" stroke-width="1"/><path d="M165.0,49.6 L216.7,72.2 L268.3,59.2 L320.0,41.7" fill="none" stroke="var(--blue, #7aa2d6)" stroke-width="2" stroke-linejoin="round"/><circle cx="165.0" cy="49.6" r="3" fill="var(--blue, #7aa2d6)" stroke="var(--blue, #7aa2d6)" stroke-width="1.5"><title>Jul 1 – 30, 2026 (Full Month) · $415</title></circle><text x="165.0" y="40.6" text-anchor="start" font-size="10" font-weight="400" fill="var(--muted)">$415</text><circle cx="216.7" cy="72.2" r="3" fill="var(--blue, #7aa2d6)" stroke="var(--blue, #7aa2d6)" stroke-width="1.5"><title>Aug 14 – Sep 13, 2026 · $282</title></circle><circle cx="268.3" cy="59.2" r="3" fill="var(--bg)" stroke="var(--blue, #7aa2d6)" stroke-width="1.5"><title>Sep 5 – Oct 4 · $358</title></circle><text x="268.3" y="50.2" text-anchor="middle" font-size="10" font-weight="400" fill="var(--muted)">$358</text><circle cx="320.0" cy="41.7" r="4.5" fill="var(--blue, #7aa2d6)" stroke="var(--blue, #7aa2d6)" stroke-width="1.5"><title>Oct 5 – Nov 3 · $462</title></circle><text x="320.0" y="32.7" text-anchor="end" font-size="10" font-weight="600" fill="var(--blue, #7aa2d6)">$462</text><text x="10.0" y="140" text-anchor="start" font-size="9" fill="var(--muted)">Mar 11</text><text x="113.3" y="140" text-anchor="middle" font-size="9" fill="var(--muted)">Jun 4</text><text x="216.7" y="140" text-anchor="middle" font-size="9" fill="var(--muted)">Sep 13</text><text x="320.0" y="140" text-anchor="end" font-size="9" fill="var(--muted)">Nov 3</text></svg></div><div class="tl-card"><div class="tl-card__head"><span class="tl-card__title">Phone answer rate</span><span class="tl-card__now">56% <span style="color:var(--green)">▲ 2%</span></span></div><svg viewBox="0 0 330 150" class="tl-svg" role="img" aria-label="Phone answer rate by report period"><line x1="10" y1="120" x2="320" y2="120" stroke="var(--card-edge)" stroke-width="1"/><path d="M10.0,57.0 L61.7,41.7 L113.3,51.6 L165.0,56.1 L216.7,71.6 L268.3,70.4 L320.0,69.4" fill="none" stroke="var(--red)" stroke-width="2" stroke-linejoin="round"/><circle cx="10.0" cy="57.0" r="3" fill="var(--red)" stroke="var(--red)" stroke-width="1.5"><title>Feb 11 – Mar 11, 2026 · 70%</title></circle><text x="10.0" y="48.0" text-anchor="start" font-size="10" font-weight="400" fill="var(--muted)">70%</text><circle cx="61.7" cy="41.7" r="3" fill="var(--red)" stroke="var(--red)" stroke-width="1.5"><title>Mar 27 – Apr 25, 2026 · 87%</title></circle><circle cx="113.3" cy="51.6" r="3" fill="var(--red)" stroke="var(--red)" stroke-width="1.5"><title>Apr 26 – Jun 4, 2026 · 76%</title></circle><circle cx="165.0" cy="56.1" r="3" fill="var(--red)" stroke="var(--red)" stroke-width="1.5"><title>Jul 1 – 30, 2026 (Full Month) · 71%</title></circle><circle cx="216.7" cy="71.6" r="3" fill="var(--red)" stroke="var(--red)" stroke-width="1.5"><title>Aug 14 – Sep 13, 2026 · 54%</title></circle><circle cx="268.3" cy="70.4" r="3" fill="var(--bg)" stroke="var(--red)" stroke-width="1.5"><title>Sep 5 – Oct 4 · 55%</title></circle><text x="268.3" y="61.4" text-anchor="middle" font-size="10" font-weight="400" fill="var(--muted)">55%</text><circle cx="320.0" cy="69.4" r="4.5" fill="var(--red)" stroke="var(--red)" stroke-width="1.5"><title>Oct 5 – Nov 3 · 56%</title></circle><text x="320.0" y="60.4" text-anchor="end" font-size="10" font-weight="600" fill="var(--red)">56%</text><text x="10.0" y="140" text-anchor="start" font-size="9" fill="var(--muted)">Mar 11</text><text x="113.3" y="140" text-anchor="middle" font-size="9" fill="var(--muted)">Jun 4</text><text x="216.7" y="140" text-anchor="middle" font-size="9" fill="var(--muted)">Sep 13</text><text x="320.0" y="140" text-anchor="end" font-size="9" fill="var(--muted)">Nov 3</text></svg></div>    </div>
     <div class="tl-scroll"><table class="tl-table"><thead><tr><th>Period</th><th>Days</th><th>Spend</th><th>/ day</th><th>Leads</th><th>/ day</th><th>CPL</th><th>Google</th><th>Meta</th><th>Calls</th><th>Answer</th></tr></thead><tbody><tr><td>Feb 11 – Mar 11, 2026</td><td>29</td><td>$16,681</td><td>$575</td><td>67</td><td>2.3</td><td>$249</td><td>—</td><td>$119</td><td>27</td><td>70%</td></tr><tr><td>Mar 27 – Apr 25, 2026</td><td>30</td><td>$16,164</td><td>$539</td><td>70</td><td>2.3</td><td>$231</td><td>—</td><td>$173</td><td>15</td><td>87%</td></tr><tr><td>Apr 26 – Jun 4, 2026</td><td>40</td><td>$20,597</td><td>$515</td><td>77</td><td>1.9</td><td>$267</td><td>—</td><td>$228</td><td>21</td><td>76%</td></tr><tr><td>Jul 1 – 30, 2026 (Full Month)</td><td>30</td><td>$21,056</td><td>$702</td><td>107</td><td>3.6</td><td>$197</td><td>$415</td><td>$116</td><td>17</td><td>71%</td></tr><tr><td>Aug 14 – Sep 13, 2026</td><td>31</td><td>$20,566</td><td>$663</td><td>106</td><td>3.4</td><td>$194</td><td>$282</td><td>$136</td><td>26</td><td>54%</td></tr><tr class="is-unpub"><td>Sep 5 – Oct 4 *</td><td>30</td><td>$24,457</td><td>$815</td><td>96</td><td>3.2</td><td>$255</td><td>$358</td><td>$181</td><td>49</td><td>55%</td></tr><tr class="is-current"><td>Oct 5 – Nov 3</td><td>30</td><td>$32,420</td><td>$1,081</td><td>129</td><td>4.3</td><td>$251</td><td>$462</td><td>$160</td><td>16</td><td>56%</td></tr></tbody></table></div>
     <p style="font-size:0.72rem; color:var(--muted-soft); margin-top:0.6rem;">Each point is a past report window, so the trend uses the same platform definitions every time: spend is Google + Meta only and leads are Google Ads conversions plus Meta leads. Window lengths differ (29–40 days), so spend and leads are shown per day; cost per lead and answer rate compare directly. Fortnight editions (Jul 30, Aug 13) and the overlapping Jul 14 and Jul 27 editions are left out so no days are counted twice; the Aug 14 – Sep 13 and Sep 5 – Oct 4 windows overlap by 9 days. * Sep 5 – Oct 4 was pulled for this report as the comparison window and was not a published edition (hollow dots in the charts). Google cost per conversion was not recorded in the first three editions.</p>
+  </section>
+
+  <!-- ───────── CONVERSIONS ───────── -->
+  <section class="section section--yellow reveal" id="conversions">
+    <div class="section__header">
+      <h2 class="section__title">Conversions · <em>Gallery Visits &amp; Contracts</em></h2>
+      <span class="section__chip section__chip--yellow">
+        <span class="section__chip-dot"></span>
+        Visits Steady · One Contract in Rescission
+      </span>
+    </div>
+    <p class="section__lede">Leads are the start; a sales-gallery visit and a signed contract are what count. Spark shows <strong>9 active hard contracts</strong> worth <strong>$74,566,000</strong>, the most recent signed Sep 21. One more is <strong>signed and in its rescission period</strong>: $4,675,000, signed Oct 17 by a buyer who first inquired through Google search on Sep 27, 20 days earlier. Gallery visits held steady at <strong>17 this window against 16</strong> (17 different people vs 14). Most visitors still come through realtors; only 2 of this window's visits trace to a paid ad (Google, Meta or LinkedIn), against 3 last window.</p>
+    <div class="stat-grid">
+      <div class="stat">
+        <div class="stat__label">Hard Contracts · active</div>
+        <div class="stat__value">9</div>
+        <div class="stat__delta stat__delta--flat"><span class="stat__delta-prev" style="margin-left:0">$74,566,000 total · last signed Sep 21</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">In Rescission</div>
+        <div class="stat__value">1</div>
+        <div class="stat__delta stat__delta--up"><span class="stat__delta-prev" style="margin-left:0">$4,675,000 · signed Oct 17 · Google organic lead</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Gallery Visits · 30 days</div>
+        <div class="stat__value">17</div>
+        <div class="stat__delta stat__delta--flat"><span class="stat__delta-prev" style="margin-left:0">vs 16 · 17 people vs 14</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Inquiry → First Visit</div>
+        <div class="stat__value">7 days</div>
+        <div class="stat__delta stat__delta--flat"><span class="stat__delta-prev" style="margin-left:0">median · 66 visitors since May</span></div>
+      </div>
+    </div>
+    <div class="chart">
+      <div class="chart__title">Sales-Center Visits Logged in Spark · by month · Nov 2025 – Oct 2026</div>
+      <div class="cv-months"><div class="cv-months__col" title="Nov 2025 · 4 sales-center visits"><span class="cv-months__val">4</span><span class="cv-months__bar" style="height:15%"></span><span class="cv-months__lab">Nov</span></div><div class="cv-months__col" title="Dec 2025 · 13 sales-center visits"><span class="cv-months__val">13</span><span class="cv-months__bar" style="height:50%"></span><span class="cv-months__lab">Dec</span></div><div class="cv-months__col" title="Jan 2026 · 23 sales-center visits"><span class="cv-months__val">23</span><span class="cv-months__bar" style="height:88%"></span><span class="cv-months__lab">Jan</span></div><div class="cv-months__col" title="Feb 2026 · 16 sales-center visits"><span class="cv-months__val">16</span><span class="cv-months__bar" style="height:62%"></span><span class="cv-months__lab">Feb</span></div><div class="cv-months__col" title="Mar 2026 · 12 sales-center visits"><span class="cv-months__val">12</span><span class="cv-months__bar" style="height:46%"></span><span class="cv-months__lab">Mar</span></div><div class="cv-months__col" title="Apr 2026 · 26 sales-center visits"><span class="cv-months__val">26</span><span class="cv-months__bar" style="height:100%"></span><span class="cv-months__lab">Apr</span></div><div class="cv-months__col" title="May 2026 · 9 sales-center visits"><span class="cv-months__val">9</span><span class="cv-months__bar" style="height:35%"></span><span class="cv-months__lab">May</span></div><div class="cv-months__col" title="Jun 2026 · 9 sales-center visits"><span class="cv-months__val">9</span><span class="cv-months__bar" style="height:35%"></span><span class="cv-months__lab">Jun</span></div><div class="cv-months__col" title="Jul 2026 · 5 sales-center visits"><span class="cv-months__val">5</span><span class="cv-months__bar" style="height:19%"></span><span class="cv-months__lab">Jul</span></div><div class="cv-months__col" title="Aug 2026 · 12 sales-center visits"><span class="cv-months__val">12</span><span class="cv-months__bar" style="height:46%"></span><span class="cv-months__lab">Aug</span></div><div class="cv-months__col" title="Sep 2026 · 19 sales-center visits"><span class="cv-months__val">19</span><span class="cv-months__bar" style="height:73%"></span><span class="cv-months__lab">Sep</span></div><div class="cv-months__col" title="Oct 2026 · 18 sales-center visits"><span class="cv-months__val">18</span><span class="cv-months__bar is-window" style="height:69%"></span><span class="cv-months__lab">Oct</span></div></div>
+      <p style="font-size:0.72rem; color:var(--muted-soft); margin-top:0.6rem;">Counts the "Sales Center Visit" interaction the sales team logs on a contact. Visits dipped through May–July and recovered from August (12, 19, 18). November so far: 2.</p>
+    </div>
+    <div class="chart">
+      <div class="chart__title">Gallery Visits by Original Lead Source · this window (was prior 30 days)</div>
+      <div class="chart-row">
+        <span class="chart-row__label">Realtor / agent</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--gold" style="width:100.0%"></div></div>
+        <span class="chart-row__value">8 · was 10</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Website / direct</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--gold" style="width:50.0%"></div></div>
+        <span class="chart-row__value">4 · was 1</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Sales center / sales team</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--green" style="width:25.0%"></div></div>
+        <span class="chart-row__value">2 · was 0</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Google paid</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--blue" style="width:12.5%"></div></div>
+        <span class="chart-row__value">1 · was 3</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Google organic</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--green" style="width:12.5%"></div></div>
+        <span class="chart-row__value">1 · was 0</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Meta</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--purple" style="width:12.5%"></div></div>
+        <span class="chart-row__value">1 · was 0</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Unknown</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--muted" style="width:0.0%"></div></div>
+        <span class="chart-row__value">0 · was 2</span>
+      </div>
+    </div>
+    <div class="chart">
+      <div class="chart__title">Signed Contracts · newest first · buyer names omitted</div>
+      <div class="cv-scroll"><table class="cv-table"><thead><tr><th>Contract date</th><th class="num">Price</th><th>Original source</th><th>Tracking tags</th><th>First inquiry</th><th class="num">Days</th></tr></thead><tbody><tr class="is-pending"><td>Oct 17, 2026 · in rescission</td><td class="num">$4,675,000</td><td><span class="cv-pill">Google organic</span></td><td>google/organic/(not set)</td><td>Sep 27, 2026</td><td class="num">20</td></tr><tr><td>Sep 21, 2026</td><td class="num">$4,780,000</td><td><span class="cv-pill">Realtor / agent</span></td><td>—</td><td>Sep 18, 2026</td><td class="num">3</td></tr><tr><td>Aug 15, 2026</td><td class="num">$4,965,000</td><td><span class="cv-pill">Google paid</span></td><td>google/cpc/search_branded</td><td>Mar 29, 2026</td><td class="num">139</td></tr><tr><td>Jul 16, 2026</td><td class="num">$8,656,000</td><td><span class="cv-pill">Google paid</span></td><td>google/cpc/search_branded</td><td>Jul 9, 2026</td><td class="num">7</td></tr><tr><td>May 20, 2026</td><td class="num">$6,950,000</td><td><span class="cv-pill">Realtor / agent</span></td><td>—</td><td>May 20, 2026</td><td class="num">0</td></tr><tr><td>May 8, 2026</td><td class="num">$10,500,000</td><td><span class="cv-pill">Website / direct</span></td><td>(direct)/(none)/(not set)</td><td>Dec 1, 2025</td><td class="num">158</td></tr><tr><td>May 8, 2026</td><td class="num">$5,750,000</td><td><span class="cv-pill">Sales center / sales team</span></td><td>—</td><td>Sep 8, 2025</td><td class="num">242</td></tr><tr><td>May 7, 2026</td><td class="num">$6,475,000</td><td><span class="cv-pill">Realtor / agent</span></td><td>—</td><td>Feb 12, 2026</td><td class="num">84</td></tr><tr><td>May 7, 2026</td><td class="num">$12,595,000</td><td><span class="cv-pill">Print / publisher</span></td><td>businessobserver/banner/bigfoot</td><td>Jan 16, 2026</td><td class="num">111</td></tr><tr><td>May 7, 2026</td><td class="num">$13,895,000</td><td><span class="cv-pill">Sales center / sales team</span></td><td>—</td><td>Oct 1, 2025</td><td class="num">218</td></tr></tbody></table></div>
+    </div>
+    <div class="chart">
+      <div class="chart__title">Active Hard Contracts by Original Lead Source</div>
+      <div class="chart-row">
+        <span class="chart-row__label">Realtor / agent</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--gold" style="width:100.0%"></div></div>
+        <span class="chart-row__value">3 · $18.2M</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Sales center / sales team</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--green" style="width:66.7%"></div></div>
+        <span class="chart-row__value">2 · $19.6M</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Google paid</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--blue" style="width:66.7%"></div></div>
+        <span class="chart-row__value">2 · $13.6M</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Print / publisher</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--purple" style="width:33.3%"></div></div>
+        <span class="chart-row__value">1 · $12.6M</span>
+      </div>
+      <div class="chart-row">
+        <span class="chart-row__label">Website / direct</span>
+        <div class="chart-row__track"><div class="chart-row__fill bar--gold" style="width:33.3%"></div></div>
+        <span class="chart-row__value">1 · $10.5M</span>
+      </div>
+    </div>
+    <p style="font-size:0.72rem; color:var(--muted-soft); margin-top:0.6rem;">Source: Spark contracts, reservations and logged interactions, pulled Nov 4. Only contracts with status Hard Contract count as sales; 20 rescinded and 10 not-accepted contracts are excluded — most are the same buyers switching units or holds placed for realtors. One contract is still being prepared ($9,285,000, a sales-team lead). "Original source" is the tracking tag or registration source on the buyer's Spark record. The Sep 21 contract carries a realtor-import source with no tracking tags; the Looker sales table lists a Sep 18 branded-search contract holder that may be the same buyer, so treat that attribution as unconfirmed. Days = contract date minus the date the buyer's Spark record was created. Meta has not produced a hard contract to date.</p>
+    <div class="action">
+      <span class="action__label">Recommendation</span>
+      Report cost per gallery visit and cost per contract by channel every month, not just cost per lead. Two things make that reliable: ask the sales team to log every gallery visit as "Sales Center Visit" (the "Tour" type has been used once), and confirm the source on the Sep 21 contract.
+    </div>
   </section>
 
   <!-- ───────── BUDGET & ROI ───────── -->
@@ -2438,6 +2567,14 @@
           <span><span class="rec-tag rec-tag--high">High</span></span>
           <span class="rec-headline">Work the 39 unworked contacts, especially LinkedIn&#x27;s 13</span>
           <span class="rec-detail">39 of this window&#x27;s contacts are still New/Lead in Spark. LinkedIn&#x27;s 24 arrived in a single week with 1 already Warm; 13 are untouched. Speed to first contact matters most on fresh form fills.</span>
+        </div>
+      </li>
+      <li class="rec-item">
+        <span class="rec-num"></span>
+        <div class="rec-content">
+          <span><span class="rec-tag rec-tag--med">Medium</span></span>
+          <span class="rec-headline">Report cost per gallery visit and per contract, not just per lead</span>
+          <span class="rec-detail">Spark already records signed contracts and sales-gallery visits on each buyer&#x27;s record. This window logged 17 gallery visits (16 last window); only 2 trace to a paid ad, and the 9 active hard contracts came from branded Google search (2), realtors (2–3), the sales center (2), the website (1) and a Business Observer banner (1) — none from Meta. Ask the sales team to log every visit as &quot;Sales Center Visit&quot; and confirm the source on the Sep 21 contract so this becomes a monthly cost-per-visit and cost-per-contract view.</span>
         </div>
       </li>
       <li class="rec-item">
