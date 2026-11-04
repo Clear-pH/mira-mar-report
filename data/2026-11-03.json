@@ -132,7 +132,54 @@
     "cost_per_spark_lead_google_prev": 895.73,
     "cost_per_spark_lead_meta": 267.03,
     "cost_per_spark_lead_meta_prev": 246.95,
-    "cost_per_spark_lead_note": "Spend ÷ Spark contacts from that channel (new demand, back-fill removed). This is the CRM-verified cost per real person, higher than platform CPL because platforms count duplicates, calls and thank-you-page re-fires."
+    "cost_per_spark_lead_note": "Spend ÷ Spark contacts from that channel (new demand, back-fill removed). This is the CRM-verified cost per real person, higher than platform CPL because platforms count duplicates, calls and thank-you-page re-fires.",
+    "midterm_market": {
+      "headline": "The midterm ad market made impressions more expensive",
+      "metrics": [
+        {
+          "metric": "Meta cost per 1,000 impressions",
+          "prev": 74.98,
+          "now": 84.7,
+          "delta_pct": 13.0,
+          "derivation": "cost / impressions × 1000 from Meta Ads Overview"
+        },
+        {
+          "metric": "Meta cost per click",
+          "prev": 4.84,
+          "now": 5.57,
+          "delta_pct": 15.1,
+          "derivation": "Looker CPC tile"
+        },
+        {
+          "metric": "YouTube cost per 1,000 impressions",
+          "prev": 10.01,
+          "now": 11.89,
+          "delta_pct": 18.8,
+          "derivation": "YouTube campaigns cost / impressions × 1000"
+        },
+        {
+          "metric": "Google cost per click",
+          "prev": 3.55,
+          "now": 4.15,
+          "delta_pct": 16.9,
+          "derivation": "Looker Avg CPC tile; confounded by October campaign-mix changes"
+        },
+        {
+          "metric": "Display cost per 1,000 impressions",
+          "prev": 2.17,
+          "now": 1.89,
+          "delta_pct": -12.9,
+          "derivation": "Display_Placements_Feeder cost / impressions × 1000"
+        }
+      ],
+      "industry_context": "Industry reports put 2026 midterm political ad spend at about $11–12 billion, with YouTube and Meta political spend rising from $34M a week in late July to $149M in the week of Oct 11 and YouTube costs up about 20%. Florida also had a governor's race on the ballot.",
+      "read": "Most of the cost increase on Meta and YouTube lines up with the industry-wide political surge; Display, which political buyers largely skipped, got cheaper. Site users fell 5% even as spend rose 33%, consistent with pricier impressions, but lead volume still rose and Election Day (Nov 3) was the busiest real day of the window. Several of our own changes landed in October too (budget increase, new creative, landing-page switch, LinkedIn launch), so the election explains part of the cost rise, not all of it.",
+      "next": "Political ads clear out after Nov 3. If cost per click and cost per 1,000 impressions fall back toward September levels in the Nov 4 – Dec 3 window with no changes on our side, that confirms the election effect.",
+      "sources": [
+        "https://www.emarketer.com/content/11b-midterm-ad-race-may-drive-record-cpms-key-battlegrounds",
+        "https://ppc.land/midterm-ads-lift-ctv-prices-to-43-as-youtube-takes-15-8-of-us-tv-time/"
+      ]
+    }
   },
   "google_ads": {
     "total_cost": 18000.57,
