@@ -33,7 +33,7 @@
     "google_ctr_note": "Search-only click-through rate: 2,382 clicks on 31,005 search impressions. Blended with Display and YouTube it is 0.34%.",
     "answer_rate_pct": 56,
     "answer_rate_note": "9 of 16 calls answered = 56.3% (CallRail tiles and daily table agree).",
-    "narrative": "The first full month at the higher budget bought more people, not cheaper ones. Google and Meta spend rose 33% to $32.4K and the CRM recorded 125 genuinely new contacts against 80 the month before (+56%), with paid Google up 38% (16 to 22) and Meta up 32% (41 to 54). LinkedIn, live only since October 28, added 24 more in its first week. Cost per CRM-verified lead from Google and Meta held flat at about $427, so the extra money scaled volume at the same price rather than buying efficiency. Quality is where the month falls short: 12 contacts are rated good today versus 10, and Meta produced just 1 of them from 62. Paid Google produced 3 and the sales center 3. 39 contacts from this window have not been worked yet, so those quality numbers will move. On creative, the new 'Day at Mira Mar' video earned 7 leads from 5,192 views, the best rate of any video in the account, while the Yoga cuts never got enough delivery to judge. Two lines spent with nothing to show: YouTube ($1,609, zero clicks) and Display ($2,101, zero good leads). Phone calls fell from 49 to 16, almost all on Google, and the answer rate stayed at 56%."
+    "narrative": "The first full month at the higher budget bought more people, not cheaper ones. Google and Meta spend rose 33% to $32.4K and the CRM recorded 125 genuinely new contacts against 80 the month before (+56%), with paid Google up 38% (16 to 22) and Meta up 32% (41 to 54). LinkedIn, live only since October 28, added 24 more in its first week. Cost per CRM-verified lead from Google and Meta held flat at about $427, so the extra money scaled volume at the same price rather than buying efficiency. Quality is where the month falls short: 12 contacts are rated good today versus 10, and Meta produced just 1 of them from 62. Paid Google produced 3 and the sales center 3. Many of this window's newest contacts still carry Spark's default rating, so those quality numbers will move. On creative, the new 'Day at Mira Mar' video earned 7 leads from 5,192 views, the best rate of any video in the account, while the Yoga cuts never got enough delivery to judge. Two lines spent with nothing to show: YouTube ($1,609, zero clicks) and Display ($2,101, zero good leads). Phone calls fell from 49 to 16, almost all on Google, and the answer rate stayed at 56%."
   },
   "spend_by_channel": {
     "google_ads": 18000.57,
@@ -54,7 +54,7 @@
     "cost_per_spark_lead_google_meta_prev": 429.07,
     "cost_per_good_lead_google_meta": 8105.09,
     "cost_per_good_lead_google_meta_prev": 8152.28,
-    "cost_per_good_lead_note": "Good = currently rated Warm, Hot, Referral, Reservation Holder or Contract Holder in Spark. Google + Meta produced 4 good leads this window (3 Google, 1 Meta) vs 3 last window (2 Google, 1 Meta). 39 of this window's contacts are still unworked (New/Lead), so this figure will improve as sales works the list.",
+    "cost_per_good_lead_note": "Good = currently rated Warm, Hot, Referral, Reservation Holder or Contract Holder in Spark. Google + Meta produced 4 good leads this window (3 Google, 1 Meta) vs 3 last window (2 Google, 1 Meta). Many recent contacts still carry Spark's default rating, so this figure will move as ratings are updated.",
     "youtube_spend": 1608.98,
     "youtube_spend_prev": 974.95,
     "youtube_note": "YouTube (Prospecting + Remarketing) cost $1,608.98 this window and $974.95 last window, with 0 clicks and 0 conversions in both.",
@@ -655,7 +655,7 @@
     "spark_meta_leads_prev": 41,
     "spark_meta_good": 1,
     "spark_meta_good_prev": 1,
-    "quality_note": "Only 1 of 62 Meta contacts is currently rated good (Warm); 31 are Non Responsive and 12 Not A Buyer. Meta brings volume at the lowest cost per lead; it is not yet bringing buyers.",
+    "quality_note": "Only 1 of this window's 62 Meta contacts was rated good when Spark was pulled (Nov 4), and the sales team has since moved that one to Cold. Meta's real bright spot is a September 18 lead from Prospecting – Sarasota that is still Warm and in active talks on specific units and financing. 31 of this window's Meta contacts are Non Responsive and 12 Not A Buyer.",
     "leads_by_campaign": [
       {
         "campaign": "Prospecting – Sarasota (New LP)",
@@ -830,7 +830,7 @@
     "unworked": 13,
     "campaign": "sarasota_brochure (utm linkedin / paid-social)",
     "spend": null,
-    "note": "LinkedIn Lead Gen Forms went live Oct 28 and delivered 24 Spark contacts in the final week — 21% of all paid-channel contacts in the window. 13 are still unworked. Spend is not in the reporting dashboard, so cost per lead can't be computed here. Leads arrive without zip code; hidden UTM fields are being added.",
+    "note": "LinkedIn Lead Gen Forms went live Oct 28 and delivered 24 Spark contacts in the final week — 21% of all paid-channel contacts in the window. 13 still carry the default rating. Spend is not in the reporting dashboard, so cost per lead can't be computed here. Leads arrive without zip code; hidden UTM fields are being added.",
     "spend_october": 455.93,
     "spend_note": "Oct 28–31 per the October spend sheet: $455.93 for 12 leads ($37.99 each). November spend is not in the sheet."
   },
@@ -1103,7 +1103,7 @@
     "good_leads_prev": 10,
     "good_leads_breakdown": "Current 12 (all Warm): 4 realtor-referred (Agent Import source, not agents themselves), 3 paid Google, 3 sales-center walk-ins (Display Sweet), 1 Meta, 1 LinkedIn.",
     "unworked": 39,
-    "unworked_note": "39 contacts from this window are still New/Lead (not yet reached) vs 0 from the prior window. Quality rates for this window are provisional.",
+    "unworked_note": "39 contacts from this window still carry Spark's default New/Lead rating vs 0 from the prior window. That rating is not the same as 'not contacted' (sales logged 29 calls in the last 30 days), so treat this window's quality rates as provisional.",
     "non_responsive": 44,
     "non_responsive_prev": 24,
     "not_a_buyer": 31,
@@ -1543,8 +1543,8 @@
     },
     {
       "priority": "high",
-      "headline": "Work the 39 unworked contacts, especially LinkedIn's 13",
-      "detail": "39 of this window's contacts are still New/Lead in Spark. LinkedIn's 24 arrived in a single week with 1 already Warm; 13 are untouched. Speed to first contact matters most on fresh form fills."
+      "headline": "Follow up the 8 warm buyers that came from paid ads",
+      "detail": "The sales team's buyer list shows 8 Warm prospects that came in through paid ads (6 Google, 1 Meta, 1 LinkedIn), plus 2 that went Cold. Two have already toured the gallery, one more very likely has, and three are planning Sarasota trips between mid-November and late December. Booking those visits is the fastest path to the next contract; the LinkedIn buyer is the newest and should be confirmed first."
     },
     {
       "priority": "medium",
@@ -1876,5 +1876,25 @@
     ],
     "prepping_count": 1,
     "pii_note": "Per-contract prices, dates and buyer records removed for the public site (no-PII rule, 2026-11-04). Detail stays in Spark."
+  },
+  "buyer_pipeline_paid": {
+    "source": "Sales team buyer-leads sheet shared by Nicole, Nov 5, 2026 (paid-ad leads only; names and notes kept out of the report)",
+    "total": 10,
+    "warm": 8,
+    "cold": 2,
+    "warm_by_source": {
+      "Google": 6,
+      "Meta": 1,
+      "LinkedIn": 1
+    },
+    "cold_by_source": {
+      "Google": 1,
+      "Meta": 1
+    },
+    "gallery_visits_confirmed_since_oct1": 2,
+    "gallery_visits_likely": 1,
+    "visit_trips_planned_nov_dec": 3,
+    "lead_created_range": "Jan 2026 – Oct 30, 2026",
+    "note": "Two paid-ad buyers have toured the gallery since Oct 1 and a third very likely did on Oct 31. Three more are planning Sarasota trips (mid-November, Nov 17 and Dec 26) with appointments still to confirm. The Meta buyer came in Sep 18 and is discussing units and financing."
   }
 }
