@@ -10,7 +10,7 @@
   "period_mismatch_note": null,
   "generated_at": "2026-11-04",
   "cadence_note": "Requested as a last-30-days read. October 1 is when the monthly budget stepped up, so this window is the first full 30 days at the higher spend; the comparison window is mostly pre-increase (Sep 5 – Sep 30) plus Oct 1–4.",
-  "spend_scope_note": "Spend covers Google Ads and Meta only — the two platforms connected to the reporting dashboard. LinkedIn (launched Oct 28), Microsoft/Bing search (6.4% of site traffic), print and Wall Street Journal placements are not in this total, so it will read lower than the full monthly media budget.",
+  "spend_scope_note": "Spend in the 30-day window covers Google Ads and Meta only, the two platforms connected to the reporting dashboard. Microsoft (Bing) and LinkedIn are not in Looker; the October spend sheet shows they added $2,751.09 in calendar October (Microsoft $2,295.16, LinkedIn $455.93), for an all-channel October total of $36,573.96. See 'October, all channels' in Budget & ROI.",
   "status": {
     "executive_summary": "yellow",
     "budget_roi": "yellow",
@@ -179,6 +179,205 @@
         "https://www.emarketer.com/content/11b-midterm-ad-race-may-drive-record-cpms-key-battlegrounds",
         "https://ppc.land/midterm-ads-lift-ctv-prices-to-43-as-youtube-takes-15-8-of-us-tv-time/"
       ]
+    },
+    "october_all_channels": {
+      "period": "Oct 1 – 31, 2026 (calendar month)",
+      "source": "Clear pH October spend sheet (Google Sheets), received Nov 5, 2026",
+      "total_spend": 36573.96,
+      "total_leads": 127,
+      "cpl": 287.98,
+      "hot_warm": 3,
+      "gallery_visits": 1,
+      "channels": [
+        {
+          "channel": "Google",
+          "spend": 18995.19,
+          "leads": 38,
+          "hot_warm": 2,
+          "gallery_visits": 1,
+          "cpl": 499.87
+        },
+        {
+          "channel": "Meta",
+          "spend": 14827.68,
+          "leads": 72,
+          "hot_warm": 0,
+          "gallery_visits": 0,
+          "cpl": 205.94
+        },
+        {
+          "channel": "Microsoft (Bing)",
+          "spend": 2295.16,
+          "leads": 5,
+          "hot_warm": 0,
+          "gallery_visits": 0,
+          "cpl": 459.03
+        },
+        {
+          "channel": "LinkedIn",
+          "spend": 455.93,
+          "leads": 12,
+          "hot_warm": 1,
+          "gallery_visits": 0,
+          "cpl": 37.99
+        }
+      ],
+      "campaigns": [
+        {
+          "campaign": "Facebook_Leads_Sarasota",
+          "channel": "Meta",
+          "leads": 24,
+          "hot_warm": 0,
+          "gallery_visits": 0,
+          "cpl": 193.54,
+          "spend": 4644.93
+        },
+        {
+          "campaign": "Facebook_Leads_Key Feeder Market",
+          "channel": "Meta",
+          "leads": 19,
+          "hot_warm": 0,
+          "gallery_visits": 0,
+          "cpl": 261.01,
+          "spend": 4959.26
+        },
+        {
+          "campaign": "Facebook_Leads_Brochure Download_Key Feeder Market",
+          "channel": "Meta",
+          "leads": 14,
+          "hot_warm": 0,
+          "gallery_visits": 0,
+          "cpl": 154.54,
+          "spend": 2163.49
+        },
+        {
+          "campaign": "LinkedIn_Leads_Brochure Download_Sarasota",
+          "channel": "LinkedIn",
+          "leads": 12,
+          "hot_warm": 1,
+          "gallery_visits": 0,
+          "cpl": 37.99,
+          "spend": 455.93
+        },
+        {
+          "campaign": "Google_Search_Branded",
+          "channel": "Google",
+          "leads": 10,
+          "hot_warm": 0,
+          "gallery_visits": 0,
+          "cpl": 60.33,
+          "spend": 603.26
+        },
+        {
+          "campaign": "Facebook_Leads_Remarketing",
+          "channel": "Meta",
+          "leads": 8,
+          "hot_warm": 0,
+          "gallery_visits": 0,
+          "cpl": 114.26,
+          "spend": 914.07
+        },
+        {
+          "campaign": "Facebook_Leads_Brochure Download",
+          "channel": "Meta",
+          "leads": 7,
+          "hot_warm": 0,
+          "gallery_visits": 0,
+          "cpl": 306.56,
+          "spend": 2145.93
+        },
+        {
+          "campaign": "Google_Search_Non-Branded_Sarasota",
+          "channel": "Google",
+          "leads": 7,
+          "hot_warm": 0,
+          "gallery_visits": 0,
+          "cpl": 584.32,
+          "spend": 4090.27
+        },
+        {
+          "campaign": "Google_Search_Non-Branded_Competitors",
+          "channel": "Google",
+          "leads": 6,
+          "hot_warm": 1,
+          "gallery_visits": 0,
+          "cpl": 760.0,
+          "spend": 4560.0
+        },
+        {
+          "campaign": "Google_Search_Non-Branded_Florida",
+          "channel": "Google",
+          "leads": 6,
+          "hot_warm": 0,
+          "gallery_visits": 0,
+          "cpl": 399.61,
+          "spend": 2397.64
+        },
+        {
+          "campaign": "Google_Display_Feeder Market",
+          "channel": "Google",
+          "leads": 5,
+          "hot_warm": 0,
+          "gallery_visits": 0,
+          "cpl": 425.59,
+          "spend": 2127.96
+        },
+        {
+          "campaign": "Microsoft_Search_Non-Branded_Sarasota",
+          "channel": "Microsoft (Bing)",
+          "leads": 4,
+          "hot_warm": 0,
+          "gallery_visits": 0,
+          "cpl": 222.57,
+          "spend": 890.28
+        },
+        {
+          "campaign": "Google_Search_Non-Branded_Feeder Market",
+          "channel": "Google",
+          "leads": 4,
+          "hot_warm": 1,
+          "gallery_visits": 1,
+          "cpl": 810.87,
+          "spend": 3243.48
+        },
+        {
+          "campaign": "Microsoft_Search_Branded",
+          "channel": "Microsoft (Bing)",
+          "leads": 1,
+          "hot_warm": 0,
+          "gallery_visits": 0,
+          "cpl": 122.06,
+          "spend": 122.06
+        },
+        {
+          "campaign": "Google_YouTube_Remarketing",
+          "channel": "Google",
+          "leads": 0,
+          "hot_warm": 0,
+          "gallery_visits": 0,
+          "cpl": null,
+          "spend": 97.08
+        },
+        {
+          "campaign": "Microsoft_Search_Non-Branded_Key Feeder Market",
+          "channel": "Microsoft (Bing)",
+          "leads": 0,
+          "hot_warm": 0,
+          "gallery_visits": 0,
+          "cpl": null,
+          "spend": 1282.82
+        },
+        {
+          "campaign": "Google_YouTube_Prospecting",
+          "channel": "Google",
+          "leads": 0,
+          "hot_warm": 0,
+          "gallery_visits": 0,
+          "cpl": null,
+          "spend": 1875.5
+        }
+      ],
+      "note": "Calendar October, all four paid channels. The window figures elsewhere in this report (Oct 5 – Nov 3) cover Google and Meta only because LinkedIn and Microsoft Ads are not connected to the Looker dashboard. Google + Meta in this sheet total $33,822.87 for October; LinkedIn and Microsoft add $2,751.09 (7.5% of the month). Lead counts here are the sheet's own and are not de-duplicated against Spark."
     }
   },
   "google_ads": {
@@ -631,7 +830,9 @@
     "unworked": 13,
     "campaign": "sarasota_brochure (utm linkedin / paid-social)",
     "spend": null,
-    "note": "LinkedIn Lead Gen Forms went live Oct 28 and delivered 24 Spark contacts in the final week — 21% of all paid-channel contacts in the window. 13 are still unworked. Spend is not in the reporting dashboard, so cost per lead can't be computed here. Leads arrive without zip code; hidden UTM fields are being added."
+    "note": "LinkedIn Lead Gen Forms went live Oct 28 and delivered 24 Spark contacts in the final week — 21% of all paid-channel contacts in the window. 13 are still unworked. Spend is not in the reporting dashboard, so cost per lead can't be computed here. Leads arrive without zip code; hidden UTM fields are being added.",
+    "spend_october": 455.93,
+    "spend_note": "Oct 28–31 per the October spend sheet: $455.93 for 12 leads ($37.99 each). November spend is not in the sheet."
   },
   "website_organic": {
     "active_users": 9300,
