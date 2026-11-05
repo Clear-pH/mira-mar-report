@@ -1549,7 +1549,7 @@
     {
       "priority": "medium",
       "headline": "Report cost per gallery visit and per contract, not just per lead",
-      "detail": "Spark already records signed contracts and sales-gallery visits on each buyer's record. This window logged 17 gallery visits (16 last window); only 2 trace to a paid ad, and the 9 active hard contracts came from branded Google search (2), realtors (2–3), the sales center (2), the website (1) and a Business Observer banner (1) — none from Meta. Ask the sales team to log every visit as \"Sales Center Visit\" and confirm the source on the Sep 21 contract so this becomes a monthly cost-per-visit and cost-per-contract view."
+      "detail": "Spark already records signed contracts and sales-gallery visits on each buyer's record. This window logged 17 gallery visits (16 last window); only 2 trace to a paid ad, and the 9 active hard contracts came from branded Google search (2), realtors (2–3), the sales center (2), the website (1) and a Business Observer banner (1) — none from Meta. Ask the sales team to log every visit as \"Sales Center Visit\" and confirm the source on the most recent realtor-attributed contract so this becomes a monthly cost-per-visit and cost-per-contract view."
     },
     {
       "priority": "medium",
@@ -1739,111 +1739,6 @@
     }
   },
   "conversions": {
-    "hard_contracts": [
-      {
-        "contract_date": "2026-05-07",
-        "price": 6475000,
-        "channel": "Realtor / agent",
-        "utm": "//",
-        "self_reported": "Realtor",
-        "lead_created": "2026-02-12",
-        "days_lead_to_contract": 84
-      },
-      {
-        "contract_date": "2026-05-07",
-        "price": 12595000,
-        "channel": "Print / publisher",
-        "utm": "businessobserver/banner/bigfoot",
-        "self_reported": "Social Media",
-        "lead_created": "2026-01-16",
-        "days_lead_to_contract": 111
-      },
-      {
-        "contract_date": "2026-05-07",
-        "price": 13895000,
-        "channel": "Sales center / sales team",
-        "utm": "//",
-        "self_reported": "Friend / Family",
-        "lead_created": "2025-10-01",
-        "days_lead_to_contract": 218
-      },
-      {
-        "contract_date": "2026-05-08",
-        "price": 10500000,
-        "channel": "Website / direct",
-        "utm": "(direct)/(none)/(not set)",
-        "self_reported": "Social Media",
-        "lead_created": "2025-12-01",
-        "days_lead_to_contract": 158
-      },
-      {
-        "contract_date": "2026-05-08",
-        "price": 5750000,
-        "channel": "Sales center / sales team",
-        "utm": "//",
-        "self_reported": null,
-        "lead_created": "2025-09-08",
-        "days_lead_to_contract": 242
-      },
-      {
-        "contract_date": "2026-05-20",
-        "price": 6950000,
-        "channel": "Realtor / agent",
-        "utm": "//",
-        "self_reported": "Realtor",
-        "lead_created": "2026-05-20",
-        "days_lead_to_contract": 0
-      },
-      {
-        "contract_date": "2026-07-16",
-        "price": 8656000,
-        "channel": "Google paid",
-        "utm": "google/cpc/search_branded",
-        "self_reported": "Google Ads",
-        "lead_created": "2026-07-09",
-        "days_lead_to_contract": 7
-      },
-      {
-        "contract_date": "2026-08-15",
-        "price": 4965000,
-        "channel": "Google paid",
-        "utm": "google/cpc/search_branded",
-        "self_reported": null,
-        "lead_created": "2026-03-29",
-        "days_lead_to_contract": 139
-      },
-      {
-        "contract_date": "2026-09-21",
-        "price": 4780000,
-        "channel": "Realtor / agent",
-        "utm": "//",
-        "self_reported": "Realtor",
-        "lead_created": "2026-09-18",
-        "days_lead_to_contract": 3
-      }
-    ],
-    "in_rescission": [
-      {
-        "contract_date": "2026-10-17",
-        "price": 4675000,
-        "channel": "Google organic",
-        "utm": "google/organic/(not set)",
-        "self_reported": "Social Media",
-        "lead_created": "2026-09-27",
-        "days_lead_to_contract": 20
-      }
-    ],
-    "prepping": [
-      {
-        "contract_date": null,
-        "price": 9285000,
-        "channel": "Sales center / sales team",
-        "utm": "//",
-        "self_reported": "Friend / Family",
-        "lead_created": "2025-10-01",
-        "days_lead_to_contract": null
-      }
-    ],
     "status_counts": {
       "Hard Contract": 9,
       "Rescinded": 20,
@@ -1955,6 +1850,31 @@
       "note": "first Sales Center Visit since May 1 2026 minus contact created date"
     },
     "interactions_history_from": "2025-11-18",
-    "source": "Live Spark API pull 2026-11-04 (contracts, contract statuses, interactions). Buyer names omitted."
+    "source": "Live Spark API pull 2026-11-04 (contracts, contract statuses, interactions). Buyer names omitted.",
+    "hard_contracts_total_value": 74566000,
+    "hard_contracts_by_month": {
+      "2026-05": 6,
+      "2026-07": 1,
+      "2026-08": 1,
+      "2026-09": 1
+    },
+    "hard_contracts_by_channel": {
+      "Realtor / agent": 3,
+      "Print / publisher": 1,
+      "Sales center / sales team": 2,
+      "Website / direct": 1,
+      "Google paid": 2
+    },
+    "days_lead_to_contract_median": 111,
+    "last_hard_contract_month": "2026-09",
+    "in_rescission_count": 1,
+    "in_rescission_channels": [
+      "Google organic"
+    ],
+    "in_rescission_days_lead_to_contract": [
+      20
+    ],
+    "prepping_count": 1,
+    "pii_note": "Per-contract prices, dates and buyer records removed for the public site (no-PII rule, 2026-11-04). Detail stays in Spark."
   }
 }

@@ -1111,8 +1111,6 @@
   .cv-table th, .cv-table td { padding: 0.5rem 0.55rem; border-bottom: 1px solid var(--card-edge); text-align: left; white-space: nowrap; }
   .cv-table td.num, .cv-table th.num { text-align: right; }
   .cv-table th { font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
-  .cv-table tr.is-pending td { color: var(--gold); }
-  .cv-pill { display: inline-block; padding: 0.1rem 0.5rem; border-radius: 999px; font-size: 0.68rem; border: 1px solid var(--card-edge); color: var(--cream); }
   .cv-months { display: grid; grid-template-columns: repeat(12, 1fr); gap: 6px; align-items: end; height: 150px; margin-top: 0.75rem; }
   .cv-months__col { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 100%; }
   .cv-months__bar { width: 100%; max-width: 34px; border-radius: 4px 4px 0 0; background: var(--gold); }
@@ -1367,17 +1365,17 @@
         Visits Steady · One Contract in Rescission
       </span>
     </div>
-    <p class="section__lede">Leads are the start; a sales-gallery visit and a signed contract are what count. Spark shows <strong>9 active hard contracts</strong> worth <strong>$74,566,000</strong>, the most recent signed Sep 21. One more is <strong>signed and in its rescission period</strong>: $4,675,000, signed Oct 17 by a buyer who first inquired through Google search on Sep 27, 20 days earlier. Gallery visits held steady at <strong>17 this window against 16</strong> (17 different people vs 14). Most visitors still come through realtors; only 2 of this window's visits trace to a paid ad (Google, Meta or LinkedIn), against 3 last window.</p>
+    <p class="section__lede">Leads are the start; a sales-gallery visit and a signed contract are what count. Spark shows <strong>9 active hard contracts</strong> worth <strong>$74.6M</strong> in total, the most recent signed in Sep. One more is <strong>signed and in its rescission period</strong>, from a buyer who first inquired through Google organic. Gallery visits held steady at <strong>17 this window against 16</strong> (17 different people vs 14). Most visitors still come through realtors; only 2 of this window's visits trace to a paid ad (Google, Meta or LinkedIn), against 3 last window.</p>
     <div class="stat-grid">
       <div class="stat">
         <div class="stat__label">Hard Contracts · active</div>
         <div class="stat__value">9</div>
-        <div class="stat__delta stat__delta--flat"><span class="stat__delta-prev" style="margin-left:0">$74,566,000 total · last signed Sep 21</span></div>
+        <div class="stat__delta stat__delta--flat"><span class="stat__delta-prev" style="margin-left:0">$74.6M total · last signed Sep</span></div>
       </div>
       <div class="stat">
         <div class="stat__label">In Rescission</div>
         <div class="stat__value">1</div>
-        <div class="stat__delta stat__delta--up"><span class="stat__delta-prev" style="margin-left:0">$4,675,000 · signed Oct 17 · Google organic lead</span></div>
+        <div class="stat__delta stat__delta--up"><span class="stat__delta-prev" style="margin-left:0">signed in October · Google organic lead</span></div>
       </div>
       <div class="stat">
         <div class="stat__label">Gallery Visits · 30 days</div>
@@ -1434,41 +1432,42 @@
       </div>
     </div>
     <div class="chart">
-      <div class="chart__title">Signed Contracts · newest first · buyer names omitted</div>
-      <div class="cv-scroll"><table class="cv-table"><thead><tr><th>Contract date</th><th class="num">Price</th><th>Original source</th><th>Tracking tags</th><th>First inquiry</th><th class="num">Days</th></tr></thead><tbody><tr class="is-pending"><td>Oct 17, 2026 · in rescission</td><td class="num">$4,675,000</td><td><span class="cv-pill">Google organic</span></td><td>google/organic/(not set)</td><td>Sep 27, 2026</td><td class="num">20</td></tr><tr><td>Sep 21, 2026</td><td class="num">$4,780,000</td><td><span class="cv-pill">Realtor / agent</span></td><td>—</td><td>Sep 18, 2026</td><td class="num">3</td></tr><tr><td>Aug 15, 2026</td><td class="num">$4,965,000</td><td><span class="cv-pill">Google paid</span></td><td>google/cpc/search_branded</td><td>Mar 29, 2026</td><td class="num">139</td></tr><tr><td>Jul 16, 2026</td><td class="num">$8,656,000</td><td><span class="cv-pill">Google paid</span></td><td>google/cpc/search_branded</td><td>Jul 9, 2026</td><td class="num">7</td></tr><tr><td>May 20, 2026</td><td class="num">$6,950,000</td><td><span class="cv-pill">Realtor / agent</span></td><td>—</td><td>May 20, 2026</td><td class="num">0</td></tr><tr><td>May 8, 2026</td><td class="num">$10,500,000</td><td><span class="cv-pill">Website / direct</span></td><td>(direct)/(none)/(not set)</td><td>Dec 1, 2025</td><td class="num">158</td></tr><tr><td>May 8, 2026</td><td class="num">$5,750,000</td><td><span class="cv-pill">Sales center / sales team</span></td><td>—</td><td>Sep 8, 2025</td><td class="num">242</td></tr><tr><td>May 7, 2026</td><td class="num">$6,475,000</td><td><span class="cv-pill">Realtor / agent</span></td><td>—</td><td>Feb 12, 2026</td><td class="num">84</td></tr><tr><td>May 7, 2026</td><td class="num">$12,595,000</td><td><span class="cv-pill">Print / publisher</span></td><td>businessobserver/banner/bigfoot</td><td>Jan 16, 2026</td><td class="num">111</td></tr><tr><td>May 7, 2026</td><td class="num">$13,895,000</td><td><span class="cv-pill">Sales center / sales team</span></td><td>—</td><td>Oct 1, 2025</td><td class="num">218</td></tr></tbody></table></div>
-    </div>
-    <div class="chart">
-      <div class="chart__title">Active Hard Contracts by Original Lead Source</div>
+      <div class="chart__title">Active Hard Contracts by Original Lead Source · 9 total</div>
       <div class="chart-row">
         <span class="chart-row__label">Realtor / agent</span>
         <div class="chart-row__track"><div class="chart-row__fill bar--gold" style="width:100.0%"></div></div>
-        <span class="chart-row__value">3 · $18.2M</span>
+        <span class="chart-row__value">3</span>
       </div>
       <div class="chart-row">
         <span class="chart-row__label">Sales center / sales team</span>
         <div class="chart-row__track"><div class="chart-row__fill bar--green" style="width:66.7%"></div></div>
-        <span class="chart-row__value">2 · $19.6M</span>
+        <span class="chart-row__value">2</span>
       </div>
       <div class="chart-row">
         <span class="chart-row__label">Google paid</span>
         <div class="chart-row__track"><div class="chart-row__fill bar--blue" style="width:66.7%"></div></div>
-        <span class="chart-row__value">2 · $13.6M</span>
+        <span class="chart-row__value">2</span>
       </div>
       <div class="chart-row">
         <span class="chart-row__label">Print / publisher</span>
         <div class="chart-row__track"><div class="chart-row__fill bar--purple" style="width:33.3%"></div></div>
-        <span class="chart-row__value">1 · $12.6M</span>
+        <span class="chart-row__value">1</span>
       </div>
       <div class="chart-row">
         <span class="chart-row__label">Website / direct</span>
         <div class="chart-row__track"><div class="chart-row__fill bar--gold" style="width:33.3%"></div></div>
-        <span class="chart-row__value">1 · $10.5M</span>
+        <span class="chart-row__value">1</span>
       </div>
     </div>
-    <p style="font-size:0.72rem; color:var(--muted-soft); margin-top:0.6rem;">Source: Spark contracts, reservations and logged interactions, pulled Nov 4. Only contracts with status Hard Contract count as sales; 20 rescinded and 10 not-accepted contracts are excluded — most are the same buyers switching units or holds placed for realtors. One contract is still being prepared ($9,285,000, a sales-team lead). "Original source" is the tracking tag or registration source on the buyer's Spark record. The Sep 21 contract carries a realtor-import source with no tracking tags; the Looker sales table lists a Sep 18 branded-search contract holder that may be the same buyer, so treat that attribution as unconfirmed. Days = contract date minus the date the buyer's Spark record was created. Meta has not produced a hard contract to date.</p>
+    <div class="chart">
+      <div class="chart__title">Hard Contracts by Month Signed</div>
+      <div class="cv-scroll"><table class="cv-table"><thead><tr><th class="num">May 2026</th><th class="num">Jul 2026</th><th class="num">Aug 2026</th><th class="num">Sep 2026</th></tr></thead><tbody><tr><td class="num">6</td><td class="num">1</td><td class="num">1</td><td class="num">1</td></tr></tbody></table></div>
+      <p style="font-size:0.72rem; color:var(--muted-soft); margin-top:0.6rem;">Six contracts converted from launch-era reservations in May; since then about one a month. Median time from a buyer's first inquiry to a hard contract: 111 days.</p>
+    </div>
+    <p style="font-size:0.72rem; color:var(--muted-soft); margin-top:0.6rem;">Source: Spark contracts and logged interactions, pulled Nov 4. Only contracts with status Hard Contract count as sales; 20 rescinded and 10 not-accepted contracts are excluded, most of them the same buyers switching units or holds placed for realtors. 1 more is being prepared. "Original source" is the tracking tag or registration source on the buyer's Spark record; one realtor-attributed contract may trace back to branded search and is being checked. Meta has not produced a hard contract to date. Individual contract details are kept in Spark and not published here.</p>
     <div class="action">
       <span class="action__label">Recommendation</span>
-      Report cost per gallery visit and cost per contract by channel every month, not just cost per lead. Two things make that reliable: ask the sales team to log every gallery visit as "Sales Center Visit" (the "Tour" type has been used once), and confirm the source on the Sep 21 contract.
+      Report cost per gallery visit and cost per contract by channel every month, not just cost per lead. Two things make that reliable: ask the sales team to log every gallery visit as "Sales Center Visit" (the "Tour" type has been used once), and confirm the source on the most recent realtor-attributed contract.
     </div>
   </section>
 
@@ -2611,7 +2610,7 @@
         <div class="rec-content">
           <span><span class="rec-tag rec-tag--med">Medium</span></span>
           <span class="rec-headline">Report cost per gallery visit and per contract, not just per lead</span>
-          <span class="rec-detail">Spark already records signed contracts and sales-gallery visits on each buyer&#x27;s record. This window logged 17 gallery visits (16 last window); only 2 trace to a paid ad, and the 9 active hard contracts came from branded Google search (2), realtors (2–3), the sales center (2), the website (1) and a Business Observer banner (1) — none from Meta. Ask the sales team to log every visit as &quot;Sales Center Visit&quot; and confirm the source on the Sep 21 contract so this becomes a monthly cost-per-visit and cost-per-contract view.</span>
+          <span class="rec-detail">Spark already records signed contracts and sales-gallery visits on each buyer&#x27;s record. This window logged 17 gallery visits (16 last window); only 2 trace to a paid ad, and the 9 active hard contracts came from branded Google search (2), realtors (2–3), the sales center (2), the website (1) and a Business Observer banner (1) — none from Meta. Ask the sales team to log every visit as &quot;Sales Center Visit&quot; and confirm the source on the most recent realtor-attributed contract so this becomes a monthly cost-per-visit and cost-per-contract view.</span>
         </div>
       </li>
       <li class="rec-item">
